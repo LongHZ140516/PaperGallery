@@ -29,6 +29,12 @@ jobs:
       - name: Generate gallery data
         run: python scripts/build_gallery_data.py
 
+      - name: Copy images into web bundle
+        run: |
+          rm -rf web/images
+          mkdir -p web/images
+          rsync -av images/ web/images/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
