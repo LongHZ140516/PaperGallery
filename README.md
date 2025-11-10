@@ -25,6 +25,22 @@
 ## 🧾 TODO List
 - [ ] 💻 Create a **dedicated website** for the repository
 
+## 🌐 部署与访问
+- 站点代码位于 `web/` 目录，并由 `scripts/build_gallery_data.py` 动态生成 `web/data/gallery-data.json`。
+- GitHub Actions (`.github/workflows/deploy.yml`) 会在推送到 `main` 时自动执行上述脚本，并将 `web/` 部署到 GitHub Pages，确保任何人都能访问最新版画廊。
+- 若需本地预览，可运行 `python3 scripts/build_gallery_data.py` 生成数据后执行 `cd web && python3 -m http.server 4173`，浏览器访问 `http://localhost:4173/` 即可。
+
+## 🤝 贡献新的架构图
+1. 在网页顶部的「上传本地架构图」表单中填写论文标题、作者、分类、链接、摘要并选择图片（首张为主图）。
+2. 点击「添加到页面」后，网页会生成：
+   - README 片段（可复制粘贴至合适章节）
+   - `metadata.json` 文件（可下载并随 PR 一起提交）
+   - Pull Request 快捷链接（跳转到 GitHub Compare 页面）
+3. 将图片拷贝到仓库的 `images/user-contributions/` 目录，并根据生成的片段更新 README。
+4. Fork 仓库、提交上述改动，最后在 GitHub 上发起 Pull Request。
+
+> 配置提示：若部署到其它仓库/组织，可在 `web/index.html` 的 `<body data-repo=\"owner/repo\">` 中填写实际仓库名，页面即可为 PR 快捷链接生成正确的仓库地址。
+
 
 ## 📄 Table of contents
 - 🔨 [Tools](#tools)

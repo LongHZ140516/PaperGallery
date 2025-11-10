@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Framework Architecture Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body data-repo="awesome-framework-gallery/awesome-framework-gallery">
+    <header class="page-header">
+      <div>
+        <h1>论文架构图总览</h1>
+        <p>逐行浏览每篇论文的标题与大图，也可以将本地架构图直接上传到页面中查看。</p>
+      </div>
+      <a class="header-link" href="../README.md" target="_blank" rel="noreferrer noopener">查看原始 README</a>
+    </header>
+
+    <section class="upload-panel">
+      <form id="uploadForm">
+        <div class="form-grid">
+          <label class="form-field">
+            <span>论文标题 *</span>
+            <input id="uploadTitle" type="text" placeholder="请输入论文标题" required>
+          </label>
+          <label class="form-field">
+            <span>作者</span>
+            <input id="uploadAuthors" type="text" placeholder="作者列表">
+          </label>
+          <div class="form-field form-field--combo">
+            <label>
+              <span>分类 *</span>
+              <select id="uploadSectionSelect" required>
+                <option value="">请选择分类</option>
+                <option value="用户上传">用户上传</option>
+                <option value="__custom__">其他（自定义）</option>
+              </select>
+            </label>
+            <input id="uploadSectionCustom" type="text" placeholder="请输入自定义分类" hidden>
+          </div>
+        </div>
+
+        <div class="form-grid form-grid--links">
+          <label class="form-field">
+            <span>Paper 链接</span>
+            <input id="uploadPaperLink" type="url" placeholder="https://arxiv.org/abs/...">
+          </label>
+          <label class="form-field">
+            <span>Project Page</span>
+            <input id="uploadProjectLink" type="url" placeholder="https://project-page.example">
+          </label>
+          <label class="form-field">
+            <span>Code 链接</span>
+            <input id="uploadCodeLink" type="url" placeholder="https://github.com/...">
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span>摘要（可选，支持多段）</span>
+          <textarea id="uploadAbstract" rows="3" placeholder="在这里粘贴摘要内容"></textarea>
+        </label>
+
+        <div class="upload-actions">
+          <div class="upload-actions__left">
+            <label class="upload-control">
+              <input id="uploadInput" type="file" accept="image/*" multiple hidden>
+              <span>选择架构图</span>
+            </label>
+            <p class="upload-hint">可一次选择多张图片，首张将作为主图展示。</p>
+          </div>
+          <button type="submit" class="upload-submit">添加到页面</button>
+        </div>
+      </form>
+    </section>
+    <section id="uploadList" class="upload-list" aria-live="polite" hidden></section>
+
+    <section class="contrib-guidelines">
+      <h2>贡献 & Pull Request 流程</h2>
+      <ol>
+        <li>填写上方信息并选择架构图，点击「添加到页面」生成贡献素材。</li>
+        <li>下载 metadata 文件，将图片放入仓库的 <code>images/user-contributions/</code> 后再提交。</li>
+        <li>复制 README 片段并粘贴到合适的章节，最后在 GitHub 上发起 Pull Request。</li>
+      </ol>
+    </section>
+
+    <section id="contributionOutput" class="contribution-output" hidden>
+      <div class="contribution-output__header">
+        <div>
+          <h3>贡献素材已生成</h3>
+          <p>请按照下述内容更新仓库并发起 Pull Request。</p>
+        </div>
+        <div class="contribution-output__buttons">
+          <button id="downloadMetadata" type="button">下载 metadata.json</button>
+          <button id="copySnippet" type="button">复制 README 片段</button>
+          <a id="openPrLink" class="open-pr-link" target="_blank" rel="noreferrer noopener">打开 Pull Request 页面</a>
+        </div>
+      </div>
+      <div class="contribution-output__body">
+        <div>
+          <p>README 片段预览：</p>
+          <textarea id="snippetField" readonly></textarea>
+        </div>
+        <div>
+          <p>需要添加的图片（放入 <code>images/user-contributions/</code>）：</p>
+          <ul id="contributionMeta" class="contribution-meta"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="statusIndicator" class="status-indicator">加载中…</section>
+    <main id="paperList" class="paper-list"></main>
+
+    <template id="paper-row-template">
+      <article class="paper-row">
+        <figure class="paper-row__figure">
+          <img loading="lazy" alt="">
+        </figure>
+        <div class="paper-row__info">
+          <p class="paper-row__section"></p>
+          <h3></h3>
+          <p class="paper-row__authors"></p>
+          <div class="paper-row__links"></div>
+          <div class="paper-row__gallery"></div>
+          <div class="paper-row__abstract"></div>
+        </div>
+      </article>
+    </template>
+
+    <template id="upload-preview-template">
+      <article class="upload-card">
+        <div class="upload-card__thumb">
+          <img alt="">
+        </div>
+        <div class="upload-card__meta">
+          <p class="upload-card__name"></p>
+          <p class="upload-card__size"></p>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

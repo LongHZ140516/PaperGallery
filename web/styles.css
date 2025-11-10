@@ -1,0 +1,469 @@
+:root {
+  color-scheme: light dark;
+  --bg: #04050a;
+  --card: #0c101d;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f5f7fa;
+  --muted: rgba(245, 247, 250, 0.7);
+  --accent: #7be8ff;
+  font-family: 'Inter', 'HarmonyOS Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050713 0%, #030308 100%);
+  color: var(--text);
+  padding: 2rem clamp(1rem, 3vw, 3rem) 4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.3rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.header-link {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+}
+
+.upload-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.upload-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.75rem 0.9rem;
+  resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible,
+.form-field select:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(123, 232, 255, 0.2);
+}
+
+.form-field--combo {
+  gap: 0.6rem;
+}
+
+.form-field--combo label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-grid--links {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.upload-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.upload-actions__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.upload-control {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.04);
+  width: fit-content;
+}
+
+.upload-control:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.upload-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.upload-submit {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #04121a;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.upload-submit:hover {
+  opacity: 0.85;
+}
+
+.upload-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.upload-list[hidden] {
+  display: none;
+}
+
+.upload-card {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.upload-card__thumb img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+}
+
+.upload-card__meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upload-card__name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.upload-card__size {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.status-indicator {
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contrib-guidelines {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.contrib-guidelines h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+}
+
+.contrib-guidelines ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.contribution-output {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card);
+  padding: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.contribution-output__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contribution-output__header h3 {
+  margin: 0 0 0.2rem;
+}
+
+.contribution-output__header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contribution-output__buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.contribution-output__buttons button,
+.contribution-output__buttons a {
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.contribution-output__buttons button:hover,
+.contribution-output__buttons a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.open-pr-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.open-pr-link.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.contribution-output__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contribution-output textarea {
+  width: 100%;
+  min-height: 160px;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  padding: 0.8rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+}
+
+.contribution-meta {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.contribution-meta li {
+  margin-bottom: 0.3rem;
+}
+
+.paper-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.paper-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  min-height: 100%;
+}
+
+.paper-row__figure {
+  margin: 0;
+}
+
+.paper-row__figure img {
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #000;
+  object-fit: contain;
+  max-height: 480px;
+}
+
+.paper-row__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paper-row__section {
+  margin: 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+.paper-row__info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.paper-row__authors {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.paper-row__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.paper-row__links a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.paper-row__gallery {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paper-row__gallery img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #000;
+}
+
+.paper-row__abstract details {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.8rem;
+  padding: 0.65rem 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.paper-row__abstract summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.paper-row__abstract p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 0.92rem;
+}
+
+.error {
+  color: #ff9191;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.2rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
+  .upload-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  .paper-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contribution-output__buttons {
+    width: 100%;
+  }
+
+  .contribution-output__buttons button,
+  .contribution-output__buttons a {
+    flex: 1;
+    text-align: center;
+  }
+}
