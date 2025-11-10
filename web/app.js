@@ -1,5 +1,5 @@
 const DATA_URL = './data/gallery-data.json';
-const IMAGE_BASE = '../';
+const IMAGE_BASE = './';
 
 const paperListEl = document.getElementById('paperList');
 const statusIndicator = document.getElementById('statusIndicator');
