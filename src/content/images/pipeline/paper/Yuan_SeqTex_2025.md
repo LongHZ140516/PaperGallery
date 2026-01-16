@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH"
 license: "CC BY"
 tags: ["Diffusion","Mesh Textures","Video Sequence"]
-image: "Yuan_SeqTex_2025.webp"
+image: "Yuan_SeqTex_2025.jpg"
 paper: "https://arxiv.org/pdf/2507.04285"
 code: ""
 project: "https://yuanze1024.github.io/SeqTex/"

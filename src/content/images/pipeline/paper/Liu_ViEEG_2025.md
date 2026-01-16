@@ -5,7 +5,7 @@ year: "2025"
 conference: "MM"
 license: ""
 tags: ["Visual Representations","Coding"]
-image: "Liu_ViEEG_2025.webp"
+image: "Liu_ViEEG_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.12408"
 code: ""
 project: ""

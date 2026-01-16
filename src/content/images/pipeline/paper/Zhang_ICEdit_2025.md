@@ -5,7 +5,7 @@ year: "2025"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["Diffusion", "Edit", "Generation"]
-image: "Zhang_ICEdit_2025.webp"
+image: "Zhang_ICEdit_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.20690"
 code: "https://github.com/River-Zhang/ICEdit"
 project: "https://river-zhang.github.io/ICEdit-gh-pages/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3DGS","Text-Driven","Diffusion"]
-image: "Shriram_RealmDreamer_2024.webp"
+image: "Shriram_RealmDreamer_2024.jpg"
 paper: "https://arxiv.org/pdf/2404.07199"
 code: ""
 project: "https://realmdreamer.github.io/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: "CC BY"
 tags: ["Self-Reinforcing","Semi-Supervised"]
-image: "Xu_SPRED_2025.webp"
+image: "Xu_SPRED_2025.jpg"
 paper: "https://arxiv.org/pdf/2507.01884"
 code: "https://github.com/zhoujiahuan1991/ICCV2025-SPRED"
 project: ""

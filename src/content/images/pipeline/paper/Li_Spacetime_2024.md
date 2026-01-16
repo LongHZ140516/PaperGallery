@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 tags: ["3DGS","Real-Time"]
 license: ""
-image: "Li_Spacetime_2024.webp"
+image: "Li_Spacetime_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.16812"
 code: "https://github.com/oppo-us-research/SpacetimeGaussians"
 project: "https://oppo-us-research.github.io/SpacetimeGaussians-website/"

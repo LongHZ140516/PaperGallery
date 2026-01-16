@@ -5,7 +5,7 @@ year: "2024"
 conference: "TPAMI"
 license: ""
 tags: ["NeRF","Panorama"]
-image: "Wang_PERF_2024.webp"
+image: "Wang_PERF_2024.jpg"
 paper: "https://arxiv.org/pdf/2310.16831"
 code: ""
 project: "https://github.com/perf-project/PeRF?tab=readme-ov-file"

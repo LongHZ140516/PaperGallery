@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Diffusion","Human Visual Perception"]
-image: "Zhao_OMG3D_2025.webp"
+image: "Zhao_OMG3D_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.12935v1"
 code: ""
 project: "https://whalesong-zrs.github.io/OMG3D-projectpage/"

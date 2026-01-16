@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY-NC-ND"
 tags: ["Segmentation", "Smoke"]
-image: "Yao_CoSW_2024.webp"
+image: "Yao_CoSW_2024.jpg"
 paper: "https://nips.cc/virtual/2024/poster/95170"
 code: ""
 project: ""

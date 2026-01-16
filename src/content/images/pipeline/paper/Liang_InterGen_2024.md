@@ -5,7 +5,7 @@ year: "2024"
 conference: "IJCV"
 license: "CC BY-NC-SA"
 tags: ["Diffusion", "Human", "Motion", "Generation"]
-image: "Liang_InterGen_2024.webp"
+image: "Liang_InterGen_2024.jpg"
 paper: "https://arxiv.org/abs/2304.05684"
 code: "https://github.com/tr3e/InterGen"
 project: "https://tr3e.github.io/intergen-page/"

@@ -5,7 +5,7 @@ year: "2023"
 conference: "arXiv"
 license: ""
 tags: ["NeRF","Foundation Model", "3D"]
-image: "Zhu_PonderV2_2023.webp"
+image: "Zhu_PonderV2_2023.jpg"
 paper: "https://arxiv.org/pdf/2310.08586"
 code: "https://github.com/OpenGVLab/PonderV2"
 project: ""

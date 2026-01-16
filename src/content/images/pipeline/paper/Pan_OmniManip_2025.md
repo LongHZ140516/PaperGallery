@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Robotics","VLA", "Interaction"]
-image: "Pan_OmniManip_2025.webp"
+image: "Pan_OmniManip_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.03841"
 code: ""
 project: ""

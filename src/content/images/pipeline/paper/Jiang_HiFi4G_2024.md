@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["3DGS", "Human", "Compression"]
-image: "Jiang_HiFi4G_2024.webp"
+image: "Jiang_HiFi4G_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.03461"
 code: ""
 project: "https://nowheretrix.github.io/HiFi4G/"

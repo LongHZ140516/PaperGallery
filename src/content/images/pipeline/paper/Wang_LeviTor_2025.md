@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion","3D Trajectory Control"]
-image: "Wang_LeviTor_2025.webp"
+image: "Wang_LeviTor_2025.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_LeviTor_3D_Trajectory_Oriented_Image-to-Video_Synthesis_CVPR_2025_paper.pdf"
 code: "https://github.com/qiuyu96/LeviTor"
 project: "https://ppetrichor.github.io/levitor.github.io/"

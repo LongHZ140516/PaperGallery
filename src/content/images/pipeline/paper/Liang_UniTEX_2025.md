@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Diffusion","3D","Large Scale"]
-image: "Liang_UniTEX_2025.webp"
+image: "Liang_UniTEX_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.23253"
 code: "https://github.com/YixunLiang/UniTEX"
 project: ""

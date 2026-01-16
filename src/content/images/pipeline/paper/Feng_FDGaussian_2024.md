@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["3DGS", "Single Image", "Diffusion"]
-image: "Feng_FDGaussian_2024.webp"
+image: "Feng_FDGaussian_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.10242.pdf"
 code: ""
 project: "https://qjfeng.net/GeoGS3D"

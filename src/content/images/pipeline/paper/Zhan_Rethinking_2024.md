@@ -5,7 +5,7 @@ year: "2024"
 conference: "EMNLP"
 license: "CC BY"
 tags: ["State Space Models","Mamba"]
-image: "Zhan_Rethinking_2024.webp"
+image: "Zhan_Rethinking_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.14725"
 code: ""
 project: ""

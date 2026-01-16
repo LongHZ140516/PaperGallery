@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC0"
 tags: ["LLM", "Benchmark", "GPT", "Generation"]
-image: "Yan_GPTImgEval_2025.webp"
+image: "Yan_GPTImgEval_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.02782"
 code: "https://github.com/PicoTrex/GPT-ImgEval"
 project: ""

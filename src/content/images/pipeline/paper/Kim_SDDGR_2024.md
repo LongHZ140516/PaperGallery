@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion","Object Detection"]
-image: "Kim_SDDGR_2024.webp"
+image: "Kim_SDDGR_2024.jpg"
 paper: "https://arxiv.org/abs/2402.17323"
 code: ""
 project: ""

@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion","Depth Estimation"]
-image: "Wang_TacoDepth_2025.webp"
+image: "Wang_TacoDepth_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.11773v1"
 code: "https://github.com/RaymondWang987/TacoDepth"
 project: ""

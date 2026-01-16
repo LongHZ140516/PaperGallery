@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["Visual", "Confidence Guided"]
-image: "Chen_CoMe_2025.webp"
+image: "Chen_CoMe_2025.jpg"
 paper: "https://arxiv.org/abs/2511.14751"
 code: "https://github.com/co-me-tokens/CoMe"
 project: "https://co-me-tokens.github.io/"

@@ -5,7 +5,7 @@ year: "2026"
 conference: "AAAI"
 license: "CC BY"
 tags: ["UAV", "Tracking"]
-image: "Chen_AerialMind_2026_2.webp"
+image: "Chen_AerialMind_2026_2.jpg"
 paper: "https://arxiv.org/abs/2511.21053"
 code: ""
 project: ""

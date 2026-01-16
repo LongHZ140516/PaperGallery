@@ -5,7 +5,7 @@ year: "2025"
 conference: "NeurIPS"
 license: "CC BY-NC-SA"
 tags: ["Diffusion", "3D", "Generation"]
-image: "Wu_Direct3DS2_2025.webp"
+image: "Wu_Direct3DS2_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.17412"
 code: "https://github.com/DreamTechAI/Direct3D-S2?tab=readme-ov-file"
 project: "https://nju-3dv.github.io/projects/Direct3D-S2/"

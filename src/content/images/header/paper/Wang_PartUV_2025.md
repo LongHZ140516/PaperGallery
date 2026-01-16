@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH Asia"
 license: "CC BY"
 tags: ["UV", "3D", "Part"]
-image: "Wang_PartUV_2025.webp"
+image: "Wang_PartUV_2025.jpg"
 paper: "https://arxiv.org/abs/2511.16659"
 code: "https://github.com/EricWang12/PartUV"
 project: "https://www.zhaoningwang.com/PartUV/"

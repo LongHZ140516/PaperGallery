@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICRA"
 license: ""
 tags: ["3DGS", "Sparse-View", "Reconstruction"]
-image: "Li_DGTR_2025.webp"
+image: "Li_DGTR_2025.jpg"
 paper: "https://arxiv.org/pdf/2411.12309"
 code: "https://github.com/lifuguan/DGTR"
 project: "https://3d-aigc.github.io/DGTR/"

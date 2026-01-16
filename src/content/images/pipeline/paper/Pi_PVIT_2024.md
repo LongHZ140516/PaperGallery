@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM","Instruction Tuning"]
-image: "Pi_PVIT_2024.webp"
+image: "Pi_PVIT_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.07113"
 code: ""
 project: ""

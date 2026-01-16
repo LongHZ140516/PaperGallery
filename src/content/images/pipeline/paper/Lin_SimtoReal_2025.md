@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Robotics","Vision", "Manipulation"]
-image: "Lin_SimtoReal_2025.webp"
+image: "Lin_SimtoReal_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.20396"
 code: ""
 project: "https://toruowo.github.io/recipe/"

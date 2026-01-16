@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["3D", "Generation", "Structred Latents"]
-image: "Xiang_Native_2025.webp"
+image: "Xiang_Native_2025.jpg"
 paper: "https://arxiv.org/abs/2512.14692"
 code: "https://github.com/microsoft/TRELLIS.2"
 project: "https://microsoft.github.io/TRELLIS.2/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: ""
 tags: ["3DGS", "Hash", "Compression"]
-image: "Chen_HAC_2024.webp"
+image: "Chen_HAC_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.14530"
 code: "https://github.com/YihangChen-ee/HAC"
 project: "https://yihangchen-ee.github.io/project_hac/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "RCR"
 license: ""
 tags: ["Remote Sensing","Transboundary"]
-image: "An_Conservation_2025.webp"
+image: "An_Conservation_2025.jpg"
 paper: "https://doi.org/10.1016/j.resconrec.2024.107976"
 code: ""
 project: ""

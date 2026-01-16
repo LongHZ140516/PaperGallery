@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY-NC-SA"
 tags: ["Dataset","LLM","Benchmark"]
-image: "Zhang_SeriesBench_2025.webp"
+image: "Zhang_SeriesBench_2025.jpg"
 paper: "https://arxiv.org/abs/2504.21435v3"
 code: "https://github.com/zackhxn/SeriesBench-CVPR2025"
 project: ""

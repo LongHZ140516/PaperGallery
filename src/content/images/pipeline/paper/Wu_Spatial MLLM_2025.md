@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["LLM","Visual", "Spatial Intelligence"]
-image: "Wu_Spatial MLLM_2025.webp"
+image: "Wu_Spatial MLLM_2025.jpg"
 paper: "https://arxiv.org/abs/2505.23747"
 code: "https://github.com/diankun-wu/Spatial-MLLM"
 project: "https://diankun-wu.github.io/Spatial-MLLM/"

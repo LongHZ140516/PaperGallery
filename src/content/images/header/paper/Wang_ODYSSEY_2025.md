@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Robotics"]
-image: "Wang_ODYSSEY_2025.webp"
+image: "Wang_ODYSSEY_2025.jpg"
 paper: "https://arxiv.org/pdf/2508.08240"
 code: ""
 project: "https://kaijwang.github.io/odyssey.github.io/"

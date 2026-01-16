@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Robotics", "Dataset"]
-image: "Ze_TWIST2_2025.webp"
+image: "Ze_TWIST2_2025.jpg"
 paper: "https://arxiv.org/abs/2511.02832"
 code: "https://github.com/amazon-far/TWIST2"
 project: "https://yanjieze.com/TWIST2/"

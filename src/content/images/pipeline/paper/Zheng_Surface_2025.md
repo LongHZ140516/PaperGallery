@@ -5,7 +5,7 @@ year: "2025"
 conference: "TIP"
 license: ""
 tags: ["Self-Supervised","Segmentation", "Surface"]
-image: "Zheng_Surface_2025.webp"
+image: "Zheng_Surface_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.09947v1"
 code: "https://github.com/zhengxyun/Surface-SOS"
 project: ""

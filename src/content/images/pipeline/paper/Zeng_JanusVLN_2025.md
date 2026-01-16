@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["VLM", "Navigation", "Semantic"]
-image: "Zeng_JanusVLN_2025.webp"
+image: "Zeng_JanusVLN_2025.jpg"
 paper: "https://arxiv.org/abs/2509.22548"
 code: "https://github.com/MIV-XJTU/JanusVLN"
 project: "https://miv-xjtu.github.io/JanusVLN.github.io/"

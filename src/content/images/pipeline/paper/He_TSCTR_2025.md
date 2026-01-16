@@ -4,7 +4,7 @@ authors: ["Weinan He", "Zilei Wang", "Yixin Zhang"]
 year: "2025"
 conference: "AAAI"
 tags: ["Semantics Clustering","Domain Adaptation"]
-image: "He_TSCTR_2025.webp"
+image: "He_TSCTR_2025.jpg"
 paper: "https://www.arxiv.org/pdf/2506.03521"
 code: "https://github.com/Sapphire-356/TASC"
 project: ""

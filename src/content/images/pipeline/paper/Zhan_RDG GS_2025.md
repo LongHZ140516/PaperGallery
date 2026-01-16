@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["3DGS","Single View"]
-image: "Zhan_RDG GS_2025.webp"
+image: "Zhan_RDG GS_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.11102"
 code: ""
 project: ""

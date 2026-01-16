@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Dataset", "Generation", "Image-Text"]
-image: "Zhou_GATEOpenING_2025.webp"
+image: "Zhou_GATEOpenING_2025.jpg"
 paper: "https://arxiv.org/pdf/2411.18499"
 code: "https://github.com/LanceZPF/OpenING"
 project: "https://opening-benchmark.github.io/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Tracking","Video"]
-image: "Qu_TAPTRv3_2024.webp"
+image: "Qu_TAPTRv3_2024.jpg"
 paper: "https://arxiv.org/pdf/2411.18671"
 code: "https://github.com/IDEA-Research/TAPTR"
 project: "https://taptr.github.io/"

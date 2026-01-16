@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Diffusion", "Rendering"]
-image: "Ole_FrameDiffuser_2025.webp"
+image: "Ole_FrameDiffuser_2025.jpg"
 paper: "https://arxiv.org/abs/2512.16670"
 code: ""
 project: ""

@@ -5,7 +5,7 @@ year: "2026"
 conference: "AAAI"
 license: "CC BY"
 tags: ["Point Cloud", "Segmentation", "3D"]
-image: "Wang_SGS3D_2026.webp"
+image: "Wang_SGS3D_2026.jpg"
 paper: "https://arxiv.org/abs/2509.05144"
 code: "https://github.com/wangchaolei7/SGS-3D"
 project: ""

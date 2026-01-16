@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: "CC BY-NC-SA"
 tags: ["Diffusion","3D", "Human"]
-image: "Hu_StructLDM_2024.webp"
+image: "Hu_StructLDM_2024.jpg"
 paper: "https://arxiv.org/abs/2404.01241"
 code: "https://github.com/TaoHuUMD/StructLDM"
 project: "https://taohuumd.github.io/projects/StructLDM/"

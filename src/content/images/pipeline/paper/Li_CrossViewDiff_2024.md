@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Diffusion", "Remote Sensing", "Cross-View", "Satellite"]
-image: "Li_CrossViewDiff_2024.webp"
+image: "Li_CrossViewDiff_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.01812"
 code: ""
 project: "https://opendatalab.github.io/CrossViewDiff/"

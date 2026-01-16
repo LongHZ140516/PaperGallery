@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: ""
 tags: ["Diffusion", "3D", "LLM"]
-image: "Fu_AnyHome_2024.webp"
+image: "Fu_AnyHome_2024.jpg"
 paper: "https://link.springer.com/chapter/10.1007/978-3-031-72933-1_4"
 code: "https://github.com/FreddieRao/anyhome_github"
 project: ""

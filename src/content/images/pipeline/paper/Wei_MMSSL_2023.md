@@ -5,7 +5,7 @@ year: "2023"
 conference: "WWW"
 license: ""
 tags: ["Self-Supervised","Multi-Modal"]
-image: "Wei_MMSSL_2023.webp"
+image: "Wei_MMSSL_2023.jpg"
 paper: "https://arxiv.org/pdf/2302.10632"
 code: "https://github.com/HKUDS/MMSSL"
 project: ""

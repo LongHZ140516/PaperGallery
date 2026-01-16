@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICLR"
 license: "CC BY-SA"
 tags: ["Diffusion", "4D", "Large Scale", "Generation"]
-image: "Bian_DynamicCity_2025.webp"
+image: "Bian_DynamicCity_2025.jpg"
 paper: "https://arxiv.org/pdf/2410.18084"
 code: "https://github.com/3DTopia/DynamicCity"
 project: "https://dynamic-city.github.io/"

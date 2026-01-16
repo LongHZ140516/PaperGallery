@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3DGS", "Reconstruction", "Large Scale"]
-image: "Gao_CityGSX_2025.webp"
+image: "Gao_CityGSX_2025.jpg"
 paper: "https://arxiv.org/pdf/2503.23044"
 code: "https://github.com/gyy456/CityGS-X"
 project: "https://lifuguan.github.io/CityGS-X/"

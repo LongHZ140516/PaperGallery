@@ -5,7 +5,7 @@ year: "2025"
 conference: "RSS"
 license: "CC BY"
 tags: ["Robotics"]
-image: "Li_Bilevel_2025.webp"
+image: "Li_Bilevel_2025.jpg"
 paper: "https://www.arxiv.org/pdf/2502.08697"
 code: "https://github.com/centaurinstitute/IVNTR"
 project: "https://jaraxxus-me.github.io/IVNTR/"

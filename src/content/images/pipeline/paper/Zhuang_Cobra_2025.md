@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH"
 license: "CC BY"
 tags: ["Diffusion", "Colorization", "Line Art"]
-image: "Zhuang_Cobra_2025.webp"
+image: "Zhuang_Cobra_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.12240"
 code: "https://github.com/Zhuang2002/Cobra"
 project: "https://zhuang2002.github.io/Cobra/"

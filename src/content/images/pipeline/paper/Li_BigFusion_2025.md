@@ -5,7 +5,7 @@ year: "2025"
 conference: "AAAI"
 license: ""
 tags: ["Emotion Recognition", "Multi-modal"]
-image: "Li_BigFusion_2025.webp"
+image: "Li_BigFusion_2025.jpg"
 paper: "https://doi.org/10.1609/aaai.v39i2.32149"
 code: ""
 project: ""

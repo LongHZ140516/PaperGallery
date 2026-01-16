@@ -5,7 +5,7 @@ year: "2024"
 conference: "KDD"
 license: ""
 tags: ["LLM","Urban"]
-image: "Li_UrbanGPT_2024.webp"
+image: "Li_UrbanGPT_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.00813"
 code: "https://github.com/HKUDS/UrbanGPT?tab=readme-ov-file"
 project: "https://urban-gpt.github.io/"

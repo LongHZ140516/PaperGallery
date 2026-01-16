@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM","Image Understanding"]
-image: "Ye_mPLUGOwl3_2024.webp"
+image: "Ye_mPLUGOwl3_2024.jpg"
 paper: "https://www.arxiv.org/pdf/2408.04840"
 code: "https://github.com/X-PLUG/mPLUG-Owl"
 project: ""

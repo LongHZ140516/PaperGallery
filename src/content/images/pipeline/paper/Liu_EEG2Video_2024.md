@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: ""
 tags: ["Diffusion", "Visual", "Dynamic"]
-image: "Liu_EEG2Video_2024.webp"
+image: "Liu_EEG2Video_2024.jpg"
 paper: "https://nips.cc/virtual/2024/poster/95156"
 code: "https://github.com/XuanhaoLiu/EEG2Video"
 project: "https://bcmi.sjtu.edu.cn/home/eeg2video/"

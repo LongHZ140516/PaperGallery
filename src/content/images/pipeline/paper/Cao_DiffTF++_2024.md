@@ -5,7 +5,7 @@ year: "2024"
 conference: "TPAMI"
 license: ""
 tags: ["Diffusion", "3D", "Generation"]
-image: "Cao_DiffTF++_2024.webp"
+image: "Cao_DiffTF++_2024.jpg"
 paper: "https://arxiv.org/abs/2405.08055"
 code: ""
 project: ""

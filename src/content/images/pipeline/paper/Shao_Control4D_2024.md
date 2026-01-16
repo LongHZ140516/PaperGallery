@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["4DGS", "Portrait", "Edit"]
-image: "Shao_Control4D_2024.webp"
+image: "Shao_Control4D_2024.jpg"
 paper: "https://arxiv.org/pdf/2305.20082"
 code: ""
 project: "https://control4darxiv.github.io/"

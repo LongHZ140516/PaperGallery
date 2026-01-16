@@ -4,7 +4,7 @@ authors: ["Peng Xia", "Siwei Han", "Shi Qiu", "Yiyang Zhou", "Zhaoyang Wang", "W
 year: "2024"
 conference: "arXiv"
 tags: ["Benchmark","VLM"]
-image: "Xia_MMIE_2024.webp"
+image: "Xia_MMIE_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.10139"
 code: "https://github.com/Lillianwei-h/MMIE"
 project: "https://mmie-bench.github.io/"

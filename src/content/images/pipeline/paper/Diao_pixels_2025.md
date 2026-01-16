@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["VLM", "Image–Text"]
-image: "Diao_pixels_2025.webp"
+image: "Diao_pixels_2025.jpg"
 paper: "https://arxiv.org/pdf/2510.14979"
 code: "https://github.com/EvolvingLMMs-Lab/NEO"
 project: ""

@@ -5,7 +5,7 @@ year: "2022"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Point Cloud", "Completion"]
-image: "Tang_Prototype_2022.webp"
+image: "Tang_Prototype_2022.jpg"
 paper: "https://arxiv.org/pdf/2209.01733"
 code: ""
 project: ""

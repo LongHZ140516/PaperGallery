@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Audio", "Compression", "LLM"]
-image: "Tao_OmniZip_2025.webp"
+image: "Tao_OmniZip_2025.jpg"
 paper: "https://arxiv.org/abs/2511.14582"
 code: "https://github.com/KD-TAO/OmniZip"
 project: ""

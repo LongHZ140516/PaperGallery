@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3DGS","SLAM","View Synthesis"]
-image: "Wu_VINGSMono_2025.webp"
+image: "Wu_VINGSMono_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.08286v1"
 code: ""
 project: ""

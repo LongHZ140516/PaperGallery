@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["3DGS","4D", "Video"]
-image: "Lei_MoSca_2024.webp"
+image: "Lei_MoSca_2024.jpg"
 paper: "https://arxiv.org/pdf/2405.17421"
 code: "https://github.com/JiahuiLei/MoSca"
 project: "https://www.cis.upenn.edu/~leijh/projects/mosca/"

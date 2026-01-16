@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["3DGS", "Video"]
-image: "Sun_3DGStream_2024.webp"
+image: "Sun_3DGStream_2024.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_3DGStream_On-the-Fly_Training_of_3D_Gaussians_for_Efficient_Streaming_of_CVPR_2024_paper.pdf"
 code: "https://github.com/SJoJoK/3DGStream"
 project: "http://sjojok.top/3dgstream/"

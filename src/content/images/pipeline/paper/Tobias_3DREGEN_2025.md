@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Reconstruction", "Indoor Scene"]
-image: "Tobias_3DREGEN_2025.webp"
+image: "Tobias_3DREGEN_2025.jpg"
 paper: "https://arxiv.org/abs/2512.17459"
 code: "https://github.com/cgtuebingen/3D-RE-GEN"
 project: "https://3dregen.jdihlmann.com/"

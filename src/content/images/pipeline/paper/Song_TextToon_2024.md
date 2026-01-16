@@ -5,7 +5,7 @@ year: "2024"
 conference: "SIGGRAPH"
 license: ""
 tags: ["3DGS","Video"]
-image: "Song_TextToon_2024.webp"
+image: "Song_TextToon_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.07160"
 code: ""
 project: "https://songluchuan.github.io/TextToon/"

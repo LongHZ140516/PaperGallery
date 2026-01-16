@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Diffusion", "4D", "Video", "Point Cloud"]
-image: "Chen_4DNEX_2025.webp"
+image: "Chen_4DNEX_2025.jpg"
 paper: "https://arxiv.org/pdf/2508.13154"
 code: "https://github.com/3DTopia/4DNeX"
 project: "https://4dnex.github.io/"

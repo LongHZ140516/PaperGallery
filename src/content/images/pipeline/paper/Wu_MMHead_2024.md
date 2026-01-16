@@ -5,7 +5,7 @@ year: "2024"
 conference: "MM"
 license: ""
 tags: ["3D", "Facial", "Animation", "Multi-modal"]
-image: "Wu_MMHead_2024.webp"
+image: "Wu_MMHead_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.07757"
 code: "https://github.com/wsj-sjtu/MMHead"
 project: "https://wsj-sjtu.github.io/MMHead/"

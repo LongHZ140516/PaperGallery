@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICML"
 license: "CC BY"
 tags: ["Incremental Learning","Knowledge guide"]
-image: "Xu_prompt_2025.webp"
+image: "Xu_prompt_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.04575v1"
 code: "https://github.com/zhoujiahuan1991/ICML2025-KA-Prompt"
 project: "https://github.com/zhoujiahuan1991/ICML2025-KA-Prompt"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-SA"
 tags: ["LLM", "AI", "Academic", "Research"]
-image: "Chen_AI4Search_2025.webp"
+image: "Chen_AI4Search_2025.jpg"
 paper: "https://arxiv.org/pdf/2507.01903"
 code: "https://github.com/LightChen233/Awesome-AI4Research"
 project: "https://ai-4-research.github.io/"

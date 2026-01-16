@@ -5,7 +5,7 @@ year: "2025"
 conference: "Habitat International"
 license: ""
 tags: ["Remote Sensing", "Agricultural"]
-image: "Pan_anti_2025.webp"
+image: "Pan_anti_2025.jpg"
 paper: "https://doi.org/10.1016/j.habitatint.2025.103354"
 code: ""
 project: ""

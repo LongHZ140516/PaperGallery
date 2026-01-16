@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["NeRF", "Synthesis"]
-image: "Jiang_GNeLF_2024.webp"
+image: "Jiang_GNeLF_2024.jpg"
 paper: "https://arxiv.org/pdf/2409.05617"
 code: ""
 project: ""

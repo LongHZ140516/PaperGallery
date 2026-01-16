@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion", "Dynamic", "Human"]
-image: "Jiang_Scaling_2024.webp"
+image: "Jiang_Scaling_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.08629"
 code: "https://github.com/jnnan/trumans_utils"
 project: "https://jnnan.github.io/trumans/"

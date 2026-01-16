@@ -5,7 +5,7 @@ year: "2025"
 conference: "IROS"
 license: "CC BY"
 tags: ["3DGS", "Graph"]
-image: "Ge_DynamicGSG_2025.webp"
+image: "Ge_DynamicGSG_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.15309"
 code: "https://github.com/GeLuzhou/Dynamic-GSG"
 project: ""

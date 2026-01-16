@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Reasoning", "Colonoscopy", "Dataset"]
-image: "Ji_ColonX_2025.webp"
+image: "Ji_ColonX_2025.jpg"
 paper: "https://arxiv.org/abs/2512.03667"
 code: "https://github.com/ai4colonoscopy/Colon-X"
 project: ""

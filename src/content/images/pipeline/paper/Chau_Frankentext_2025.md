@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM"]
-image: "Chau_Frankentext_2025.webp"
+image: "Chau_Frankentext_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.18128"
 code: "https://github.com/chtmp223/Frankentext"
 project: ""

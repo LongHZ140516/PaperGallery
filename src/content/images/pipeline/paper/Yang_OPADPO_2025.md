@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["LLM","DPO"]
-image: "Yang_OPADPO_2025.webp"
+image: "Yang_OPADPO_2025.jpg"
 paper: "https://arxiv.org/abs/2501.09695"
 code: "https://github.com/zhyang2226/OPA-DPO?tab=readme-ov-file"
 project: "https://opa-dpo.github.io/"

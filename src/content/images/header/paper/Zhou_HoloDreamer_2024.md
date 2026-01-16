@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["3DGS", "3D", "Generation"]
-image: "Zhou_HoloDreamer_2024.webp"
+image: "Zhou_HoloDreamer_2024.jpg"
 paper: "https://arxiv.org/abs/2407.15187"
 code: "https://zhouhyocean.github.io/holodreamer/"
 project: "https://zhouhyocean.github.io/holodreamer/"

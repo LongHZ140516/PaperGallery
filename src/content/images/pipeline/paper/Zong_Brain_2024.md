@@ -5,7 +5,7 @@ year: "2024"
 conference: "TPAMI"
 license: ""
 tags: ["Diffusion", "Brain Network", "Graph"]
-image: "Zong_Brain_2024.webp"
+image: "Zong_Brain_2024.jpg"
 paper: "https://arxiv.org/abs/2407.18329"
 code: ""
 project: ""

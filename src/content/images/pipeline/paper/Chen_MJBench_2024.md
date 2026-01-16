@@ -5,7 +5,7 @@ year: "2024"
 conference: "ICML"
 license: ""
 tags: ["LLM","Reward Model"]
-image: "Chen_MJBench_2024.webp"
+image: "Chen_MJBench_2024.jpg"
 paper: "https://arxiv.org/pdf/2407.04842"
 code: "https://github.com/MJ-Bench/MJ-Bench"
 project: "https://mj-bench.github.io/"

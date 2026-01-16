@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion","Panorama", "Generation"]
-image: "Zhang_PanFusion_2024.webp"
+image: "Zhang_PanFusion_2024.jpg"
 paper: "https://arxiv.org/abs/2404.07949"
 code: "https://github.com/chengzhag/PanFusion"
 project: "https://chengzhag.github.io/publication/panfusion/"

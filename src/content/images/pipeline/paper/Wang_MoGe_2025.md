@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Diffusion","Open-Domain Images","3D"]
-image: "Wang_MoGe_2025.webp"
+image: "Wang_MoGe_2025.jpg"
 paper: "https://arxiv.org/pdf/2410.19115"
 code: "https://github.com/microsoft/MoGe"
 project: "https://wangrc.site/MoGePage/"

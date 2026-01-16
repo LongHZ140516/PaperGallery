@@ -5,7 +5,7 @@ year: "2026"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Memory", "Operating System"]
-image: "Hu_EverMemOS_2026.webp"
+image: "Hu_EverMemOS_2026.jpg"
 paper: "https://www.arxiv.org/abs/2601.02163"
 code: "https://github.com/EverMind-AI/EverMemOS"
 project: ""

@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH"
 license: "CC BY"
 tags: ["LLM","Patent Match"]
-image: "Xiong_MemGraph_2025.webp"
+image: "Xiong_MemGraph_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.14845"
 code: "https://github.com/NEUIR/MemGraph"
 project: ""

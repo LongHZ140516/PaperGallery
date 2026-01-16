@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Robotic", "3D", "Point Cloud"]
-image: "Zhao_Real2Edit2Real_2025.webp"
+image: "Zhao_Real2Edit2Real_2025.jpg"
 paper: "https://arxiv.org/abs/2512.19402"
 code: ""
 project: "https://real2edit2real.github.io/"

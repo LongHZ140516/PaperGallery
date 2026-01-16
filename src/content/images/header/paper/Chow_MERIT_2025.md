@@ -5,7 +5,7 @@ year: "2025"
 conference: "NeurIPS"
 license: "CC BY-NC-SA"
 tags: ["Retrieval", "Semantic", "Dataset"]
-image: "Chow_MERIT_2025.webp"
+image: "Chow_MERIT_2025.jpg"
 paper: "https://arxiv.org/abs/2506.03144"
 code: "https://github.com/weichow23/merit"
 project: "https://merit-2025.github.io/"

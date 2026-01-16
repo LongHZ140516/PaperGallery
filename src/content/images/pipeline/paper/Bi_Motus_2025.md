@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["World Model", "Unified"]
-image: "Bi_Motus_2025.webp"
+image: "Bi_Motus_2025.jpg"
 paper: "https://arxiv.org/pdf/2512.13030"
 code: "https://github.com/thu-ml/Motus"
 project: "https://motus-robotics.github.io/motus"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3DGS", "SLAM", "NeRF"]
-image: "Li_DenseSplat_2025.webp"
+image: "Li_DenseSplat_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.09111"
 code: ""
 project: ""

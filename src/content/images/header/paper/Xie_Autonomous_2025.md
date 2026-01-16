@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: "CC BY-SA"
 tags: ["Dataset", "VLM"]
-image: "Xie_Autonomous_2025.webp"
+image: "Xie_Autonomous_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.04003"
 code: "https://github.com/worldbench/DriveBench"
 project: "https://drive-bench.github.io/"

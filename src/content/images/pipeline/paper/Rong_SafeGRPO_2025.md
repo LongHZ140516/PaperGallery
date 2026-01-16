@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["GRPO", "Multi-modal", "VLM"]
-image: "Rong_SafeGRPO_2025.webp"
+image: "Rong_SafeGRPO_2025.jpg"
 paper: "https://arxiv.org/abs/2511.12982"
 code: "https://github.com/XuankunRong/SafeGRPO"
 project: ""

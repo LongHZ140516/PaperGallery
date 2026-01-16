@@ -4,7 +4,7 @@ authors: ["Zhixuan Shen", "Haonan Luo", "Kexun Chen", "Fengmao Lv", "Tianrui Li"
 year: "2025"
 conference: "AAAI"
 tags: ["Agent","Robot", "Navigation"]
-image: "Shen_MCoCoNav_2025.webp"
+image: "Shen_MCoCoNav_2025.jpg"
 paper: "https://arxiv.org/pdf/2412.18292"
 code: "https://github.com/FrankZxShen/MCoCoNav"
 project: ""

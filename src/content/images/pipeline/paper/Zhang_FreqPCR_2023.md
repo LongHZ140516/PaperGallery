@@ -5,7 +5,7 @@ year: "2023"
 conference: "CVPR"
 license: ""
 tags: ["NeRF", "Point Cloud", "Edit"]
-image: "Zhang_FreqPCR_2023.webp"
+image: "Zhang_FreqPCR_2023.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Frequency-Modulated_Point_Cloud_Rendering_With_Easy_Editing_CVPR_2023_paper.pdf"
 code: "https://github.com/yizhangphd/FreqPCR"
 project: ""

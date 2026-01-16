@@ -5,7 +5,7 @@ year: "2024"
 conference: "ICLR"
 license: ""
 tags: ["3DGS", "3D"]
-image: "Tang_DreamGaussian_2024.webp"
+image: "Tang_DreamGaussian_2024.jpg"
 paper: "https://arxiv.org/pdf/2309.16653.pdf"
 code: "https://github.com/dreamgaussian/dreamgaussian"
 project: "https://dreamgaussian.github.io/"

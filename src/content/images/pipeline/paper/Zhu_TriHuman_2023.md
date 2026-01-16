@@ -5,7 +5,7 @@ year: "2024"
 conference: "TOG"
 license: "CC BY"
 tags: ["NeRF","Real-time", "Synthesis"]
-image: "Zhu_TriHuman_2023.webp"
+image: "Zhu_TriHuman_2023.jpg"
 paper: "https://arxiv.org/pdf/2312.05161"
 code: ""
 project: "https://vcai.mpi-inf.mpg.de/projects/trihuman/"

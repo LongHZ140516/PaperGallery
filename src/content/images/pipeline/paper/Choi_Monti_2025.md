@@ -5,7 +5,7 @@ year: "2025"
 conference: "AAAI"
 license: ""
 tags: ["GNN","Fraud Detectors"]
-image: "Choi_Monti_2025.webp"
+image: "Choi_Monti_2025.jpg"
 paper: "https://arxiv.org/pdf/2412.18370"
 code: "https://github.com/bdi-lab/monti"
 project: ""

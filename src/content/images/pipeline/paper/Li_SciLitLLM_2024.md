@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM","Understanding","Scientific Literature"]
-image: "Li_SciLitLLM_2024.webp"
+image: "Li_SciLitLLM_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.15545"
 code: ""
 project: ""

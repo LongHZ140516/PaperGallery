@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Multi-modal", "LLM", "Dataset"]
-image: "Yang_EgoLife_2025.webp"
+image: "Yang_EgoLife_2025.jpg"
 paper: "https://arxiv.org/pdf/2503.03803"
 code: "https://github.com/EvolvingLMMs-Lab/EgoLife"
 project: "https://egolife-ai.github.io/"

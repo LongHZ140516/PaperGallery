@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Remote Sensing","Image Fusion"]
-image: "DU_Modality_2024.webp"
+image: "DU_Modality_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.04802"
 code: ""
 project: ""

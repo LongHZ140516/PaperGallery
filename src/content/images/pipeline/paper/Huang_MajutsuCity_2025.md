@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Generation", "Language-driven", "City Scene"]
-image: "Huang_MajutsuCity_2025.webp"
+image: "Huang_MajutsuCity_2025.jpg"
 paper: "https://arxiv.org/abs/2511.20415"
 code: "https://github.com/LongHZ140516/MajutsuCity"
 project: "https://longhz140516.github.io/MajutsuCity/"

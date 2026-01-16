@@ -5,7 +5,7 @@ year: "2023"
 conference: "arXiv"
 tags: ["3DGS","Domain-free"]
 license: "CC BY-NC-ND"
-image: "Chung_LucidDreamer_2023.webp"
+image: "Chung_LucidDreamer_2023.jpg"
 paper: "https://arxiv.org/pdf/2311.13384"
 code: "https://github.com/luciddreamer-cvlab/LucidDreamer"
 project: "https://luciddreamer-cvlab.github.io/"

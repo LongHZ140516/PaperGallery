@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Diffusion", "Generation", "Text-to-Image"]
-image: "Mo_FreeControl_2024.webp"
+image: "Mo_FreeControl_2024.jpg"
 paper: "https://arxiv.org/abs/2312.07536"
 code: "https://github.com/genforce/freecontrol"
 project: "https://genforce.github.io/freecontrol//"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "ACL"
 license: ""
 tags: ["LLM", "Dataset", "Chinese"]
-image: "Fang_CKnowEdit_2024.webp"
+image: "Fang_CKnowEdit_2024.jpg"
 paper: "https://arxiv.org/pdf/2409.05806"
 code: "https://github.com/zjunlp/EasyEdit"
 project: ""

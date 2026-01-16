@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Remote Sensing","SAM","Urban"]
-image: "Li_UrbanSAM_2025.webp"
+image: "Li_UrbanSAM_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.15199"
 code: "https://github.com/danfenghong"
 project: ""

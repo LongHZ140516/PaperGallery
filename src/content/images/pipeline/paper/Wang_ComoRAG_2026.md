@@ -5,7 +5,7 @@ year: "2026"
 conference: "AAAI"
 license: ""
 tags: ["RAG", "Memory", "Reasoning"]
-image: "Wang_ComoRAG_2026.webp"
+image: "Wang_ComoRAG_2026.jpg"
 paper: "https://arxiv.org/pdf/2508.10419"
 code: "https://github.com/EternityJune25/ComoRAG"
 project: ""

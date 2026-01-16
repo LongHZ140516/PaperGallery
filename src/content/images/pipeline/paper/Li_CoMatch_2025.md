@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: ""
 tags: ["Image Matching", "Dynamic", "Subpixel Level"]
-image: "Li_CoMatch_2025.webp"
+image: "Li_CoMatch_2025.jpg"
 paper: "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_CoMatch_Dynamic_Covisibility-Aware_Transformer_for_Bilateral_Subpixel-Level_Semi-Dense_Image_Matching_ICCV_2025_paper.pdf"
 code: ""
 project: ""

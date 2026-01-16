@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICRA"
 license: ""
 tags: ["Point Cloud", "LiDAR", "Segmentation"]
-image: "Ilya_Interactive4D_2025.webp"
+image: "Ilya_Interactive4D_2025.jpg"
 paper: "https://arxiv.org/pdf/2410.08206"
 code: "https://github.com/Ilya-Fradlin/Interactive4D"
 project: "https://ilya-fradlin.github.io/Interactive4D/"

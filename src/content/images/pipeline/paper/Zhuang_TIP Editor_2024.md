@@ -5,7 +5,7 @@ year: "2024"
 conference: "TOG"
 license: ""
 tags: ["3DGS","3D", "Edit"]
-image: "Zhuang_TIP Editor_2024.webp"
+image: "Zhuang_TIP Editor_2024.jpg"
 paper: "https://arxiv.org/pdf/2401.14828"
 code: ""
 project: "https://zjy526223908.github.io/TIP-Editor/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: ""
 tags: ["Diffusion", "4DGS", "Human", "Sparse-View", "Video"]
-image: "Jin_Diffuman4D_2025.webp"
+image: "Jin_Diffuman4D_2025.jpg"
 paper: "https://arxiv.org/abs/2507.13344"
 code: "https://github.com/zju3dv/Diffuman4D"
 project: "https://diffuman4d.github.io/"

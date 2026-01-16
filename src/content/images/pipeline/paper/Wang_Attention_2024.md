@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion", "Driven"]
-image: "Wang_Attention_2024.webp"
+image: "Wang_Attention_2024.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Attention-Driven_Training-Free_Efficiency_Enhancement_of_Diffusion_Models_CVPR_2024_paper.pdf"
 code: ""
 project: "https://atedm.github.io/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICLR"
 license: "CC BY"
 tags: ["Diffusion", "Generation", "4D"]
-image: "Huang_MVTokenFlow_2025.webp"
+image: "Huang_MVTokenFlow_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.11697"
 code: "https://github.com/SooLab/MVTokenFlow"
 project: "https://soolab.github.io/MVTokenFlow/"

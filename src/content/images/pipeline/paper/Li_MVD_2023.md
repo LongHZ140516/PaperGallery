@@ -5,7 +5,7 @@ year: "2023"
 conference: "TIP"
 lincese: " "
 tags: ["Diffusion","Spectral Cluster"]
-image: "Li_MVD_2023.webp"
+image: "Li_MVD_2023.jpg"
 paper: "https://ieeexplore.ieee.org/abstract/document/10214517"
 code: ""
 project: ""

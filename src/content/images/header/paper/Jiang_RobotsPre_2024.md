@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Robotics","Dataset"]
-image: "Jiang_Robots_2024.webp"
+image: "Jiang_Robots_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.22325"
 code: "https://github.com/luccachiang/robots-pretrain-robots"
 project: "https://robots-pretrain-robots.github.io/"

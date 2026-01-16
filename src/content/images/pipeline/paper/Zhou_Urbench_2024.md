@@ -5,7 +5,7 @@ year: "2024"
 conference: "AAAI"
 license: ""
 tags: ["LLM","Urban Scenarios", "Benchmark"]
-image: "Zhou_Urbench_2024.webp"
+image: "Zhou_Urbench_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.17267"
 code: "https://github.com/opendatalab/UrBench?tab=readme-ov-file"
 project: "https://opendatalab.github.io/UrBench/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "AAAI"
 license: ""
 tags: ["NeRF", "Sparse Views"]
-image: "Ni_ColNeRF_2024.webp"
+image: "Ni_ColNeRF_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.09095"
 code: "https://github.com/eezkni/ColNeRF"
 project: ""

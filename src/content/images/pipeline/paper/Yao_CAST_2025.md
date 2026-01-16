@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH"
 license: "CC BY-NC-ND"
 tags: ["Diffusion", "3D", "Reconstruction", "Single-Image"]
-image: "Yao_CAST_2025.webp"
+image: "Yao_CAST_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.12894"
 code: ""
 project: "https://sites.google.com/view/cast4"

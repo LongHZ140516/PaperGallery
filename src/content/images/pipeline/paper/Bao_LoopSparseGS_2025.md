@@ -5,7 +5,7 @@ year: "2025"
 conference: "TPAMI"
 license: ""
 tags: ["3DGS"]
-image: "Bao_LoopSparseGS_2025.webp"
+image: "Bao_LoopSparseGS_2025.jpg"
 paper: "https://arxiv.org/pdf/2408.00254"
 code: "https://github.com/pcl3dv/LoopSparseGS"
 project: "https://zhenybao.github.io/LoopSparseGS/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Generation", "High-Fidelity"]
-image: "Lai_LATTICE_2025.webp"
+image: "Lai_LATTICE_2025.jpg"
 paper: "https://arxiv.org/abs/2512.03052"
 code: "https://github.com/Zeqiang-Lai/LATTICE"
 project: "https://lattice3d.github.io/"

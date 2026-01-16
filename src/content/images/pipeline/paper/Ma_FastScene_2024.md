@@ -5,7 +5,7 @@ year: "2024"
 conference: "IJCAI"
 license: ""
 tags: ["3DGS", "Panoramic", "Generation"]
-image: "Ma_FastScene_2024.webp"
+image: "Ma_FastScene_2024.jpg"
 paper: "https://arxiv.org/pdf/2405.05768"
 code: "https://github.com/Mr-Ma-yikun/FastScene"
 project: ""

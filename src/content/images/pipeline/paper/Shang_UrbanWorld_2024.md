@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Diffusion","3D", "Generation"]
-image: "Shang_UrbanWorld_2024.webp"
+image: "Shang_UrbanWorld_2024.jpg"
 paper: "https://arxiv.org/abs/2407.11965"
 code: ""
 project: ""

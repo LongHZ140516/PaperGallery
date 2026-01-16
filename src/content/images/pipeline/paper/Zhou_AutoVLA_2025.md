@@ -5,7 +5,7 @@ year: "2025"
 conference: "NeurIPS"
 license: "CC BY-NC-SA"
 tags: ["VLM", "Autonomous Driving", "SFT", "RFT"]
-image: "Zhou_AutoVLA_2025.webp"
+image: "Zhou_AutoVLA_2025.jpg"
 paper: "https://arxiv.org/pdf/2506.13757"
 code: "https://github.com/ucla-mobility/AutoVLA"
 project: "https://autovla.github.io/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM", "SFT"]
-image: "Liang_ISheep_2024.webp"
+image: "Liang_ISheep_2024.jpg"
 paper: "https://www.arxiv.org/pdf/2408.08072"
 code: "https://github.com/multimodal-art-projection/I-SHEEP"
 project: ""

@@ -5,7 +5,7 @@ year: "2024"
 conference: "Nature Machine Intelligence"
 tags: ["Nature","LLM"]
 license: "CC BY"
-image: "Liu_MolecularLLM_2024.webp"
+image: "Liu_MolecularLLM_2024.jpg"
 paper: "https://arxiv.org/abs/2402.04119"
 code: "https://github.com/AI-HPC-Research-Team/SLM4Mol"
 project: ""

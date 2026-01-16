@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM","Open-Source"]
-image: "Fu_VITA_2024.webp"
+image: "Fu_VITA_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.05211"
 code: "https://github.com/VITA-MLLM/VITA"
 project: "https://vita-home.github.io/"

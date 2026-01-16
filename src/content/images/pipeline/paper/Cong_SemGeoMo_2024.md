@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion","Human Motion Generation"]
-image: "Cong_SemGeoMo_2024.webp"
+image: "Cong_SemGeoMo_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.13307"
 code: "https://github.com/4DVLab/SemGeoMo"
 project: "https://4dvlab.github.io/project_page/semgeomo/"

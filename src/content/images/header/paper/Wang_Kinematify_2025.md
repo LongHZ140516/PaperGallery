@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["DoF", "Robotics"]
-image: "Wang_Kinematify_2025.webp"
+image: "Wang_Kinematify_2025.jpg"
 paper: "https://arxiv.org/abs/2511.01294"
 code: ""
 project: "https://sites.google.com/deemos.com/kinematify"

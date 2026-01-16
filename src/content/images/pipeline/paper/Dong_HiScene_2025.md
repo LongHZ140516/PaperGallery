@@ -5,7 +5,7 @@ year: "2025"
 conference: "MM"
 license: "CC BY"
 tags: ["Diffusion", "3D", "Generation"]
-image: "Dong_HiScene_2025.webp"
+image: "Dong_HiScene_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.13072"
 code: ""
 project: "https://zju3dv.github.io/hiscene/"

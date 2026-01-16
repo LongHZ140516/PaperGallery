@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY"
 tags: ["3DGS","Motion Decomposition"]
-image: "KwaK_MoDec GS_2025.webp"
+image: "KwaK_MoDec GS_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.03714"
 code: ""
 project: ""

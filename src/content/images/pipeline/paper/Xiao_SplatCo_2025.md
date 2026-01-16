@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["3DGS","Cross View"]
-image: "Xiao_SplatCo_2025.webp"
+image: "Xiao_SplatCo_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.17951"
 code: "https://github.com/SCUT-BIP-Lab/SplatCo"
 project: ""

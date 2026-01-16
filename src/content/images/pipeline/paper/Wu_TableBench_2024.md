@@ -5,7 +5,7 @@ year: "2024"
 conference: "AAAI"
 license: ""
 tags: ["LLM","Benchmark"]
-image: "Wu_TableBench_2024.webp"
+image: "Wu_TableBench_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.09174"
 code: "https://github.com/TableBench/TableBench"
 project: "https://tablebench.github.io/"

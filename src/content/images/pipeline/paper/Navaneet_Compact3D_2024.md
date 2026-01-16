@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: "CC BY"
 tags: ["3DGS", "Vector", "K-Means"]
-image: "Navaneet_Compact3D_2024.webp"
+image: "Navaneet_Compact3D_2024.jpg"
 paper: "https://arxiv.org/pdf/2311.18159"
 code: "https://github.com/UCDvision/compact3d"
 project: "https://ucdvision.github.io/compact3d/"

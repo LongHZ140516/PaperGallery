@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICML"
 license: "CC BY"
 tags: ["Time series forecasting","GNN-based"]
-image: "Hu_TimeFilter_2025.webp"
+image: "Hu_TimeFilter_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.13041"
 code: "https://github.com/TROUBADOUR000/TimeFilter"
 project: ""

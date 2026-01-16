@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Video", "Self-Supervised", "Hashing"]
-image: "Lian_AutoSSVH_2025.webp"
+image: "Lian_AutoSSVH_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.03587v1"
 code: "https://github.com/EliSpectre/CVPR25-AutoSSVH"
 project: ""

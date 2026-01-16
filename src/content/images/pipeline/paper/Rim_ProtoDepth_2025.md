@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Unsupervised learning","benchmark"]
-image: "Rim_ProtoDepth_2025.webp"
+image: "Rim_ProtoDepth_2025.jpg"
 paper: "https://arxiv.org/abs/2503.12745"
 code: ""
 project: ""

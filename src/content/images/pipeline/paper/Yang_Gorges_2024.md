@@ -5,7 +5,7 @@ year: "2024"
 conference: "STOTEN"
 license: ""
 tags: ["Remote Sensing", "Climate Change"]
-image: "Yang_Gorges_2024.webp"
+image: "Yang_Gorges_2024.jpg"
 paper: "https://doi.org/10.1016/j.scitotenv.2023.169415"
 code: ""
 project: ""

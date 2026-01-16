@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["Diffusion","Animate","3D", "Video"]
-image: "Jiang_Animate3D_2024.webp"
+image: "Jiang_Animate3D_2024.jpg"
 paper: "https://arxiv.org/pdf/2407.11398"
 code: "https://github.com/yanqinJiang/Animate3D"
 project: "https://animate3d.github.io/"

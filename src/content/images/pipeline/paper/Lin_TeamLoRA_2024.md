@@ -5,7 +5,7 @@ year: "2024"
 conference: "ACL"
 license: ""
 tags: ["LLM","LoRA"]
-image: "Lin_TeamLoRA_2024.webp"
+image: "Lin_TeamLoRA_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.09856"
 code: "https://github.com/Lin-Tianwei/TeamLoRA"
 project: ""

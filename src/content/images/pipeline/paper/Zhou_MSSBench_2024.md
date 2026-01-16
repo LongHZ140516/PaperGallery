@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM","Model Safety"]
-image: "Zhou_MSSBench_2024.webp"
+image: "Zhou_MSSBench_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.06172"
 code: "https://github.com/eric-ai-lab/MSSBench"
 project: "https://mssbench.github.io/"

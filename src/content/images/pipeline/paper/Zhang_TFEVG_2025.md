@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-SA"
 tags: ["Diffusion","Training-Free", "Video", "Generation"]
-image: "Zhang_TFEVG_2025.webp"
+image: "Zhang_TFEVG_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.16864"
 code: "https://github.com/DreamTechAI/Direct3D-S2?tab=readme-ov-file"
 project: "https://julianjuaner.github.io/projects/jenga/"

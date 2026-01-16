@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Agent", "3D", "Synthesis"]
-image: "Yang_SceneWeaver_2025.webp"
+image: "Yang_SceneWeaver_2025.jpg"
 paper: "https://arxiv.org/abs/2509.20414"
 code: "https://github.com/Scene-Weaver/SceneWeaver"
 project: "https://scene-weaver.github.io/"

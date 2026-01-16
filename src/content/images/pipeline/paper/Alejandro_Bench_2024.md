@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY"
 tags: ["VLM", "Benchmark", "Understanding"]
-image: "Alejandro_Bench_2024.webp"
+image: "Alejandro_Bench_2024.jpg"
 paper: "https://arxiv.org/pdf/2407.01791"
 code: "https://github.com/yeung-lab/Micro-Bench"
 project: "https://ale9806.github.io/uBench-website/"

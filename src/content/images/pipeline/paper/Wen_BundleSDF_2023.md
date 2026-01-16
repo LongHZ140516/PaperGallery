@@ -5,7 +5,7 @@ year: "2023"
 conference: "CVPR"
 license: "CC BY"
 tags: ["NeRF", "3D", "Reconstruction", "SDF"]
-image: "Wen_BundleSDF_2023.webp"
+image: "Wen_BundleSDF_2023.jpg"
 paper: "https://arxiv.org/pdf/2303.14158"
 code: "https://github.com/NVlabs/BundleSDF"
 project: "https://bundlesdf.github.io//"

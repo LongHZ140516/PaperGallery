@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["3DGS", "Avatar", "Animate"]
-image: "Li_Animatable_2024.webp"
+image: "Li_Animatable_2024.jpg"
 paper: "https://arxiv.org/pdf/2311.16096.pdf"
 code: "https://github.com/lizhe00/AnimatableGaussians"
 project: "https://animatable-gaussians.github.io/relight/"

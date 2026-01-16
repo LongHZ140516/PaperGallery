@@ -5,7 +5,7 @@ year: "2024"
 conference: "Cell Press"
 license: ""
 tags: ["Remote Sensing","Health"]
-image: "Yu_Shared_2024.webp"
+image: "Yu_Shared_2024.jpg"
 paper: "https://doi.org/10.1016/j.isci.2024.109728"
 code: ""
 project: ""

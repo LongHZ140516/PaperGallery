@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY"
 tags: ["LLM", "3D", "Point Cloud", "Visual"]
-image: "Chen_LL3DA_2024.webp"
+image: "Chen_LL3DA_2024.jpg"
 paper: "https://arxiv.org/pdf/2311.18651"
 code: "https://github.com/Open3DA/LL3DA"
 project: "https://ll3da.github.io/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arxiv"
 license: "CC BY"
 tags: ["3DGS","SLAM"]
-image: "Liu_SLAM_2024.webp"
+image: "Liu_SLAM_2024.jpg"
 paper: "https://arxiv.org/pdf/2405.20031"
 code: ""
 project: ""

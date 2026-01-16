@@ -5,7 +5,7 @@ year: "2021"
 conference: "SIGIR"
 license: ""
 tags: ["Graph", "Recommendation"]
-image: "Xia_Graph_2021.webp"
+image: "Xia_Graph_2021.jpg"
 paper: "https://doi.org/10.48550/arXiv.2110.03969"
 code: "https://github.com/akaxlh/MB-GMN"
 project: ""

@@ -1,5 +1,5 @@
 ---
-import { Vibrant } from "node-vibrant/node";
+// import { Vibrant } from "node-vibrant/node";
 import { Toaster } from "sonner";
 import { ToastListener } from "../ui/ToastListener";
 import { ImageActions } from "./ImageActions";
@@ -35,37 +35,7 @@ const {
 // Get license display info
 const { isOpen, displayText } = getLicenseDisplayInfo(license);
 
-import fs from "node:fs";
-
-let swatches: { name: string; hex: string }[] = [];
-try {
-    if (serverImgSrc && fs.existsSync(serverImgSrc)) {
-        // Use server path for Vibrant color extraction with optimized settings
-        const palette = await Vibrant.from(serverImgSrc)
-            .quality(1) // Higher quality sampling
-            .maxColorCount(256) // More colors to analyze
-            .getPalette();
-    const order = [
-        "Vibrant",
-        "DarkVibrant",
-        "LightVibrant",
-        "Muted",
-        "DarkMuted",
-        "LightMuted",
-    ];
-    swatches = order
-        swatches = order
-            .map((name) => ({ name, sw: (palette as any)[name] }))
-            .filter(({ sw }) => Boolean(sw))
-            .map(({ name, sw }: any) => ({ name, hex: sw.hex ?? sw.getHex?.() }))
-            .filter((x) => Boolean(x.hex));
-        // console.log(`Extracted ${swatches.length} colors for ${title}`);
-    } else {
-        console.warn(`Server image path not found or empty: ${serverImgSrc}`);
-    }
-} catch (e) {
-    console.error(`Color extraction failed for ${title} (${serverImgSrc}):`, e);
-}
+// Server-side extraction removed in favor of client-side
 
 const buttonClass =
     "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 relative shadow-md hover:scale-110 !transition-all";
@@ -80,24 +50,19 @@ const buttonClass =
             <aside
                 class="flex flex-col items-center space-y-4"
                 style={{ alignSelf: "start" }}
+                id="palette-container"
             >
-                {
-                    swatches.map(({ name, hex }) => (
-                        <button
-                            class={buttonClass}
-                            style={{ backgroundColor: hex }}
-                            title={`${name}: ${hex}`}
-                            data-hex={hex}
-                            data-name={name}
-                            onclick="copyColorToClipboard(this)"
-                        />
-                    ))
-                }
+                {/* Palette will be injected here by client-side script */}
+                <div class="animate-pulse space-y-4">
+                     {[...Array(6)].map(() => (
+                        <div class="h-10 w-10 rounded-md bg-muted"></div>
+                     ))}
+                </div>
             </aside>
 
             {/* Main Image */}
             <div class="h-full flex flex-col items-center">
-                <img src={clientImgSrc} width={900} height={800} alt={title} />
+                <img src={clientImgSrc} width={900} height={800} alt={title} data-main-image />
 
                 {/* Disclaimer and License Row */}
                 <div
@@ -161,7 +126,90 @@ const buttonClass =
     </div>
 </div>
 
-<script is:inline>
+<script>
+    import { Vibrant } from "node-vibrant/browser";
+
+    // Re-declare buttonClass for client-side use
+    const buttonClass = "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 relative shadow-md hover:scale-110 !transition-all";
+
+    document.addEventListener('astro:page-load', async () => {
+        // Run on initial load and navigation
+        initPalette();
+    });
+
+    // Fallback for non-ViewTransitions setup
+    if (document.readyState === 'complete') {
+        initPalette();
+    } else {
+        document.addEventListener('DOMContentLoaded', initPalette);
+    }
+
+    async function initPalette() {
+        const container = document.getElementById('palette-container');
+        const img = document.querySelector('img[data-main-image]'); // Find the main image via data attribute
+
+        console.log('[Color Palette] initPalette called', { container: !!container, img: !!img });
+
+        if (!container || !img) {
+            console.warn('[Color Palette] Missing container or image element');
+            return;
+        }
+        
+        // Remove existing swatches if any (except spinner/skeleton)
+        // Check if we already have buttons to avoid duplication
+        if (container.querySelector('button')) {
+            console.log('[Color Palette] Buttons already exist, skipping');
+            return;
+        }
+
+        const imgSrc = img.getAttribute('src');
+        console.log('[Color Palette] Image src:', imgSrc);
+        if (!imgSrc) return;
+
+        try {
+            console.log('[Color Palette] Starting Vibrant extraction...');
+            const palette = await Vibrant.from(imgSrc)
+                .quality(1)
+                .maxColorCount(256)
+                .getPalette();
+            console.log('[Color Palette] Palette extracted:', palette);
+
+            const order = [
+                "Vibrant",
+                "DarkVibrant",
+                "LightVibrant",
+                "Muted",
+                "DarkMuted",
+                "LightMuted",
+            ];
+
+            const swatches = order
+                .map((name) => ({ name, sw: palette[name] }))
+                .filter(({ sw }) => Boolean(sw))
+                .map(({ name, sw }) => ({ name, hex: sw.hex }))
+                .filter((x) => Boolean(x.hex));
+
+            // Clear skeleton
+            container.innerHTML = '';
+
+            swatches.forEach(({ name, hex }) => {
+                const btn = document.createElement('button');
+                btn.className = buttonClass;
+                btn.style.backgroundColor = hex;
+                btn.title = `${name}: ${hex}`;
+                btn.dataset.hex = hex;
+                btn.dataset.name = name;
+                btn.onclick = function() { window.copyColorToClipboard(this); };
+                container.appendChild(btn);
+            });
+
+        } catch (e) {
+            console.error("Client-side color extraction failed:", e);
+            // Optionally show error state in container
+            container.innerHTML = '<span class="text-xs text-muted-foreground">Colors unavailable</span>';
+        }
+    }
+
     function showToast(message, type = "default", className = "") {
         const event = new CustomEvent("astro-toast", {
             detail: {

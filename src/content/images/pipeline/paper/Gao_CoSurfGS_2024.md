@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["3DGS", "Large Scale", "Reconstruction"]
-image: "Gao_CoSurfGS_2024.webp"
+image: "Gao_CoSurfGS_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.17612"
 code: "https://github.com/zju3dv/CoSurfGS"
 project: "https://gyy456.github.io/CoSurfGS/"

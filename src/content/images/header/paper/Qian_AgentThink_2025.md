@@ -5,7 +5,7 @@ year: "2025"
 conference: "EMNLP"
 license: ""
 tags: ["Agent", "CoT", "VLM", "GRPO", "Autonomous Driving"]
-image: "Qian_AgentThink_2025.webp"
+image: "Qian_AgentThink_2025.jpg"
 paper: "https://arxiv.org/abs/2505.15298"
 code: "https://github.com/curryqka/AgentThink"
 project: "https://curryqka.github.io/AgentThink.github.io/"

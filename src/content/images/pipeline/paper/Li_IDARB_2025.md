@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICLR"
 license: "CC BY"
 tags: ["Diffusion", "Illumination", "Decomposition"]
-image: "Li_IDARB_2025.webp"
+image: "Li_IDARB_2025.jpg"
 paper: "https://arxiv.org/pdf/2412.12083"
 code: "https://github.com/Lizb6626/IDArb"
 project: "https://lizb6626.github.io/IDArb/"

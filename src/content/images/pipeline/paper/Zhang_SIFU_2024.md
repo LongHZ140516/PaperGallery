@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["NeRF","Side View Conditioned","Real world"]
-image: "Zhang_SIFU_2024.webp"
+image: "Zhang_SIFU_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.06704"
 code: "https://github.com/River-Zhang/SIFU"
 project: "https://river-zhang.github.io/SIFU-projectpage/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D Supervision","Self-supervised"]
-image: "Jiang_RayZer_2025.webp"
+image: "Jiang_RayZer_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.00702"
 code: "https://github.com/hwjiang1510/RayZer"
 project: "https://hwjiang1510.github.io/RayZer/"

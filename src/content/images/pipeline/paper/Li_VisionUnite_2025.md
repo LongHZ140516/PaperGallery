@@ -5,7 +5,7 @@ year: "2025"
 conference: "TPAMI"
 license: ""
 tags: ["LLM","Vision Foundation Model"]
-image: "Li_VisionUnite_2025.webp"
+image: "Li_VisionUnite_2025.jpg"
 paper: "https://www.arxiv.org/pdf/2408.02865"
 code: "https://github.com/HUANGLIZI/VisionUnite"
 project: ""

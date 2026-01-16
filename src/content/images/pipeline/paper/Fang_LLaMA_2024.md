@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY-NC-ND"
 tags: ["LLM","Llama-based"]
-image: "Fang_LLaMA_2024.webp"
+image: "Fang_LLaMA_2024.jpg"
 paper: "https://arxiv.org/pdf/2409.06666"
 code: "https://github.com/ictnlp/LLaMA-Omni"
 project: ""

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Image Matching","Pre-Training"]
-image: "He_MatchAnything_2025.webp"
+image: "He_MatchAnything_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.07556"
 code: "https://github.com/zju3dv/MatchAnything"
 project: "https://zju3dv.github.io/MatchAnything/"

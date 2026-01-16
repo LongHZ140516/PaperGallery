@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 tags: ["Point Cloud","Segment"]
 license: ""
-image: "Yang_SA3DIP_2024.webp"
+image: "Yang_SA3DIP_2024.jpg"
 paper: "https://nips.cc/virtual/2024/poster/96708"
 code: "https://github.com/ryang41/sa3dip"
 project: ""

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["3D", "Reconstruction", "Motion", "Generation"]
-image: "Zhang_Joint_2025.webp"
+image: "Zhang_Joint_2025.jpg"
 paper: "https://arxiv.org/abs/2512.05044"
 code: "https://github.com/Zhangyr2022/MoRe4D"
 project: "https://ivg-yanranzhang.github.io/MoRe4D/"

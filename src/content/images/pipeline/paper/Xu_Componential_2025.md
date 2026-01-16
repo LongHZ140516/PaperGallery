@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICML"
 license: "CC BY"
 tags: ["Alignment", "Domain Incremental Learning"]
-image: "Xu_Componential_2025.webp"
+image: "Xu_Componential_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.04575v1"
 code: "https://github.com/zhoujiahuan1991/ICML2025-KA-Prompt"
 project: ""

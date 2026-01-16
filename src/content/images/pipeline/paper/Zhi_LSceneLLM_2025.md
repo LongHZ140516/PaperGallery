@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["LLM","3D Scene"]
-image: "Zhi_LSceneLLM_2025.webp"
+image: "Zhi_LSceneLLM_2025.jpg"
 paper: "https://arxiv.org/abs/2412.01292v2"
 code: ""
 project: ""

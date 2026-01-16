@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-ND"
 tags: ["Dataset","Story"]
-image: "Zhuang_ViStory_2025.webp"
+image: "Zhuang_ViStory_2025.jpg"
 paper: "https://arxiv.org/abs/2505.24862"
 code: "https://github.com/vistorybench/vistorybench"
 project: "https://vistorybench.github.io/"

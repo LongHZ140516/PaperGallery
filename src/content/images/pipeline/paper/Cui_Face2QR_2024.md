@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY-NC-SA"
 tags: ["Diffusion", "QR Code", "Generation"]
-image: "Cui_Face2QR_2024.webp"
+image: "Cui_Face2QR_2024.jpg"
 paper: "https://arxiv.org/abs/2411.19246"
 code: "https://github.com/cavosamir/Face2QR"
 project: ""

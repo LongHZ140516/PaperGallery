@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM", "Technical Report", "Baichuan"]
-image: "Li_Baichuan_2024.webp"
+image: "Li_Baichuan_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.08565"
 code: "https://github.com/westlake-baichuan-mllm/bc-omni"
 project: ""

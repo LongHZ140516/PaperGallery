@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Reasoning"]
-image: "Chu_SelfCritique_2025.webp"
+image: "Chu_SelfCritique_2025.jpg"
 paper: "https://arxiv.org/abs/2505.19112"
 code: "https://github.com/zchuz/SiGIR-MHQA"
 project: ""

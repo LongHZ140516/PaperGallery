@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICML"
 license: "CC BY-NC-ND"
 tags: ["Dataset", "MLLM", "Evaluation"]
-image: "Fei_General_2025.webp"
+image: "Fei_General_2025.jpg"
 paper: "https://arxiv.org/abs/2505.04620"
 code: "https://github.com/path2generalist/General-Level"
 project: "https://generalist.top/"

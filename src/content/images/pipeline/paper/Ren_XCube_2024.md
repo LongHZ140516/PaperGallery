@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Diffusion"]
-image: "Ren_XCube_2024.webp"
+image: "Ren_XCube_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.03806"
 code: "https://github.com/nv-tlabs/XCube"
 project: "https://research.nvidia.com/labs/toronto-ai/xcube/"

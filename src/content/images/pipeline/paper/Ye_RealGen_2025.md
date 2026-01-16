@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Text-to-Image", "Generation", "Photorealistic"]
-image: "Ye_RealGen_2025.webp"
+image: "Ye_RealGen_2025.jpg"
 paper: "https://arxiv.org/abs/2512.00473"
 code: "https://github.com/yejy53/RealGen?tab=readme-ov-file"
 project: "https://yejy53.github.io/RealGen/"

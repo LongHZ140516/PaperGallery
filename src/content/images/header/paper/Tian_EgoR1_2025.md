@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM", "SFT", "CoT", "Video"]
-image: "Tian_EgoR1_2025.webp"
+image: "Tian_EgoR1_2025.jpg"
 paper: "https://arxiv.org/pdf/2506.13654"
 code: "https://github.com/egolife-ai/Ego-R1"
 project: "https://egolife-ai.github.io/Ego-R1/"

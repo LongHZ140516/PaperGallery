@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICRA"
 license: ""
 tags: ["Point Cloud", "Dynamic"]
-image: "Xu_CoDynTrust_2025.webp"
+image: "Xu_CoDynTrust_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.08169v1"
 code: "https://github.com/CrazyShout/CoDynTrust"
 project: ""

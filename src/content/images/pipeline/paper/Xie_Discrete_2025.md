@@ -5,7 +5,7 @@ year: "2025"
 conference: "AAAI"
 license: ""
 tags: ["Video", "Restoration", "Face"]
-image: "Xie_Discrete_2025.webp"
+image: "Xie_Discrete_2025.jpg"
 paper: "https://arxiv.org/abs/2501.09960"
 code: "https://github.com/lxxie298/DP-TempCoh"
 project: ""

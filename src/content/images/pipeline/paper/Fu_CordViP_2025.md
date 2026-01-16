@@ -5,7 +5,7 @@ year: "2025"
 conference: "RSS"
 license: "CC BY"
 tags: ["Robotics", "Manipulation", "Point Cloud"]
-image: "Fu_CordViP_2025.webp"
+image: "Fu_CordViP_2025.jpg"
 paper: "https://www.arxiv.org/pdf/2502.08449"
 code: "https://github.com/xuanxuanzzzii/cordvip"
 project: "https://aureleopku.github.io/CordViP/"

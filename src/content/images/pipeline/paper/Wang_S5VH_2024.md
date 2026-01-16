@@ -5,7 +5,7 @@ year: "2024"
 conference: "AAAI"
 license: "CC BY"
 tags: ["Self-Supervised","Mamba"]
-image: "Wang_S5VH_2024.webp"
+image: "Wang_S5VH_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.14518v1"
 code: "https://github.com/gimpong/AAAI25-S5VH"
 project: ""

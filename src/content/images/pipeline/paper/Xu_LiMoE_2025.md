@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY-SA"
 tags: ["PointCloud","Automotive Scenes"]
-image: "Xu_LiMoE_2025.webp"
+image: "Xu_LiMoE_2025.jpg"
 paper: "https://arxiv.org/abs/2501.04004"
 code: "https://github.com/Xiangxu-0103/LiMoE"
 project: "https://ldkong.com/LiMoE"

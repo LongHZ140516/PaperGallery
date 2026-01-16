@@ -5,7 +5,7 @@ year: "2024"
 conference: "SIGGRAPH Asia"
 license: "CC BY"
 tags: ["3D", "Facial Animation"]
-image: "Qiu_FreeAvatar_2024.webp"
+image: "Qiu_FreeAvatar_2024.jpg"
 paper: "https://dl.acm.org/doi/full/10.1145/3680528.3687669"
 code: "https://github.com/FuxiVirtualHuman/free_avatar"
 project: ""

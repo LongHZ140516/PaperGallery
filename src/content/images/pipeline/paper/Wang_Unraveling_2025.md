@@ -5,7 +5,7 @@ year: "2025"
 conference: "CSC"
 license: ""
 tags: ["Remote Sensing", "Urban", "Vegetation Carbon Sequestration"]
-image: "Wang_Unraveling_2025.webp"
+image: "Wang_Unraveling_2025.jpg"
 paper: "https://doi.org/10.1016/j.scs.2025.106157"
 code: ""
 project: ""

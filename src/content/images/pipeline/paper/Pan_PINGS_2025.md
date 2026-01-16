@@ -4,7 +4,7 @@ authors: ["Yue Pan", "Xingguang Zhong", "Liren Jin", "Louis Wiesmann", "Marija P
 year: "2025"
 conference: ""
 tags: ["3DGS","Implicit"]
-image: "Pan_PINGS_2025.webp"
+image: "Pan_PINGS_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.05752"
 code: ""
 project: ""

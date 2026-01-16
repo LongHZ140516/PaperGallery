@@ -5,7 +5,7 @@ year: "2025"
 conference: "WACV"
 license: ""
 tags: ["NeRF", "3D", "Reconstruction"]
-image: "Tu_DreaMo_2025.webp"
+image: "Tu_DreaMo_2025.jpg"
 paper: "https://arxiv.org/pdf/2312.02617"
 code: ""
 project: "https://ttaoretw.github.io/DreaMo/"

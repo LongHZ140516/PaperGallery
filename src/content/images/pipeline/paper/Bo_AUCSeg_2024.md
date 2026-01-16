@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["Semantic Segmentation", "Pixel-level", "AUC"]
-image: "Bo_AUCSeg_2024.webp"
+image: "Bo_AUCSeg_2024.jpg"
 paper: "https://proceedings.neurips.cc/paper_files/paper/2024/file/e574db41163e700545ff4114f96b3d7a-Paper-Conference.pdf"
 code: "https://github.com/boyuh/AUCSeg"
 project: "https://boyuh.github.io/project/AUCSeg/"

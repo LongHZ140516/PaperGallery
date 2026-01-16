@@ -5,7 +5,7 @@ year: "2025"
 conference: "ACL"
 license: "CC BY"
 tags: ["LLM", "DoS Attack", "Generation"]
-image: "Zhang_Crabs_2025.webp"
+image: "Zhang_Crabs_2025.jpg"
 paper: "https://arxiv.org/pdf/2412.13879"
 code: "https://github.com/shuita2333/AutoDoS"
 project: ""

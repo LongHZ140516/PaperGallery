@@ -5,7 +5,7 @@ year: "2025"
 conference: "AAAI"
 license: ""
 tags: ["Diffusion","3D"]
-image: "He_MagicMAN_2025.webp"
+image: "He_MagicMAN_2025.jpg"
 paper: "https://arxiv.org/abs/2408.14211"
 code: "https://github.com/thuhcsi/MagicMan?tab=readme-ov-file"
 project: "https://thuhcsi.github.io/MagicMan/"

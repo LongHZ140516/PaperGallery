@@ -5,7 +5,7 @@ year: "2023"
 conference: "CVPR"
 license: "CC BY"
 tags: ["NeRF", "Edit", "Semantic"]
-image: "Bao_SINE_2023.webp"
+image: "Bao_SINE_2023.jpg"
 paper: "https://arxiv.org/pdf/2303.13277"
 code: "https://github.com/zju3dv/SINE"
 project: "https://zju3dv.github.io/sine/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "ICLR"
 license: "CC BY"
 tags: ["4DGS", "Dynamic", "Real-Time"]
-image: "Yang_4DGS_2024.webp"
+image: "Yang_4DGS_2024.jpg"
 paper: "https://arxiv.org/pdf/2310.10642"
 code: "https://github.com/fudan-zvg/4d-gaussian-splatting"
 project: "https://fudan-zvg.github.io/4d-gaussian-splatting/"

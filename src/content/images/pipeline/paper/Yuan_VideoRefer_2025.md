@@ -2,10 +2,10 @@
 title: "VideoRefer Suite: Advancing Spatial-Temporal Object Understanding with Video LLM"
 authors: ["Yuqian Yuan", "Hang Zhang", "Wentong Li", "Zesen Cheng", "Boqiang Zhang", "Long Li", "Xin Li", "Deli Zhao", "Wenqiao Zhang", "Yueting Zhuang", "Jianke Zhu", "Lidong Bing"]
 year: "2025"
-conference: "arXiv"
+conference: ""
 license: ""
 tags: ["LLM","Object Understanding", "Video"]
-image: "Yuan_VideoRefer_2025.webp"
+image: "Yuan_VideoRefer_2025.jpg"
 paper: "https://arxiv.org/abs/2501.00599"
 code: "https://github.com/DAMO-NLP-SG/VideoRefer"
 project: "https://damo-nlp-sg.github.io/VideoRefer/"

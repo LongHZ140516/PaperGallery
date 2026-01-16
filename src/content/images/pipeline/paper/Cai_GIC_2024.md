@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: ""
 tags: ["3DGS", "Physical", "Simulation"]
-image: "Cai_GIC_2024.webp"
+image: "Cai_GIC_2024.jpg"
 paper: "https://arxiv.org/abs/2406.14927"
 code: "https://github.com/Jukgei/gic"
 project: "https://jukgei.github.io/project/gic/"

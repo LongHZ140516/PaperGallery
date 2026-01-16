@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Video", "Generation", "Multi-Task"]
-image: "Huang_UnityVideo_2025.webp"
+image: "Huang_UnityVideo_2025.jpg"
 paper: "https://arxiv.org/abs/2512.07831"
 code: "https://github.com/dvlab-research/UnityVideo"
 project: "https://jackailab.github.io/Projects/UnityVideo/"

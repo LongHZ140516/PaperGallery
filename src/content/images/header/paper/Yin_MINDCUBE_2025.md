@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: ""
 tags: ["LLM","VLM","Spatial Mental"]
-image: "Yin_MINDCUBE_2025.webp"
+image: "Yin_MINDCUBE_2025.jpg"
 paper: "https://arxiv.org/pdf/2506.21458"
 code: "https://github.com/mll-lab-nu/MindCube"
 project: "https://mind-cube.github.io/"

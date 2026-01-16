@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Diffusion", "Motion Generation", "Text-Driven"]
-image: "Cao_CrowdMoGen_2024.webp"
+image: "Cao_CrowdMoGen_2024.jpg"
 paper: "https://arxiv.org/abs/2407.06188"
 code: ""
 project: "https://yukangcao.github.io/CrowdMoGen/"

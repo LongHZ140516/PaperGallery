@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["GPT", "Image Generation", "Synthetic Image"]
-image: "Ye_Echo4o_2025_2.webp"
+image: "Ye_Echo4o_2025_2.jpg"
 paper: "https://arxiv.org/abs/2508.09987"
 code: "https://github.com/yejy53/Echo-4o"
 project: ""

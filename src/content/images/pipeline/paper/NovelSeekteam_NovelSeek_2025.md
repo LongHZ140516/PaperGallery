@@ -4,7 +4,7 @@ authors: ["NovelSeek Team"]
 year: "2025"
 conference: "arXiv"
 tags: ["Agent","Closed Loop"]
-image: "NovelSeekteam_NovelSeek_2025.webp"
+image: "NovelSeekteam_NovelSeek_2025.jpg"
 paper: "https://arxiv.org/abs/2505.16938"
 code: ""
 project: "https://alpha-innovator.github.io/NovelSeek-project-page/"

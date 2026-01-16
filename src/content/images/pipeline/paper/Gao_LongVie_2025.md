@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Diffusion","Video", "Generation"]
-image: "Gao_LongVie_2025.webp"
+image: "Gao_LongVie_2025.jpg"
 paper: "https://arxiv.org/pdf/2508.03694"
 code: "https://github.com/Vchitect/LongVie"
 project: "https://vchitect.github.io/LongVie-project/"

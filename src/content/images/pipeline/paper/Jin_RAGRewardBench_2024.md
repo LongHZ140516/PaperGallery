@@ -5,7 +5,7 @@ year: "2024"
 conference: "ACL"
 license: "CC BY"
 tags: ["Dataset","Benchmark","LLM"]
-image: "Jin_RAGRewardBench_2024.webp"
+image: "Jin_RAGRewardBench_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.13746"
 code: "https://github.com/jinzhuoran/RAG-RewardBench/"
 project: ""

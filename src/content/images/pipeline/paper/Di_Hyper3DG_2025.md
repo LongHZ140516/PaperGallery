@@ -5,7 +5,7 @@ year: "2025"
 conference: "IJCV"
 license: ""
 tags: ["3DGS", "Generation", "Text-to-3D"]
-image: "Di_Hyper3DG_2025.webp"
+image: "Di_Hyper3DG_2025.jpg"
 paper: "https://arxiv.org/pdf/2403.09236.pdf"
 code: "https://github.com/yjhboy/Hyper3DG"
 project: ""

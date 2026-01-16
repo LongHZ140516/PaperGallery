@@ -4,7 +4,7 @@ authors: ["Xiang Yue", "Yuansheng Ni", "Kai Zhang", "Tianyu Zheng", "Ruoqi Liu",
 year: "2024"
 conference: "CVPR"
 tags: ["LLM"]
-image: "Yue_MMMU_2024.webp"
+image: "Yue_MMMU_2024.jpg"
 paper: "https://arxiv.org/pdf/2311.16502"
 code: "https://github.com/MMMU-Benchmark/MMMU"
 project: "https://mmmu-benchmark.github.io/"

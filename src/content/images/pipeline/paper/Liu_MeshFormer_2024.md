@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["3D", "Generation", "Reconstruction"]
-image: "Liu_MeshFormer_2024.webp"
+image: "Liu_MeshFormer_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.10198"
 code: ""
 project: "https://meshformer3d.github.io/"

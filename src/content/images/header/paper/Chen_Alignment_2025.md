@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Detection", "Gemini"]
-image: "Chen_Alignment_2025.webp"
+image: "Chen_Alignment_2025.jpg"
 paper: "https://arxiv.org/abs/2512.06746"
 code: ""
 project: ""

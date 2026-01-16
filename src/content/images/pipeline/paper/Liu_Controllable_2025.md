@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICCV"
 license: ""
 tags: ["Point Cloud", "3D", "Graph", "Generation"]
-image: "Liu_Controllable_2025.webp"
+image: "Liu_Controllable_2025.jpg"
 paper: "https://arxiv.org/pdf/2503.07152"
 code: "https://github.com/yuhengliu02/control-3d-scene"
 project: "https://yuheng.ink/project-page/control-3d-scene/"

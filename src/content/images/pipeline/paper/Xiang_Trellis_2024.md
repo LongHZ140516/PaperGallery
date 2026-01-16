@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["3DGS","3D", "Generation"]
-image: "Xiang_Trellis_2024.webp"
+image: "Xiang_Trellis_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.01506"
 code: "https://github.com/Microsoft/TRELLIS"
 project: "https://trellis3d.github.io"

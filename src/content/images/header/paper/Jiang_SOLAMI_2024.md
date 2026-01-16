@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY-NC-SA"
 tags: ["LLM","VLA"]
-image: "Jiang_SOLAMI_2024.webp"
+image: "Jiang_SOLAMI_2024.jpg"
 paper: "https://arxiv.org/pdf/2412.00174"
 code: ""
 project: "https://solami-ai.github.io/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion", "3D", "NeRF"]
-image: "Xie_CityDreamer_2024.webp"
+image: "Xie_CityDreamer_2024.jpg"
 paper: "https://arxiv.org/abs/2309.00610"
 code: "https://github.com/hzxie/CityDreamer"
 project: "https://www.infinitescript.com/project/city-dreamer"

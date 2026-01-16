@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Benchmark", "City Scene", "Human", "Understanding"]
-image: "He_UrbanFeel_2025_2.webp"
+image: "He_UrbanFeel_2025_2.jpg"
 paper: "https://arxiv.org/abs/2509.22228"
 code: ""
 project: ""

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Robotics", "SFT", "VLM"]
-image: "Zhang_GRAPE_2024.webp"
+image: "Zhang_GRAPE_2024.jpg"
 paper: "https://arxiv.org/pdf/2411.19309"
 code: "https://github.com/aiming-lab/grape"
 project: "https://grape-vla.github.io/"

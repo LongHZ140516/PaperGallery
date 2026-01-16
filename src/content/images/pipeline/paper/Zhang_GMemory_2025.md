@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Agent", "Memory"]
-image: "Zhang_GMemory_2025.webp"
+image: "Zhang_GMemory_2025.jpg"
 paper: "https://arxiv.org/pdf/2506.07398"
 code: "https://github.com/bingreeky/GMemory"
 project: ""

@@ -4,7 +4,7 @@ authors: ["Fanqing Meng", "Jin Wang", "Chuanhao Li", "Quanfeng Lu", "Hao Tian", 
 year: "2024"
 conference: "arXiv"
 tags: ["LLM","VLM","Understanding"]
-image: "Meng_MMIU_2024.webp"
+image: "Meng_MMIU_2024.jpg"
 paper: "https://www.arxiv.org/pdf/2408.02718"
 code: "https://github.com/OpenGVLab/MMIU"
 project: "https://mmiu-bench.github.io/"

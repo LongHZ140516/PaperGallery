@@ -5,7 +5,7 @@ year: "2024"
 conference: "SIGGRAPH Asia"
 license: ""
 tags: ["3DGS", "3D", "Generation"]
-image: "Li_DIScene_2024.webp"
+image: "Li_DIScene_2024.jpg"
 paper: "https://dl.acm.org/doi/10.1145/3680528.3687589"
 code: ""
 project: ""

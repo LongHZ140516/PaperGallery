@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY-SA"
 tags: ["LLM"]
-image: "Zhang_MultiTrust_2024.webp"
+image: "Zhang_MultiTrust_2024.jpg"
 paper: "https://arxiv.org/pdf/2406.07057"
 code: "https://github.com/thu-ml/MMTrustEval"
 project: "https://multi-trust.github.io/"

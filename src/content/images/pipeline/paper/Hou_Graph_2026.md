@@ -5,7 +5,7 @@ year: "2026"
 conference: "AAAI"
 license: "CC BY"
 tags: ["Detection", "OOD"]
-image: "Hou_Graph_2026.webp"
+image: "Hou_Graph_2026.jpg"
 paper: "https://arxiv.org/abs/2511.13541"
 code: ""
 project: ""

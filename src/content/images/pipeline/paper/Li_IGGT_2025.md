@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Reconstruction", "Semantic"]
-image: "Li_IGGT_2025.webp"
+image: "Li_IGGT_2025.jpg"
 paper: "https://arxiv.org/abs/2510.22706"
 code: "https://github.com/lifuguan/IGGT_official"
 project: "https://lifuguan.github.io/IGGT_official"

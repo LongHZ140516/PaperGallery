@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["3DGS", "Generation", "Layout"]
-image: "Zhou_GALA3D_2024.webp"
+image: "Zhou_GALA3D_2024.jpg"
 paper: "https://arxiv.org/pdf/2402.07207.pdf"
 code: "https://github.com/VDIGPKU/GALA3D"
 project: "https://gala3d.github.io/"

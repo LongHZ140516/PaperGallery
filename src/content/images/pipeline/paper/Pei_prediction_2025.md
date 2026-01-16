@@ -5,7 +5,7 @@ year: "2025"
 conference: "AFM"
 license: ""
 tags: ["Remote Sensing","Crop Yield"]
-image: "Pei_prediction_2025.webp"
+image: "Pei_prediction_2025.jpg"
 paper: "https://doi.org/10.1016/j.agrformet.2024.110340"
 code: ""
 project: ""

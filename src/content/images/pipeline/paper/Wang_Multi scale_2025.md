@@ -5,7 +5,7 @@ year: "2025"
 conference: "GSIS"
 license: ""
 tags: ["Remote Sensing","Multi-scale","ecological-urban"]
-image: "Wang_Multi scale_2025.webp"
+image: "Wang_Multi scale_2025.jpg"
 paper: "https://doi.org/10.1080/10095020.2025.2486287"
 code: ""
 project: ""

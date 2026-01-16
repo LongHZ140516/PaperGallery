@@ -5,7 +5,7 @@ year: "2025"
 conference: "ACL"
 license: ""
 tags: ["LLM", "Compression"]
-image: "Deng_Silver_2025.webp"
+image: "Deng_Silver_2025.jpg"
 paper: "https://arxiv.org/pdf/2412.17483"
 code: ""
 project: ""

@@ -5,7 +5,7 @@ year: "2025"
 conference: "SIGGRAPH"
 license: ""
 tags: ["3DGS","Generation", "3D"]
-image: "Yang_LayerPano3D_2025.webp"
+image: "Yang_LayerPano3D_2025.jpg"
 paper: "https://dl.acm.org/doi/full/10.1145/3721238.3730643"
 code: "https://github.com/3DTopia/LayerPano3D"
 project: "https://ys-imtech.github.io/projects/LayerPano3D/"

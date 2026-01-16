@@ -5,7 +5,7 @@ year: "2023"
 conference: "ICDE"
 license: ""
 tags: ["Urban", "Detection", "GCN"]
-image: "Xiao_CMSF_2025.webp"
+image: "Xiao_CMSF_2025.jpg"
 paper: "https://doi.org/10.1609/aaai.v39i2.32149"
 code: ""
 project: ""

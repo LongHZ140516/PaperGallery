@@ -5,7 +5,7 @@ year: "2025"
 conference: "TPAMI"
 license: ""
 tags: ["3DGS", "Human", "Sparse Views"]
-image: "Zhou_GPSGaussian_2025.webp"
+image: "Zhou_GPSGaussian_2025.jpg"
 paper: "https://arxiv.org/pdf/2411.11363"
 code: "https://github.com/YaourtB/GPS_plus"
 project: "https://yaourtb.github.io/GPS-Gaussian+"

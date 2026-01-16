@@ -5,7 +5,7 @@ year: "2023"
 conference: "CVPR"
 lincese: ""
 tags: ["3DGS","Reconstruction"]
-image: "Das_NPGs_2023.webp"
+image: "Das_NPGs_2023.jpg"
 paper: "https://arxiv.org/pdf/2312.01196"
 code: "https://github.com/DevikalyanDas/npgs"
 project: "https://geometric-rl.mpi-inf.mpg.de/npg/"

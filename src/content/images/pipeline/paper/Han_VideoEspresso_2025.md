@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: "CC BY"
 tags: ["LLM","Video Reasoning", "CoT"]
-image: "Han_VideoEspresso_2025.webp"
+image: "Han_VideoEspresso_2025.jpg"
 paper: "https://arxiv.org/pdf/2411.14794"
 code: "https://github.com/hshjerry/VideoEspresso"
 project: ""

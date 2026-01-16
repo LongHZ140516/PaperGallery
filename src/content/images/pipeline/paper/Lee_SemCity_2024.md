@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY-NC-ND"
 tags: ["Diffusion","3D", "Triplane"]
-image: "Lee_SemCity_2024.webp"
+image: "Lee_SemCity_2024.jpg"
 paper: "https://arxiv.org/abs/2403.07773"
 code: "https://github.com/zoomin-lee/SemCity"
 project: "https://sglab.kaist.ac.kr/SemCity/"

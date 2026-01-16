@@ -5,7 +5,7 @@ year: "2025"
 licenseL: ""
 conference: "arXiv"
 tags: ["3DGS","Multi-Layer Perceptron"]
-image: "Tang_NeuralGS_2025.webp"
+image: "Tang_NeuralGS_2025.jpg"
 paper: "https://arxiv.org/pdf/2503.23162"
 code: "https://github.com/PKU-YuanGroup/NeuralGS"
 project: "https://pku-yuangroup.github.io/NeuralGS/"

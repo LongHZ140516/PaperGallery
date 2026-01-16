@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["Navigation", "Reasoning", "3D"]
-image: "Liu_NavR1_2025.webp"
+image: "Liu_NavR1_2025.jpg"
 paper: "https://arxiv.org/abs/2509.10884"
 code: "https://github.com/AIGeeksGroup/Nav-R1"
 project: "https://aigeeksgroup.github.io/Nav-R1/"

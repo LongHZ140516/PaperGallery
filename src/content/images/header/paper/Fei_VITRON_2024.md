@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["LLM","Pixel-level","Understanding"]
-image: "Fei_VITRON_2024.webp"
+image: "Fei_VITRON_2024.jpg"
 paper: "https://haofei.vip/downloads/papers/Skywork_Vitron_2024.pdf"
 code: "https://github.com/SkyworkAI/Vitron?tab=readme-ov-file"
 project: "https://vitron-llm.github.io/"

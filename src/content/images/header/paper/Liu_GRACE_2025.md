@@ -5,7 +5,7 @@ year: "2025"
 conference: "HRI"
 license: ""
 tags: ["Robotics", "Dataset"]
-image: "Liu_GRACE_2025.webp"
+image: "Liu_GRACE_2025.jpg"
 paper: "https://arxiv.org/abs/2501.17855"
 code: ""
 project: "https://emprise.cs.cornell.edu/grace/"

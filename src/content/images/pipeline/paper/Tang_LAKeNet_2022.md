@@ -5,7 +5,7 @@ year: "2022"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Point Cloud", "Completion", "Topology"]
-image: "Tang_LAKeNet_2022.webp"
+image: "Tang_LAKeNet_2022.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2022/papers/Tang_LAKe-Net_Topology-Aware_Point_Cloud_Completion_by_Localizing_Aligned_Keypoints_CVPR_2022_paper.pdf"
 code: "https://github.com/junshutang/LAKe-Net"
 project: ""

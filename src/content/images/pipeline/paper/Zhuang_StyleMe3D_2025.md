@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-ND"
 tags: ["3DGS","Stylized Scenarios"]
-image: "Zhuang_StyleMe3D_2025.webp"
+image: "Zhuang_StyleMe3D_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.15281"
 code: "https://github.com/AIGCResearch/styleme3d"
 project: "https://styleme3d.github.io/"

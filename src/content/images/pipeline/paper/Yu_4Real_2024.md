@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["4DGS", "Diffusion", "Video"]
-image: "Yu_4Real_2024.webp"
+image: "Yu_4Real_2024.jpg"
 paper: "https://arxiv.org/pdf/2406.07472"
 code: ""
 project: "https://snap-research.github.io/4Real/"

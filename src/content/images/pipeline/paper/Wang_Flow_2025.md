@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Matching", "Video"]
-image: "Wang_Flow_2025.webp"
+image: "Wang_Flow_2025.jpg"
 paper: "https://arxiv.org/pdf/2504.11949"
 code: ""
 project: ""

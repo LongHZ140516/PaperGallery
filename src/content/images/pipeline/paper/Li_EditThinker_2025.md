@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Image", "Edit", "Reasoning"]
-image: "Li_EditThinker_2025.webp"
+image: "Li_EditThinker_2025.jpg"
 paper: "https://arxiv.org/abs/2512.05965"
 code: "https://github.com/appletea233/EditThinker"
 project: "https://appletea233.github.io/think-while-edit/"

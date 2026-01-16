@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Generation", "Refinement"]
-image: "Zou_UltraShape_2025.webp"
+image: "Zou_UltraShape_2025.jpg"
 paper: "https://arxiv.org/abs/2512.21185"
 code: "https://github.com/PKU-YuanGroup/UltraShape-1.0"
 project: "https://pku-yuangroup.github.io/UltraShape-1.0/"

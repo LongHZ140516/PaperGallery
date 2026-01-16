@@ -5,7 +5,7 @@ year: "2025"
 conference: "ICLR"
 license: "CC BY"
 tags: ["Robotics", "LLM", "Manipulation"]
-image: "Chen_GravMAD_2025.webp"
+image: "Chen_GravMAD_2025.jpg"
 paper: "https://arxiv.org/pdf/2409.20154v4"
 code: ""
 project: "https://gravmad.github.io/"

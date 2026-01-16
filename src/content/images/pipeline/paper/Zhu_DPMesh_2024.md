@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["Diffusion", "Human", "Mesh Recovery"]
-image: "Zhu_DPMesh_2024.webp"
+image: "Zhu_DPMesh_2024.jpg"
 paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhu_DPMesh_Exploiting_Diffusion_Prior_for_Occluded_Human_Mesh_Recovery_CVPR_2024_paper.html"
 code: "https://github.com/EternalEvan/DPMesh"
 project: "https://eternalevan.github.io/dpmesh-proj"

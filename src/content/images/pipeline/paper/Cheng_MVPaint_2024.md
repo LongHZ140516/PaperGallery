@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: "CC BY"
 tags: ["Diffusion","Multi-View","3D"]
-image: "Cheng_MVPaint_2024.webp"
+image: "Cheng_MVPaint_2024.jpg"
 paper: "https://arxiv.org/pdf/2411.02336"
 code: "https://github.com/3DTopia/MVPaint"
 project: "https://mvpaint.github.io/"

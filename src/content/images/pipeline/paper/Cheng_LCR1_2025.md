@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["LLM","Large Reasoning Models"]
-image: "Cheng_LCR1_2025.webp"
+image: "Cheng_LCR1_2025.jpg"
 paper: "https://arxiv.org/pdf/2506.14755"
 code: "https://github.com/zxiangx/LC-R1"
 project: ""

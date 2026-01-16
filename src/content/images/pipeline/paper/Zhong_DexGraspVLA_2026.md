@@ -5,7 +5,7 @@ year: "2026"
 conference: "AAAI"
 license: ""
 tags: ["Robotics", "VLM", "Real-World"]
-image: "Zhong_DexGraspVLA_2026.webp"
+image: "Zhong_DexGraspVLA_2026.jpg"
 paper: "https://arxiv.org/pdf/2502.20900"
 code: "https://github.com/Psi-Robot/DexGraspVLA"
 project: "https://dexgraspvla.github.io/"

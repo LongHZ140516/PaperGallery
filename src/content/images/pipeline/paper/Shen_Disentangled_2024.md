@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: ""
 tags: ["NeRF", "Generation", "Triplane"]
-image: "Shen_Disentangled_2024.webp"
+image: "Shen_Disentangled_2024.jpg"
 paper: "https://arxiv.org/pdf/2409.15715"
 code: "https://github.com/GaoHchen/DiGARR"
 project: "https://gaohchen.github.io/DiGARR/"

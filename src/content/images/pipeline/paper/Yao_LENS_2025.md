@@ -4,7 +4,7 @@ authors: ["Ruilin Yao", "Bo Zhang", "Jirui Huang", "Xinwei Long", "Yifang Zhang"
 year: "2025"
 conference: "arXiv"
 tags: ["Dataset","LLM", "Evalution"]
-image: "Yao_LENS_2025.webp"
+image: "Yao_LENS_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.15616"
 code: "https://github.com/Lens4MLLMs/lens"
 project: ""

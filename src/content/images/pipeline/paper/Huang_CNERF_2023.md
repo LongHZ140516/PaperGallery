@@ -5,7 +5,7 @@ year: "2023"
 conference: "arXiv"
 license: ""
 tags: ["NeRF", "Detection"]
-image: "Huang_CNERF_2023.webp"
+image: "Huang_CNERF_2023.jpg"
 paper: "https://arxiv.org/pdf/2312.02751"
 code: "https://github.com/C-NeRF/C-NeRF"
 project: ""

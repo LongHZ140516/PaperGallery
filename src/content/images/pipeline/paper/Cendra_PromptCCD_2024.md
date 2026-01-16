@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: "CC BY-NC-SA"
 tags: ["Gaussian","Discovery"]
-image: "Cendra_PromptCCD_2024.webp"
+image: "Cendra_PromptCCD_2024.jpg"
 paper: "https://arxiv.org/abs/2407.19001"
 code: "https://github.com/Visual-AI/PromptCCD"
 project: "https://visual-ai.github.io/promptccd/"

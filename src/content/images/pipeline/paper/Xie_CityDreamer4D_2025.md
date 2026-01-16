@@ -5,7 +5,7 @@ year: "2025"
 conference: "TPAMI"
 license: ""
 tags: ["Diffusion", "4D", "Generation"]
-image: "Xie_CityDreamer4D_2025.webp"
+image: "Xie_CityDreamer4D_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.08983"
 code: "https://github.com/hzxie/CityDreamer4D/"
 project: "https://www.infinitescript.com/project/city-dreamer-4d"

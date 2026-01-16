@@ -5,7 +5,7 @@ year: "2024"
 license: "CC BY"
 conference: "ECCV"
 tags: ["3DGS","4D"]
-image: "Zeng_STAG4D_2024.webp"
+image: "Zeng_STAG4D_2024.jpg"
 paper: "https://arxiv.org/pdf/2403.14939"
 code: "https://github.com/zeng-yifei/STAG4D"
 project: "https://nju-3dv.github.io/projects/STAG4D/"

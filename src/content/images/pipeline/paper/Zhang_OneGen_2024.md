@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM","Unified", "Generation"]
-image: "Zhang_OneGen_2024.webp"
+image: "Zhang_OneGen_2024.jpg"
 paper: "https://arxiv.org/pdf/2409.05152"
 code: "https://github.com/zjunlp/OneGen"
 project: ""

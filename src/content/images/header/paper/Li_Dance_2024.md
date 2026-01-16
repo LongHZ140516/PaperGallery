@@ -5,7 +5,7 @@ year: "2024"
 conference: "SIGGRAPH Asia"
 license: ""
 tags: ["Generation", "Music", "Dataset"]
-image: "Li_Dance_2024.webp"
+image: "Li_Dance_2024.jpg"
 paper: "https://dl.acm.org/doi/10.1145/3680528.3687562"
 code: "https://github.com/lsfhuihuiff/Dance-to-music_Siggraph_Asia_2024"
 project: "https://lsfhuihuiff.github.io/dance2music.github.io/"

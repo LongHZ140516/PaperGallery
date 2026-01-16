@@ -5,7 +5,7 @@ year: "2023"
 conference: "ICCV"
 license: ""
 tags: ["Point Cloud", "3D Attack", "Generation"]
-image: "Tao_3DHacker_2023.webp"
+image: "Tao_3DHacker_2023.jpg"
 paper: "https://openaccess.thecvf.com/content/ICCV2023/papers/Tao_3DHacker_Spectrum-based_Decision_Boundary_Generation_for_Hard-label_3D_Point_Cloud_ICCV_2023_paper.pdf"
 code: ""
 project: ""

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["3DGS", "Segementation"]
-image: "Lyu_Gaga_2024.webp"
+image: "Lyu_Gaga_2024.jpg"
 paper: "https://arxiv.org/pdf/2404.07977"
 code: "https://github.com/weijielyu/Gaga"
 project: "https://www.gaga.gallery/"

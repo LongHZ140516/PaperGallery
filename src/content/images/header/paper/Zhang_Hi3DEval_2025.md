@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Evalution", "3D"]
-image: "Zhang_Hi3DEval_2025.webp"
+image: "Zhang_Hi3DEval_2025.jpg"
 paper: "https://arxiv.org/pdf/2508.05609"
 code: ""
 project: "https://zyh482.github.io/Hi3DEval/"

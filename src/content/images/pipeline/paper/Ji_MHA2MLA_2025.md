@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["LLM","DeepSeek"]
-image: "Ji_MHA2MLA_2025.webp"
+image: "Ji_MHA2MLA_2025.jpg"
 paper: "https://arxiv.org/pdf/2502.14837"
 code: "https://github.com/JT-Ushio/MHA2MLA"
 project: ""

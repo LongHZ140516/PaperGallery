@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["LLM", "Face", "Multi-modal"]
-image: "Huang_FFAA_2024.webp"
+image: "Huang_FFAA_2024.jpg"
 paper: "https://arxiv.org/pdf/2408.10072"
 code: "https://github.com/thu-huangzc/FFAA"
 project: "https://ffaa-vl.github.io/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: ""
 tags: ["Dataset","LLM"]
-image: "Chen_MEGA BENCH_2024.webp"
+image: "Chen_MEGA BENCH_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.10563"
 code: "https://github.com/TIGER-AI-Lab/MEGA-Bench"
 project: "https://tiger-ai-lab.github.io/MEGA-Bench/"

@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: "CC BY"
 tags: ["Diffusion", "Image Restoration"]
-image: "Jiang_AutoDIR_2024.webp"
+image: "Jiang_AutoDIR_2024.jpg"
 paper: "https://arxiv.org/abs/2310.10123"
 code: "https://github.com/jiangyitong/AutoDIR"
 project: "https://atedm.github.io/"

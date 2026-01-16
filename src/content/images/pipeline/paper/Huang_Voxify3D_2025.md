@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["3D", "Pixel Art", "Generation"]
-image: "Huang_Voxify3D_2025.webp"
+image: "Huang_Voxify3D_2025.jpg"
 paper: "https://arxiv.org/abs/2512.07834"
 code: ""
 project: "https://yichuanh.github.io/Voxify-3D/"

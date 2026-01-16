@@ -5,7 +5,7 @@ year: "2024"
 conference: "TOG"
 license: "CC BY-NC-ND"
 tags: ["Diffusion","3D", "Generation"]
-image: "Peng_CharacterGen_2024.webp"
+image: "Peng_CharacterGen_2024.jpg"
 paper: "https://arxiv.org/pdf/2402.17214"
 code: "https://github.com/zjp-shadow/CharacterGen?tab=readme-ov-file"
 project: "https://charactergen.github.io/"

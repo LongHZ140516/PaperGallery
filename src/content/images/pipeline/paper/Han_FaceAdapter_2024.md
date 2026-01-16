@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: ""
 tags: ["Diffusion", "Face", "Generation"]
-image: "Han_FaceAdapter_2024.webp"
+image: "Han_FaceAdapter_2024.jpg"
 paper: "https://arxiv.org/pdf/2405.12970"
 code: "https://github.com/FaceAdapter/Face-Adapter?tab=readme-ov-file"
 project: "https://faceadapter.github.io/face-adapter.github.io/"

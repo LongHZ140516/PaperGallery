@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: ""
 tags: ["Depth Estimation", "Panorama", "Dataset"]
-image: "Lin_DAP_2025.webp"
+image: "Lin_DAP_2025.jpg"
 paper: "https://arxiv.org/abs/2512.16913"
 code: "https://github.com/Insta360-Research-Team/DAP"
 project: "https://insta360-research-team.github.io/DAP_website/"

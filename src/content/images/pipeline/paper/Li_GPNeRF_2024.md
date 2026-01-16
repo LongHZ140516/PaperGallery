@@ -5,7 +5,7 @@ year: "2024"
 conference: "CVPR"
 license: ""
 tags: ["NeRF", "3D"]
-image: "Li_GPNeRF_2024.webp"
+image: "Li_GPNeRF_2024.jpg"
 paper: "https://arxiv.org/pdf/2311.11863"
 code: "https://github.com/lifuguan/GP-NeRF"
 project: "https://lifuguan.github.io/gpnerf-pages/"

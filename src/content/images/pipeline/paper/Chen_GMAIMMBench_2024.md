@@ -5,7 +5,7 @@ year: "2024"
 conference: "NeurIPS"
 license: "CC BY-NC-SA"
 tags: ["LLM", "Benchmark", "Evaluation"]
-image: "Chen_GMAIMMBench_2024.webp"
+image: "Chen_GMAIMMBench_2024.jpg"
 paper: "https://www.arxiv.org/pdf/2408.03361"
 code: "https://github.com/uni-medical/GMAI-MMBench"
 project: "https://uni-medical.github.io/GMAI-MMBench.github.io/"

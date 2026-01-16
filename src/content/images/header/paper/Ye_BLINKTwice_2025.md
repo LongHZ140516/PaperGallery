@@ -5,7 +5,7 @@ year: "2025"
 conference: "NeurIPS"
 license: "CC BY"
 tags: ["VLM", "Benchmark", "Visual"]
-image: "Ye_BLINKTwice_2025.webp"
+image: "Ye_BLINKTwice_2025.jpg"
 paper: "https://arxiv.org/abs/2510.09361"
 code: ""
 project: ""

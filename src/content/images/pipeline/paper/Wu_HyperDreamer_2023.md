@@ -5,7 +5,7 @@ year: "2023"
 conference: "SIGGRAPH Asia"
 license: ""
 tags: ["Diffusion", "Generation", "3D"]
-image: "Wu_HyperDreamer_2023.webp"
+image: "Wu_HyperDreamer_2023.jpg"
 paper: "https://arxiv.org/abs/2312.04543"
 code: "https://github.com/wutong16/HyperDreamer"
 project: "https://ys-imtech.github.io/HyperDreamer/"

@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY"
 tags: ["Diffusion", "Generation", "Agent"]
-image: "Yuan_ImmerseGen_2025.webp"
+image: "Yuan_ImmerseGen_2025.jpg"
 paper: "https://arxiv.org/abs/2506.14315"
 code: "https://immersegen.github.io/"
 project: ""

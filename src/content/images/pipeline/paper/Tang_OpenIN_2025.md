@@ -5,7 +5,7 @@ year: "2025"
 conference: "IEEE Robotics and Automation Letters"
 license: ""
 tags: ["Point Cloud","Open-Vocabulary", "Navigation"]
-image: "Tang_OpenIN_2025.webp"
+image: "Tang_OpenIN_2025.jpg"
 paper: "https://arxiv.org/pdf/2501.04279v1"
 code: ""
 project: "https://openin-nav.github.io/"

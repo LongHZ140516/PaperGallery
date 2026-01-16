@@ -5,7 +5,7 @@ year: "2024"
 license: "CC BY"
 conference: "SIGGRAPH"
 tags: ["NeRF","real-time"]
-image: "Ilya_Neural Light_2024.webp"
+image: "Ilya_Neural Light_2024.jpg"
 paper: "https://dl.acm.org/doi/10.1145/3680528.3687660"
 code: "https://github.com/princeton-computational-imaging/NeuLS"
 project: ""

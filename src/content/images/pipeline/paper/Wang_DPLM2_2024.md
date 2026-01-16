@@ -5,7 +5,7 @@ year: "2024"
 conference: "arXiv"
 license: "CC BY-NC-ND"
 tags: ["Diffusion", "Protein Language Model"]
-image: "Wang_DPLM2_2024.webp"
+image: "Wang_DPLM2_2024.jpg"
 paper: "https://arxiv.org/pdf/2410.13782"
 code: "https://github.com/bytedance/dplm"
 project: "https://bytedance.github.io/dplm/dplm-2"

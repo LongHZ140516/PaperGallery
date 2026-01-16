@@ -5,7 +5,7 @@ year: "2024"
 conference: "ECCV"
 license: ""
 tags: ["3DGS", "Real-time", "Motion"]
-image: "Agelos_DynMF_2024.webp"
+image: "Agelos_DynMF_2024.jpg"
 paper: "https://arxiv.org/pdf/2312.00112.pdf"
 code: "https://github.com/agelosk/dynmf"
 project: "https://agelosk.github.io/dynmf/"

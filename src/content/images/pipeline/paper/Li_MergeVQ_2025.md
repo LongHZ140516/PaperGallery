@@ -5,7 +5,7 @@ year: "2025"
 conference: "CVPR"
 license: ""
 tags: ["Generation","Unified"]
-image: "Li_MergeVQ_2025.webp"
+image: "Li_MergeVQ_2025.jpg"
 paper: "https://arxiv.org/abs/2504.00999"
 code: ""
 project: "https://apexgen-x.github.io/MergeVQ/"

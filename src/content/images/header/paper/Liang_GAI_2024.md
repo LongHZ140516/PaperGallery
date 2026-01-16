@@ -5,7 +5,7 @@ year: "2024"
 conference: "TCCN"
 license: ""
 tags: ["Diffusion", "Survey", "Signal Processing"]
-image: "Liang_GAI_2024.webp"
+image: "Liang_GAI_2024.jpg"
 paper: "https://arxiv.org/abs/2401.00124"
 code: ""
 project: ""

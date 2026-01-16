@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["3DGS","SLAM","Large-Scale"]
-image: "Deng_VPGS SLAM_2025.webp"
+image: "Deng_VPGS SLAM_2025.jpg"
 paper: "https://arxiv.org/pdf/2505.18992"
 code: "https://github.com/dtc111111/vpgs-slam"
 project: ""

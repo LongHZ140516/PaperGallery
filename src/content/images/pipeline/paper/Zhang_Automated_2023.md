@@ -5,7 +5,7 @@ year: "2023"
 conference: "WWW"
 license: ""
 tags: ["POI", "GIS", "Graph"]
-image: "Zhang_Automated_2023.webp"
+image: "Zhang_Automated_2023.jpg"
 paper: "https://arxiv.org/pdf/2305.03920"
 code: "https://github.com/HKUDS/AutoST"
 project: ""

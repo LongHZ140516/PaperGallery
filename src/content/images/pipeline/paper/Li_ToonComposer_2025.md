@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 tags: ["Diffusion","Cartoon"]
 license: ""
-image: "Li_ToonComposer_2025.webp"
+image: "Li_ToonComposer_2025.jpg"
 paper: "https://arxiv.org/pdf/2508.10881"
 code: "https://github.com/TencentARC/ToonComposer"
 project: "https://lg-li.github.io/project/tooncomposer/"

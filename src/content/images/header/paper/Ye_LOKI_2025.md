@@ -4,7 +4,7 @@ authors: ["Junyan Ye", "Baichuan Zhou", "Zilong Huang", "Junan Zhang", "Tianyi B
 year: "2025"
 conference: "ICLR"
 tags: ["Dataset","LLM", "Detection"]
-image: "Ye_LOKI_2025.webp"
+image: "Ye_LOKI_2025.jpg"
 license: ""
 paper: "https://arxiv.org/pdf/2410.09732"
 code: "https://github.com/opendatalab/LOKI"

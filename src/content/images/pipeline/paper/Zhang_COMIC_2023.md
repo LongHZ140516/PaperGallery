@@ -5,7 +5,7 @@ year: "2023"
 conference: "ICCV"
 license: ""
 tags: ["Classification", "Dataset"]
-image: "Zhang_COMIC_2023.webp"
+image: "Zhang_COMIC_2023.jpg"
 paper: "https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Learning_in_Imperfect_Environment_Multi-Label_Classification_with_Long-Tailed_Distribution_and_ICCV_2023_paper.pdf"
 code: "https://github.com/wannature/COMIC"
 project: ""

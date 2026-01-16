@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-SA"
 tags: ["Simulation", "Driven", "Real-World"]
-image: "Tian_SimScale_2025.webp"
+image: "Tian_SimScale_2025.jpg"
 paper: "https://arxiv.org/abs/2511.23369"
 code: "https://github.com/OpenDriveLab/SimScale"
 project: "https://opendrivelab.com/SimScale"

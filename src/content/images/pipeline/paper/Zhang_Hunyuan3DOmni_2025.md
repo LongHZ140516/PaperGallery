@@ -5,7 +5,7 @@ year: "2025"
 conference: "arXiv"
 license: "CC BY-NC-ND"
 tags: ["3D", "Generation", "Controllable"]
-image: "Zhang_Hunyuan3DOmni_2025.webp"
+image: "Zhang_Hunyuan3DOmni_2025.jpg"
 paper: "https://arxiv.org/abs/2509.21245"
 code: "https://github.com/Tencent-Hunyuan/Hunyuan3D-Omni"
 project: "https://3d.hunyuan.tencent.com/"
