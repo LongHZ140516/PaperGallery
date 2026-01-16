@@ -16,8 +16,8 @@
 Clone the `web` branch specifically:
 
 ```bash
-git clone -b web [https://github.com/LongHZ140516/awesome-framework-gallery.git](https://github.com/LongHZ140516/awesome-framework-gallery.git)
-cd awesome-framework-gallery
+git clone -b web https://github.com/LongHZ140516/PaperGallery.git
+cd PaperGallery
 ```
 
 ### 2. Install dependencies
