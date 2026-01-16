@@ -7,6 +7,8 @@ const allImagePapers = await getCollection("images");
 const allProjects = await getCollection("project_page");
 const allTools = await getCollection("tools");
 
+const base = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
+
 // Transform image data
 const imageData = allImagePapers.map((entry) => {
     const { id, data } = entry;
@@ -18,7 +20,7 @@ const imageData = allImagePapers.map((entry) => {
         title: data.title,
         authors: data.authors.join(", "),
         conference: data.conference,
-        image: `/src/content/images/${category}/images/${data.image}`,
+        image: `${base}/images/${category}/${data.image}`,
         tags: data.tags || [],
     };
 });
@@ -29,9 +31,9 @@ const projectData = allProjects.map((entry) => {
     const category = id.split("/")[0] as "examples" | "templates";
 
     return {
-        title: data.title,
-        conference: data.conference,
-        image: `/src/content/project_page/${category}/images/${data.image}`,
+        title: data.title || data.name || "Untitled",
+        conference: data.conference || "",
+        image: `${base}/project/${category}/${data.image}`,
         link: data.link || "#",
         tags: data.tags || [],
         category,
@@ -46,7 +48,7 @@ const toolData = allTools.map((entry) => {
     return {
         name: data.name,
         link: data.link || "#",
-        image: `/src/content/tools/${category}/images/${data.image}`,
+        image: `${base}/tools/${category}/${data.image}`,
         category,
     };
 });
@@ -57,4 +59,5 @@ const toolData = allTools.map((entry) => {
     imageData={imageData}
     projectData={projectData}
     toolData={toolData}
+    base={base}
 />

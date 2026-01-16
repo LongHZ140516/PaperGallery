@@ -55,8 +55,9 @@ try {
         .filter(({ sw }) => Boolean(sw))
         .map(({ name, sw }: any) => ({ name, hex: sw.hex ?? sw.getHex?.() }))
         .filter((x) => Boolean(x.hex));
+    // console.log(`Extracted ${swatches.length} colors for ${title}`);
 } catch (e) {
-    console.error("Color extraction failed:", e);
+    console.error(`Color extraction failed for ${title} (${serverImgSrc}):`, e);
 }
 
 const buttonClass =

@@ -31,9 +31,10 @@ interface GlobalSearchProps {
     imageData: ImageItem[];
     projectData: ProjectItem[];
     toolData: ToolItem[];
+    base: string;
 }
 
-export const GlobalSearch: React.FC<GlobalSearchProps> = ({ imageData, projectData, toolData }) => {
+export const GlobalSearch: React.FC<GlobalSearchProps> = ({ imageData, projectData, toolData, base }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState("");
     const inputRef = useRef<HTMLInputElement>(null);
@@ -144,7 +145,7 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({ imageData, projectDa
                                             {filteredImages.map((item) => (
                                                 <a
                                                     key={`img-${item.id}`}
-                                                    href={`/images/${item.id}`}
+                                                    href={`${base}/images/${item.id}`}
                                                     className="group flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-accent/50 hover:text-accent-foreground transition-colors cursor-pointer"
                                                 >
                                                     <div className="relative h-10 w-16 overflow-hidden rounded border bg-muted shrink-0">
@@ -178,7 +179,7 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({ imageData, projectDa
                                             {filteredProjects.map((item, idx) => (
                                                 <a
                                                     key={`proj-${idx}`}
-                                                    href={item.link}
+                                                    href={item.link.startsWith("http") || item.link.startsWith("#") ? item.link : `${base}${item.link}`}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="group flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-accent/50 hover:text-accent-foreground transition-colors cursor-pointer"
@@ -219,7 +220,7 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({ imageData, projectDa
                                             {filteredTools.map((item, idx) => (
                                                 <a
                                                     key={`tool-${idx}`}
-                                                    href={item.link}
+                                                    href={item.link.startsWith("http") || item.link.startsWith("#") ? item.link : `${base}${item.link}`}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="group flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-accent/50 hover:text-accent-foreground transition-colors cursor-pointer"
