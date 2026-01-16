@@ -11,7 +11,7 @@
 
 *"A curated gallery and toolkit designed to provide inspiration for scientific illustrations, project sites, and visual storytelling in research."*
 
-<img src="assets/cover.jpg"  alt="cover img"> 
+<img src="assets/cover.jpg"  width="60%" alt="cover img"> 
 
 </div>
 
