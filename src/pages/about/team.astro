@@ -1,0 +1,210 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import { Github, Globe, Users, GraduationCap } from "lucide-react";
+
+// Mock data based on Footer info + placeholders for missing info
+const teamMembers = [
+    {
+        name: "Zilong Huang",
+        role: "Team Lead",
+        bio: "Words mean nothing without action.",
+        avatar: "/members/zilonghuang.jpg",
+        links: [
+            {
+                icon: Github,
+                url: "https://github.com/LongHZ140516",
+                label: "GitHub",
+            },
+            {
+                icon: Globe,
+                url: "https://serein-six.vercel.app/",
+                label: "Website",
+            },
+            {
+                icon: GraduationCap,
+                url: "https://scholar.google.com/citations?user=Nq2HLEUAAAAJ&hl=zh-CN",
+                label: "Google Scholar",
+            },
+        ],
+    },
+    {
+        name: "Junyan Ye",
+        role: "Team Member",
+        bio: "Exhaust principles and rectify the mind.",
+        avatar: "/members/junyanye.jpg",
+        links: [
+            {
+                icon: Github,
+                url: "https://github.com/yejy53",
+                label: "GitHub",
+            },
+            {
+                icon: Globe,
+                url: "https://yejy53.github.io/",
+                label: "Website",
+            },
+            {
+                icon: GraduationCap,
+                url: "https://scholar.google.com/citations?user=6IbGkd4AAAAJ&hl=en&oi=ao",
+                label: "Google Scholar",
+            },
+        ],
+    },
+    {
+        name: "Jun He",
+        role: "Team Member",
+        bio: "Saying goodbye to the past is about moving towards the future.",
+        avatar: "/members/junhe.jpg",
+        links: [
+            {
+                icon: Github,
+                url: "https://github.com/Hejun0915",
+                label: "GitHub",
+            },
+            {
+                icon: GraduationCap,
+                url: "https://scholar.google.com/citations?user=ktFT40UAAAAJ&hl=zh-CN",
+                label: "Google Scholar",
+            },
+        ],
+    },
+    {
+        name: "Yaopeng Zou",
+        role: "Team Member",
+        bio: "If it ain’t broke… you probably just haven’t found the right way to make it smoke yet.",
+        avatar: "/members/yaopengzou.jpg",
+        links: [
+            {
+                icon: Github,
+                url: "https://github.com/Jasper65432",
+                label: "GitHub",
+            },
+            {
+                icon: GraduationCap,
+                url: "https://scholar.google.com/citations?hl=zh-CN&user=xHyDLI4AAAAJ&view_op=list_works&gmla=APjjwuZ0wvmcR9YfMeXmeQ7FOR9EfD_vjv4-ZqeC_Cgx9wp1fXbQ-jVpKw5Vao7BWHU6NkgXXf1lMEir_ZExU8KfWuTlzMeKpE-sfLzXKoXHeBu3aCBU8_aQj0MS-nZilOB77jU8vg",
+                label: "Google Scholar",
+            },
+        ],
+    },
+    {
+        name: "Jingpeng Li",
+        role: "Team Member",
+        bio: "Try again. Fail again. Fail better.",
+        avatar: "/members/jingpengli.jpg",
+        links: [
+            {
+                icon: Github,
+                url: "https://github.com/Lijp411",
+                label: "GitHub",
+            },
+        ],
+    },
+];
+---
+
+<MainLayout content={{ title: "Our Team | Paper Gallery" }}>
+    <div
+        class="min-h-screen py-20 lg:py-32 px-4 relative overflow-hidden bg-background"
+    >
+        {/* Subtle grainy texture overlay */}
+        <div
+            class="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-multiply"
+            style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%221%22/%3E%3C/svg%3E');"
+        >
+        </div>
+
+        <div class="container relative z-10 max-w-7xl mx-auto">
+            <div class="flex flex-col items-center text-center mb-20 space-y-6">
+                <div
+                    class="p-3 bg-secondary/30 rounded-full text-primary mb-2 ring-1 ring-border/20 backdrop-blur-sm"
+                >
+                    <Users className="w-8 h-8" />
+                </div>
+                <h1
+                    class="text-5xl md:text-6xl font-serif font-medium tracking-tight text-foreground"
+                >
+                    The Architects
+                </h1>
+                <p
+                    class="text-xl text-muted-foreground max-w-2xl font-sans font-light leading-relaxed"
+                >
+                    Crafting the intersection of research and design.
+                </p>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"
+            >
+                {
+                    teamMembers.map((member, index) => (
+                        <div
+                            class="group relative w-full max-w-[340px] min-h-[480px] h-auto perspective-1000"
+                            style={`animation-delay: ${index * 150}ms`}
+                        >
+                            {/* Tarot Card Container */}
+                            <div class="relative w-full h-full transition-all duration-500 ease-out transform group-hover:-translate-y-2">
+                                {/* Card Background & Border - The physical card */}
+                                <div class="absolute inset-0 bg-[#FBF9F6] dark:bg-[#1A1A19] border border-stone-200 dark:border-stone-800 rounded-lg shadow-sm group-hover:shadow-xl transition-shadow duration-500 overflow-hidden">
+                                    {/* Decorative Frame */}
+                                    <div class="absolute inset-3 border border-stone-300/50 dark:border-stone-700/50 rounded-sm pointer-events-none" />
+
+                                    {/* Inner Content */}
+                                    <div class="flex flex-col items-center h-full p-8 text-center bg-gradient-to-b from-transparent to-stone-100/30 dark:to-stone-900/30">
+                                        {/* Top Symbol/Number (Tarot style) */}
+                                        <div class="text-xs font-serif italic text-muted-foreground mb-8 opacity-50">
+                                            {
+                                                ["I", "II", "III", "IV", "V"][
+                                                    index
+                                                ]
+                                            }
+                                        </div>
+
+                                        {/* Avatar - Styled as an engraving or focused portrait */}
+                                        <div class="relative w-32 h-32 mb-6 flex-shrink-0 rounded-full ring-1 ring-stone-200 dark:ring-stone-800 p-1 bg-background select-none pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-700">
+                                            <img
+                                                src={member.avatar}
+                                                alt={member.name}
+                                                class="h-full w-full object-cover rounded-full"
+                                            />
+                                        </div>
+
+                                        {/* Text Content */}
+                                        <div class="space-y-2 mb-4 flex-shrink-0">
+                                            <h3 class="text-2xl font-serif text-foreground font-medium">
+                                                {member.name}
+                                            </h3>
+                                            <div class="w-8 h-[1px] bg-primary/40 mx-auto my-3" />
+                                            <p class="text-xs font-sans tracking-widest text-primary uppercase">
+                                                {member.role}
+                                            </p>
+                                        </div>
+
+                                        {/* Bio - flexible grow area */}
+                                        <p class="text-sm font-serif text-muted-foreground leading-relaxed italic mt-4 mb-5 max-w-[85%] flex-grow">
+                                            "{member.bio}"
+                                        </p>
+
+                                        {/* Footer / Links - Always at bottom */}
+                                        <div class="mt-auto pt-4 flex gap-4 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0">
+                                            {member.links.map((link) => (
+                                                <a
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    class="text-muted-foreground hover:text-primary transition-colors duration-300"
+                                                    aria-label={link.label}
+                                                >
+                                                    <link.icon className="w-5 h-5" />
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</MainLayout>

@@ -1,0 +1,250 @@
+---
+import { Github, Mail, Users, FileText } from "lucide-react";
+import CenterUnderline from "@/components/animation/underline-center";
+
+const data = {
+    githubLink: "https://github.com/LongHZ140516/awesome-framework-gallery",
+    images: {
+        header: "/images/header",
+        pipeline: "/images/pipeline",
+    },
+    project: {
+        examples: "/project/examples",
+        templates: "/project/templates",
+    },
+    tools: {
+        colors: "/tools/colors",
+        icons: "/tools/icons",
+    },
+    about: {
+        members: "/about/team",
+        contact: "/about/contact",
+    },
+    company: {
+        name: "Paper Gallery",
+        description:
+            "Bridging science and design: A gallery of exceptional paper figures and web layouts selected to inspire effective research communication.",
+        logo: "/logo.png",
+    },
+};
+
+const imagesLinks = [
+    { text: "Header", href: data.images.header },
+    { text: "Pipeline", href: data.images.pipeline },
+];
+
+const projectLinks = [
+    { text: "Examples", href: data.project.examples },
+    { text: "Templates", href: data.project.templates },
+];
+
+const toolsLinks = [
+    { text: "Colors", href: data.tools.colors },
+    { text: "Icons", href: data.tools.icons },
+];
+
+const membersInfo = [
+    {
+        name: "Zilong Huang",
+        img: "/members/zilonghuang.jpg",
+        link: "https://serein-six.vercel.app/",
+    },
+    {
+        name: "Junyan Ye",
+        img: "/members/junyanye.jpg",
+        link: "https://yejy53.github.io/",
+    },
+    {
+        name: "Jun He",
+        img: "/members/junhe.jpg",
+        link: "https://github.com/Hejun0915",
+    },
+    {
+        name: "Yaopeng Zou",
+        img: "/members/yaopengzou.jpg",
+        link: "https://github.com/Jasper65432",
+    },
+];
+
+const aboutInfo = [
+    { icon: Github, text: "GitHub", href: data.githubLink },
+    { icon: Mail, text: "Contact", href: data.about.contact },
+    { icon: FileText, text: "Terms", href: "/about/terms" },
+];
+---
+
+<footer
+    class="bg-secondary/30 dark:bg-secondary/10 mt-16 w-full border-t border-secondary"
+>
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-8 lg:py-12">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div
+                class="flex flex-col items-center text-center lg:items-start lg:text-left"
+            >
+                <div class="text-primary flex items-center gap-2">
+                    <img
+                        src={data.company.logo || "/placeholder.svg"}
+                        alt="logo"
+                        class="h-8 w-8 rounded-full"
+                    />
+                    <span class="text-xl font-bold tracking-tight">
+                        {data.company.name}
+                    </span>
+                </div>
+
+                <p
+                    class="text-muted-foreground mt-4 max-w-xs text-sm leading-relaxed"
+                >
+                    {data.company.description}
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-2">
+                <div
+                    class="flex flex-col items-center text-center sm:items-start sm:text-left"
+                >
+                    <p class="font-semibold">Images</p>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        {
+                            imagesLinks.map(({ text, href }) => (
+                                <li>
+                                    <a
+                                        class="text-muted-foreground hover:text-foreground transition-colors group"
+                                        href={href}
+                                    >
+                                        <span class="relative inline-block">
+                                            {text}
+                                            <span class="absolute left-0 top-full block h-[1px] w-full max-w-0 bg-current transition-all duration-300 group-hover:max-w-full" />
+                                        </span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+
+                <div
+                    class="flex flex-col items-center text-center sm:items-start sm:text-left"
+                >
+                    <p class="font-semibold">Projects</p>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        {
+                            projectLinks.map(({ text, href }) => (
+                                <li>
+                                    <a
+                                        class="text-muted-foreground hover:text-foreground transition-colors group"
+                                        href={href}
+                                    >
+                                        <span class="relative inline-block">
+                                            {text}
+                                            <span class="absolute left-0 top-full block h-[1px] w-full max-w-0 bg-current transition-all duration-300 group-hover:max-w-full" />
+                                        </span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+
+                <div
+                    class="flex flex-col items-center text-center sm:items-start sm:text-left"
+                >
+                    <p class="font-semibold">Tools</p>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        {
+                            toolsLinks.map(({ text, href }) => (
+                                <li>
+                                    <a
+                                        href={href}
+                                        class="text-muted-foreground hover:text-foreground transition-colors group"
+                                    >
+                                        <span class="relative inline-block">
+                                            {text}
+                                            <span class="absolute left-0 top-full block h-[1px] w-full max-w-0 bg-current transition-all duration-300 group-hover:max-w-full" />
+                                        </span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+
+                <div
+                    class="flex flex-col items-center text-center sm:items-start sm:text-left"
+                >
+                    <p class="font-semibold">Team</p>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        <li
+                            class="flex flex-wrap justify-center sm:justify-start gap-2"
+                        >
+                            {
+                                membersInfo.map(({ name, img, link }) => (
+                                    <a
+                                        href={link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        title={name}
+                                        class="group relative"
+                                    >
+                                        <div class="h-7 w-7 rounded-full border-2 border-background ring-1 ring-border overflow-hidden">
+                                            <img
+                                                src={img}
+                                                alt={name}
+                                                class="h-full w-full object-cover"
+                                            />
+                                        </div>
+                                    </a>
+                                ))
+                            }
+                        </li>
+                        {
+                            aboutInfo.map(({ icon: Icon, text, href }) => (
+                                <li>
+                                    <a
+                                        class="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+                                        href={href}
+                                    >
+                                        <Icon className="h-4 w-4" />
+                                        <span class="relative inline-block">
+                                            {text}
+                                            <span class="absolute left-0 top-full block h-[1px] w-full max-w-0 bg-current transition-all duration-300 group-hover:max-w-full" />
+                                        </span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 border-t pt-8">
+            {/* Disclaimer Text */}
+            <!-- <p class="text-xs text-muted-foreground text-left mb-3">
+                Figures indexed for academic preview only. Copyright © original
+                authors.
+            </p> -->
+
+            <div
+                class="flex flex-col items-center justify-between gap-4 sm:flex-row"
+            >
+                <p class="text-xs text-muted-foreground">
+                    &copy; {new Date().getFullYear()}
+                    {data.company.name}. All rights reserved.
+                </p>
+                <div
+                    class="flex items-center gap-4 text-xs text-muted-foreground"
+                >
+                    <a href="#" class="hover:underline underline-offset-4"
+                        >Privacy Policy</a
+                    >
+                    <a
+                        href="/about/terms"
+                        class="hover:underline underline-offset-4"
+                        >Terms of Service</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,225 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import MasonryGallery from "@/components/gallery-ui/MasonryGallery.astro";
+import ImageCard from "@/components/gallery-ui/ImageCard.astro";
+import type { ImageItem } from "@/components/test/image-item";
+import { Image, Search } from "lucide-react";
+import { getCollection } from "astro:content";
+
+const content = {
+    title: "Header Gallery",
+};
+
+// Fetch all papers from header category
+const headerPapers = await getCollection("images", ({ id }: { id: string }) => {
+    return id.startsWith("header/paper/");
+});
+
+// Transform content collection data to ImageItem format
+const image_info: ImageItem[] = headerPapers
+    .map((entry: any) => {
+        const { id, data, body } = entry;
+        const slug = entry.slug;
+
+        // Extract filename from id (e.g., "header/paper/Bian_DynamicCity_2025.md" -> "Bian_DynamicCity_2025")
+        const filename = id.split("/").pop()?.replace(".md", "") || "";
+        const category = "header";
+
+        return {
+            id: `${category}-${filename}`, // Use category prefix for unique IDs
+            slug: slug,
+            category: "header" as const,
+            image: `/src/content/images/header/images/${data.image}`,
+            tags: data.tags || [],
+            title: data.title,
+            authors: data.authors.join(", "),
+            abstract: body || "",
+            year: data.year,
+            conference: data.conference,
+            license: data.license || "",
+            bibtex: data.bibtex,
+            paperLink: data.paper,
+            githubLink: data.code,
+            projectpageLink: data.project,
+        };
+    })
+    .sort((a: ImageItem, b: ImageItem) => b.year.localeCompare(a.year)); // Sort by year descending
+---
+
+<MainLayout content={content}>
+    <div class="py-10 relative">
+        {/* Decorative Background */}
+        <div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.05),rgba(255,255,255,0))]"
+            >
+            </div>
+            <div
+                class="absolute top-0 left-0 right-0 h-96 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]"
+            >
+            </div>
+        </div>
+
+        <div class="text-center mb-12 flex flex-col items-center">
+            <div
+                class="p-3 bg-secondary/50 rounded-full text-primary mb-4 ring-1 ring-border/50"
+            >
+                <Image className="w-8 h-8" />
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight mb-4 font-serif">
+                Header Gallery
+            </h1>
+            <p class="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Explore collection of header designs and compositions.
+            </p>
+        </div>
+        <div class="max-w-xl mx-auto mb-0 px-4 flex flex-col gap-6">
+            <div class="relative w-full group">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search headers..."
+                    class="peer w-full pl-11 pr-4 py-3 rounded-full border border-border/80 bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all text-sm shadow-sm hover:shadow-md"
+                />
+                <div
+                    class="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground peer-focus:text-foreground transition-colors pointer-events-none"
+                >
+                    <Search className="w-4 h-4" />
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2">
+                <button
+                    class="filter-btn active px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-foreground text-background shadow-sm hover:opacity-90"
+                    data-filter="all"
+                >
+                    All
+                </button>
+                {
+                    // Get unique conferences and count their occurrences
+                    Array.from(
+                        new Set(image_info.map((item) => item.conference)),
+                    )
+                        .map((conference) => ({
+                            name: conference,
+                            count: image_info.filter(
+                                (item) => item.conference === conference,
+                            ).length,
+                        }))
+                        .sort((a, b) => b.count - a.count) // Sort by count descending
+                        .slice(0, 10) // Take top 10
+                        .map(({ name }) => (
+                            <button
+                                class="filter-btn px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-background border border-border/60 text-muted-foreground hover:border-foreground/20 hover:text-foreground"
+                                data-filter={name}
+                                data-filter-type="conference"
+                            >
+                                {name}
+                            </button>
+                        ))
+                }
+            </div>
+        </div>
+
+        <MasonryGallery className="max-w-[90%] mx-auto" id="gallery-grid">
+            {
+                image_info.map((item, i) => (
+                    <div
+                        class="mb-4 break-inside-avoid gallery-item transition-all duration-500 ease-out"
+                        data-tags={item.tags?.join(",").toLowerCase() || ""}
+                        data-title={item.title?.toLowerCase() || ""}
+                        data-authors={item.authors?.toLowerCase() || ""}
+                        data-abstract={
+                            item.abstract?.toLowerCase().slice(0, 500) || ""
+                        }
+                        data-conference={item.conference}
+                    >
+                        <ImageCard data={item} index={i} />
+                    </div>
+                ))
+            }
+        </MasonryGallery>
+    </div>
+
+    <script is:inline>
+        const buttons = document.querySelectorAll(".filter-btn");
+        const searchInput = document.getElementById("search-input");
+        const items = document.querySelectorAll(".gallery-item");
+
+        let currentFilter = "all";
+        let searchQuery = "";
+
+        function filterItems() {
+            items.forEach((item) => {
+                const conference = item.getAttribute("data-conference") || "";
+                const title = item.getAttribute("data-title") || "";
+                const tags = item.getAttribute("data-tags") || "";
+                const authors = item.getAttribute("data-authors") || "";
+                const abstract = item.getAttribute("data-abstract") || "";
+
+                const matchesFilter =
+                    currentFilter === "all" || conference === currentFilter;
+
+                // Search across title, tags, authors, and abstract
+                const matchesSearch =
+                    searchQuery === "" ||
+                    title.includes(searchQuery) ||
+                    tags.includes(searchQuery) ||
+                    authors.includes(searchQuery) ||
+                    abstract.includes(searchQuery);
+
+                if (matchesFilter && matchesSearch) {
+                    item.style.display = "";
+                    setTimeout(() => {
+                        item.style.opacity = "1";
+                        item.style.transform = "translateY(0)";
+                    }, 10);
+                } else {
+                    item.style.opacity = "0";
+                    item.style.transform = "translateY(20px)";
+                    setTimeout(() => {
+                        item.style.display = "none";
+                    }, 300);
+                }
+            });
+        }
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                buttons.forEach((b) => {
+                    b.classList.remove(
+                        "bg-foreground",
+                        "text-background",
+                        "shadow-sm",
+                    );
+                    b.classList.add(
+                        "bg-background",
+                        "border",
+                        "border-border/60",
+                        "text-muted-foreground",
+                    );
+                });
+                btn.classList.remove(
+                    "bg-background",
+                    "border",
+                    "border-border/60",
+                    "text-muted-foreground",
+                );
+                btn.classList.add(
+                    "bg-foreground",
+                    "text-background",
+                    "shadow-sm",
+                );
+
+                currentFilter = btn.getAttribute("data-filter");
+                filterItems();
+            });
+        });
+
+        searchInput?.addEventListener("input", (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            filterItems();
+        });
+    </script>
+</MainLayout>
+```

@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import { GlobalSearch } from "./GlobalSearch";
+
+// Fetch all data for global search
+const allImagePapers = await getCollection("images");
+const allProjects = await getCollection("project_page");
+const allTools = await getCollection("tools");
+
+// Transform image data
+const imageData = allImagePapers.map((entry) => {
+    const { id, data } = entry;
+    const filename = id.split("/").pop()?.replace(".md", "") || "";
+    const category = id.split("/")[0];
+
+    return {
+        id: `${category}-${filename}`, // Add category prefix to match routing
+        title: data.title,
+        authors: data.authors.join(", "),
+        conference: data.conference,
+        image: `/src/content/images/${category}/images/${data.image}`,
+        tags: data.tags || [],
+    };
+});
+
+// Transform project data
+const projectData = allProjects.map((entry) => {
+    const { id, data } = entry;
+    const category = id.split("/")[0] as "examples" | "templates";
+
+    return {
+        title: data.title,
+        conference: data.conference,
+        image: `/src/content/project_page/${category}/images/${data.image}`,
+        link: data.link || "#",
+        tags: data.tags || [],
+        category,
+    };
+});
+
+// Transform tools data
+const toolData = allTools.map((entry) => {
+    const { id, data } = entry;
+    const category = id.split("/")[0] as "color" | "icon";
+
+    return {
+        name: data.name,
+        link: data.link || "#",
+        image: `/src/content/tools/${category}/images/${data.image}`,
+        category,
+    };
+});
+---
+
+<GlobalSearch
+    client:load
+    imageData={imageData}
+    projectData={projectData}
+    toolData={toolData}
+/>

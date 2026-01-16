@@ -1,0 +1,124 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import { Mail, MessageSquare } from "lucide-react";
+---
+
+<MainLayout content={{ title: "Contact Us | Paper Gallery" }}>
+    <div
+        class="relative min-h-[85vh] flex items-center justify-center py-20 px-4 bg-background overflow-hidden"
+    >
+        {/* Background Grid Pattern */}
+        <div class="absolute inset-0 -z-10">
+            <div
+                class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:48px_48px]"
+            >
+            </div>
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.08),transparent_60%)]"
+            >
+            </div>
+        </div>
+
+        {/* Gradient Orbs */}
+        <div
+            class="absolute top-20 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse pointer-events-none"
+        >
+        </div>
+        <div
+            class="absolute bottom-20 right-1/4 w-80 h-80 bg-primary/3 rounded-full blur-3xl animate-pulse pointer-events-none"
+            style="animation-delay: 1s;"
+        >
+        </div>
+
+        {/* Subtle grainy texture overlay */}
+        <div
+            class="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-multiply"
+            style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%221%22/%3E%3C/svg%3E');"
+        >
+        </div>
+
+        <div
+            class="w-full max-w-2xl mx-auto space-y-12 text-center relative z-10"
+        >
+            <div class="space-y-6 flex flex-col items-center">
+                <div
+                    class="p-3 bg-secondary/30 rounded-full text-primary ring-1 ring-border/20 backdrop-blur-sm"
+                >
+                    <Mail className="w-8 h-8" />
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl font-serif font-medium text-foreground tracking-tight"
+                >
+                    Community
+                </h1>
+                <p
+                    class="text-lg text-muted-foreground font-sans font-light leading-relaxed max-w-lg mx-auto"
+                >
+                    We value the community's input. Help us expand the gallery
+                    or reach out to us with your thoughts.
+                    <br />
+                    Send an email to
+                    <a
+                        href="mailto:papergallery@163.com"
+                        class="text-primary hover:underline"
+                    >
+                        papergallery@163.com
+                    </a>
+                    or our members.
+                </p>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2 text-left">
+                <div
+                    class="group p-8 rounded-lg bg-card border border-border hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-md"
+                >
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="text-primary opacity-80 group-hover:opacity-100 transition-opacity"
+                        >
+                            <MessageSquare className="h-5 w-5" />
+                        </div>
+                        <h3 class="font-serif text-lg font-medium">
+                            Recommend an Entry
+                        </h3>
+                    </div>
+                    <p class="text-sm text-muted-foreground leading-relaxed">
+                        Found a paper with exceptional figures or a useful tool?
+                        Submit your recommendation to help us curate the best
+                        resources for the community.
+                    </p>
+                </div>
+
+                <div
+                    class="group p-8 rounded-lg bg-card border border-border hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-md"
+                >
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="text-primary opacity-80 group-hover:opacity-100 transition-opacity"
+                        >
+                            <Mail className="h-5 w-5" />
+                        </div>
+                        <h3 class="font-serif text-lg font-medium">
+                            Feedback & Support
+                        </h3>
+                    </div>
+                    <p class="text-sm text-muted-foreground leading-relaxed">
+                        Encountered an issue or have a suggestion for the
+                        website? Reach out to us for bug reports, general
+                        inquiries. We will reply as soon as possible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8">
+                <a
+                    href="mailto:papergallery@163.com"
+                    class="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-8 py-3 text-sm font-medium text-background shadow-lg transition-all hover:bg-foreground/90 hover:translate-y-[-1px] active:translate-y-[1px]"
+                >
+                    <Mail className="h-4 w-4" />
+                    <span>Start a Conversation</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</MainLayout>

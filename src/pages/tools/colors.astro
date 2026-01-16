@@ -1,0 +1,57 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import RegularGallery from "@/components/gallery-ui/RegularGallery.astro";
+import ToolsCard from "@/components/gallery-ui/ToolsCard.astro";
+import type { ToolItem } from "@/components/test/tool-item";
+import { Palette } from "lucide-react";
+import { getCollection } from "astro:content";
+
+const content = {
+    title: "Color Tools",
+};
+
+// Fetch all tools from color category
+const colorTools = await getCollection("tools", ({ id }: { id: string }) => {
+    return id.startsWith("color/web/");
+});
+
+// Transform content collection data to ToolItem format
+const tool_info: ToolItem[] = colorTools
+    .map((entry: any) => {
+        const { id, data } = entry;
+        const slug = entry.slug;
+
+        const filename = id.split("/").pop()?.replace(".md", "") || "";
+
+        return {
+            id: filename,
+            slug: slug,
+            category: "color" as const,
+            name: data.name,
+            link: data.link,
+            image: `/src/content/tools/color/images/${data.image}`,
+        };
+    })
+    .sort((a: ToolItem, b: ToolItem) => a.name.localeCompare(b.name));
+---
+
+<MainLayout content={content}>
+    <div class="py-10 space-y-12">
+        <div class="text-center flex flex-col items-center">
+            <div
+                class="p-3 bg-secondary/70 rounded-full text-primary mb-4 ring-1 ring-border/50"
+            >
+                <Palette className="w-8 h-8" />
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight mb-4 font-serif">
+                Color Tools
+            </h1>
+            <p class="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Explore useful color tools and resources for your design needs.
+            </p>
+        </div>
+        <RegularGallery>
+            {tool_info.map((item, i) => <ToolsCard data={item} index={i} />)}
+        </RegularGallery>
+    </div>
+</MainLayout>

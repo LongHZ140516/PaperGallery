@@ -1,0 +1,105 @@
+---
+import { PAPER_PALETTE } from "../tools/paper-palette";
+import { ExternalLink } from "lucide-react";
+
+interface Props {
+    data: {
+        title: string;
+        conference: string;
+        image: string;
+        link: string;
+        tags: string[];
+    };
+    index: number;
+}
+
+const { data, index } = Astro.props;
+const { title, conference, image, link, tags } = data;
+const paperColor =
+    PAPER_PALETTE.find((paper) => paper.name === conference)?.color ||
+    "#48cae4";
+
+// Animation delay calculation as a CSS variable
+const animationDelay = `${index * 0.06}s`;
+---
+
+<div
+    class="group flex flex-col gap-3 opacity-0 translate-y-8 animate-fade-in-up"
+    style={{ animationDelay }}
+    role="article"
+    aria-label={`project card ${title}`}
+>
+    {/* Image Container with hover effect */}
+    <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        class="block overflow-hidden rounded-xl bg-muted relative aspect-video shadow-sm transition-all hover:shadow-md"
+    >
+        <img
+            src={image}
+            alt={title}
+            class="h-full w-full object-cover transition-transform duration-300 md:group-hover:scale-105"
+            loading="lazy"
+        />
+    </a>
+
+    {/* Content Below */}
+    <div class="flex items-start justify-between gap-4">
+        <div class="space-y-1 flex-1 min-w-0">
+            <h3
+                class="font-semibold text-lg leading-tight group-hover:underline decoration-primary/50 underline-offset-4 decoration-2 transition-all mb-2 wrap-break-word"
+            >
+                {title}
+            </h3>
+            <div
+                class="flex flex-wrap gap-2 text-xs text-muted-foreground mt-0.5"
+            >
+                {
+                    conference && (
+                        <span
+                            class="inline-flex items-center rounded-sm px-1.5 py-0.5 font-medium ring-1 ring-inset ring-black/10 text-white"
+                            style={`background-color: ${paperColor}`}
+                        >
+                            {conference}
+                        </span>
+                    )
+                }
+                {
+                    tags.map((tag) => (
+                        <span class="inline-flex items-center rounded-sm px-1.5 py-0.5 ring-1 ring-inset ring-border bg-background text-muted-foreground">
+                            {tag}
+                        </span>
+                    ))
+                }
+            </div>
+        </div>
+
+        <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            class="shrink-0 text-muted-foreground hover:text-primary transition-colors p-1"
+        >
+            <ExternalLink className="h-5 w-5" />
+            <span class="sr-only">Open Project</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(2rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.4s ease-out forwards;
+    }
+</style>

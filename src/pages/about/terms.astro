@@ -1,0 +1,319 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import {
+    FileText,
+    AlertTriangle,
+    Scale,
+    Mail,
+    Shield,
+    ExternalLink,
+} from "lucide-react";
+---
+
+<MainLayout
+    content={{ title: "Terms of Use & Copyright Disclaimer | Paper Gallery" }}
+>
+    <div
+        class="min-h-screen py-20 lg:py-32 px-4 relative overflow-hidden bg-background"
+    >
+        {/* Subtle grainy texture overlay */}
+        <div
+            class="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-multiply"
+            style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%221%22/%3E%3C/svg%3E');"
+        >
+        </div>
+
+        <div class="container relative z-10 max-w-4xl mx-auto">
+            {/* Header */}
+            <div class="flex flex-col items-center text-center mb-16 space-y-6">
+                <div
+                    class="p-3 bg-secondary/30 rounded-full text-primary mb-2 ring-1 ring-border/20 backdrop-blur-sm"
+                >
+                    <Scale className="w-8 h-8" />
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl font-serif font-medium tracking-tight text-foreground"
+                >
+                    Terms of Use & Copyright Disclaimer
+                </h1>
+
+                {/* Agreement Clause */}
+                <div
+                    class="max-w-3xl mx-auto bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6"
+                >
+                    <p
+                        class="text-sm md:text-base text-foreground/90 font-medium leading-relaxed"
+                    >
+                        By accessing or using Paper Gallery, you acknowledge
+                        that you have read, understood, and agree to be bound by
+                        these Terms. If you do not agree to these Terms, please
+                        do not use this website.
+                    </p>
+                </div>
+            </div>
+
+            {/* Content Sections */}
+            <div class="space-y-12">
+                {/* Section 1: Nature of the Website */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <FileText className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                1. Nature of the Website
+                            </h2>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Paper Gallery is a <strong
+                                    class="text-foreground"
+                                    >non-profit academic index and curation
+                                    platform</strong
+                                > dedicated to bridging science and design. We curate
+                                exceptional paper figures and web layouts solely for
+                                educational, research, and inspirational purposes.
+                                We do not engage in any commercial activity, sales,
+                                or monetization of the indexed content.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section 2: Copyright Ownership */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <Shield className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                2. Copyright Ownership & Licensing
+                            </h2>
+                            <p class="text-muted-foreground leading-relaxed">
+                                This website acts as a directory. <strong
+                                    class="text-foreground"
+                                    >Paper Gallery claims no ownership</strong
+                                > over the original academic papers, figures, datasets,
+                                code, or project pages displayed or linked herein.
+                            </p>
+                            <ul
+                                class="list-disc list-outside pl-5 space-y-3 text-muted-foreground"
+                            >
+                                <li>
+                                    <strong>Ownership:</strong> All intellectual property
+                                    rights belong to the respective original authors,
+                                    institutions, and publishers (e.g., IEEE, CVF,
+                                    Springer, Nature, ACM).
+                                </li>
+                                <li>
+                                    <strong>Compliance:</strong> Users accessing content
+                                    through this site must strictly comply with the
+                                    original licensing terms set forth by the content
+                                    owners.
+                                </li>
+                                <li>
+                                    <strong>Attribution:</strong> We strive to provide
+                                    accurate attribution and direct links to official
+                                    sources (DOI, ArXiv, Project Page) to ensure credit
+                                    is given where due.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section 3: Fair Use & Indexing */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <Scale className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                3. Fair Use & Indexing Policy
+                            </h2>
+                            <div class="space-y-4">
+                                <div class="pl-4 border-l-2 border-primary/30">
+                                    <h3
+                                        class="font-medium text-foreground mb-2"
+                                    >
+                                        Previews Only
+                                    </h3>
+                                    <p
+                                        class="text-muted-foreground leading-relaxed"
+                                    >
+                                        Images displayed are screen-resolution
+                                        previews used strictly for indexing and
+                                        visual navigation. They are not
+                                        substitutes for the original
+                                        high-resolution academic works. This
+                                        usage is intended to fall under "Fair
+                                        Use" for scholarship and research.
+                                    </p>
+                                </div>
+                                <div class="pl-4 border-l-2 border-primary/30">
+                                    <h3
+                                        class="font-medium text-foreground mb-2"
+                                    >
+                                        No Hosting of PDFs
+                                    </h3>
+                                    <p
+                                        class="text-muted-foreground leading-relaxed"
+                                    >
+                                        We do NOT host full-text PDF files. All
+                                        download actions redirect users to the
+                                        official repositories or publisher
+                                        websites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section 4: Copyright Infringement & Takedown */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <AlertTriangle className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                4. Copyright Infringement & Takedown
+                            </h2>
+                            <p class="text-muted-foreground leading-relaxed">
+                                We rigorously respect intellectual property
+                                rights. If you are a copyright holder and
+                                believe your work has been indexed improperly or
+                                without necessary permission, please contact us
+                                immediately.
+                            </p>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Upon receipt of a valid removal request, we will <strong
+                                    class="text-foreground"
+                                    >expedite the removal of the disputed
+                                    content within 24 hours</strong
+                                >.
+                            </p>
+                            <div class="flex flex-wrap gap-3 pt-2">
+                                <a
+                                    href="/about/contact"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+                                >
+                                    <Mail className="w-4 h-4" />
+                                    Submit Takedown Request
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section 5: Abuse & Inappropriate Content */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <Shield className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                5. Abuse & Inappropriate Content
+                            </h2>
+                            <p class="text-muted-foreground leading-relaxed">
+                                We maintain a professional academic standard. If
+                                you encounter any content that is malicious,
+                                spam, or widely offensive, please report it. We
+                                reserve the right to remove any content at our
+                                sole discretion to maintain the integrity of the
+                                gallery.
+                            </p>
+                            <div class="flex flex-wrap gap-3 pt-2">
+                                <a
+                                    href="/about/contact"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg text-sm font-medium hover:bg-secondary/80 transition-colors"
+                                >
+                                    <Shield className="w-4 h-4" />
+                                    Report Abuse
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section 6: Disclaimer of Warranties */}
+                <section
+                    class="bg-card/50 rounded-2xl p-8 border border-border/50 shadow-sm"
+                >
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="p-2 bg-primary/10 rounded-lg text-primary shrink-0"
+                        >
+                            <Scale className="w-5 h-5" />
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-semibold text-foreground">
+                                6. Disclaimer of Warranties & Liability
+                            </h2>
+                            <ul
+                                class="list-disc list-outside pl-5 space-y-2 text-muted-foreground"
+                            >
+                                <li>
+                                    <strong>"As Is" Basis:</strong> The services and
+                                    content are provided on an "as is" and "as available"
+                                    basis without any warranties of any kind, express
+                                    or implied.
+                                </li>
+                                <li>
+                                    <strong>Accuracy:</strong> We do not warrant the
+                                    accuracy, completeness, or reliability of any
+                                    content. Users are responsible for verifying information
+                                    with original sources.
+                                </li>
+                                <li>
+                                    <strong>External Links:</strong> This site contains
+                                    links to third-party websites. We are not responsible
+                                    for the content, privacy policies, or practices
+                                    of any third-party sites. Accessing them is at
+                                    your own risk.
+                                </li>
+                                <li>
+                                    <strong>Limitation of Liability:</strong> In no
+                                    event shall Paper Gallery or its contributors
+                                    be liable for any direct, indirect, incidental,
+                                    or consequential damages arising out of the use
+                                    or inability to use this website.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Additional Notice */}
+                <div class="text-center pt-8 border-t border-border/50">
+                    <p class="text-sm text-muted-foreground">
+                        Last updated: January 2026
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</MainLayout>

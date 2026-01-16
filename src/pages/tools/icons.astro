@@ -1,0 +1,57 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import RegularGallery from "@/components/gallery-ui/RegularGallery.astro";
+import ToolsCard from "@/components/gallery-ui/ToolsCard.astro";
+import type { ToolItem } from "@/components/test/tool-item";
+import { Package } from "lucide-react";
+import { getCollection } from "astro:content";
+
+const content = {
+    title: "Icon Tools",
+};
+
+// Fetch all tools from icon category
+const iconTools = await getCollection("tools", ({ id }: { id: string }) => {
+    return id.startsWith("icon/web/");
+});
+
+// Transform content collection data to ToolItem format
+const tool_info: ToolItem[] = iconTools
+    .map((entry: any) => {
+        const { id, data } = entry;
+        const slug = entry.slug;
+
+        const filename = id.split("/").pop()?.replace(".md", "") || "";
+
+        return {
+            id: filename,
+            slug: slug,
+            category: "icon" as const,
+            name: data.name,
+            link: data.link,
+            image: `/src/content/tools/icon/images/${data.image}`,
+        };
+    })
+    .sort((a: ToolItem, b: ToolItem) => a.name.localeCompare(b.name));
+---
+
+<MainLayout content={content}>
+    <div class="py-10 space-y-12">
+        <div class="text-center flex flex-col items-center">
+            <div
+                class="p-3 bg-secondary/70 rounded-full text-primary mb-4 ring-1 ring-border/50"
+            >
+                <Package className="w-8 h-8" />
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight mb-4 font-serif">
+                Icon Tools
+            </h1>
+            <p class="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Discover icon libraries and tools for your design needs.
+            </p>
+        </div>
+        <RegularGallery>
+            {tool_info.map((item, i) => <ToolsCard data={item} index={i} />)}
+        </RegularGallery>
+    </div>
+</MainLayout>

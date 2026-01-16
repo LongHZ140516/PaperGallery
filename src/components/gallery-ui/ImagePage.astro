@@ -1,0 +1,219 @@
+---
+import { Vibrant } from "node-vibrant/node";
+import { Toaster } from "sonner";
+import { ToastListener } from "../ui/ToastListener";
+import { ImageActions } from "./ImageActions";
+import { getLicenseDisplayInfo } from "@/lib/license-utils";
+import { Eye, EyeOff } from "lucide-react";
+
+interface Props {
+    title: string;
+    authors: string;
+    abstract: string;
+    cite: string;
+    serverImgSrc: string; // For Vibrant extraction (server-side)
+    clientImgSrc: string; // For browser display
+    paperLink: string | null;
+    githubLink: string | null;
+    projectpageLink: string | null;
+    license?: string;
+}
+
+const {
+    title,
+    authors,
+    abstract,
+    cite,
+    serverImgSrc,
+    clientImgSrc,
+    paperLink,
+    githubLink,
+    projectpageLink,
+    license,
+} = Astro.props;
+
+// Get license display info
+const { isOpen, displayText } = getLicenseDisplayInfo(license);
+
+let swatches: { name: string; hex: string }[] = [];
+try {
+    // Use server path for Vibrant color extraction with optimized settings
+    const palette = await Vibrant.from(serverImgSrc)
+        .quality(1) // Higher quality sampling
+        .maxColorCount(256) // More colors to analyze
+        .getPalette();
+    const order = [
+        "Vibrant",
+        "DarkVibrant",
+        "LightVibrant",
+        "Muted",
+        "DarkMuted",
+        "LightMuted",
+    ];
+    swatches = order
+        .map((name) => ({ name, sw: (palette as any)[name] }))
+        .filter(({ sw }) => Boolean(sw))
+        .map(({ name, sw }: any) => ({ name, hex: sw.hex ?? sw.getHex?.() }))
+        .filter((x) => Boolean(x.hex));
+} catch (e) {
+    console.error("Color extraction failed:", e);
+}
+
+const buttonClass =
+    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 relative shadow-md hover:scale-110 !transition-all";
+---
+
+<div class="min-h-screen bg-background">
+    <Toaster client:idle />
+    <ToastListener client:idle />
+    <div class="mx-auto max-w-[80%] py-8 px-4 md:px-6 lg:px-8">
+        <div class="flex gap-6 items-start justify-center">
+            {/* Search Palette Column */}
+            <aside
+                class="flex flex-col items-center space-y-4"
+                style={{ alignSelf: "start" }}
+            >
+                {
+                    swatches.map(({ name, hex }) => (
+                        <button
+                            class={buttonClass}
+                            style={{ backgroundColor: hex }}
+                            title={`${name}: ${hex}`}
+                            data-hex={hex}
+                            data-name={name}
+                            onclick="copyColorToClipboard(this)"
+                        />
+                    ))
+                }
+            </aside>
+
+            {/* Main Image */}
+            <div class="h-full flex flex-col items-center">
+                <img src={clientImgSrc} width={900} height={800} alt={title} />
+
+                {/* Disclaimer and License Row */}
+                <div
+                    class="w-full max-w-[900px] flex items-center justify-between mt-3 px-1"
+                >
+                    {/* Disclaimer Text - Left */}
+                    <p class="text-xs text-gray-500 dark:text-gray-400">
+                        Figures indexed for academic preview only. Copyright ©
+                        original authors.
+                    </p>
+
+                    {/* License Badge - Right */}
+                    <span
+                        class:list={[
+                            "inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset transition-colors",
+                            isOpen
+                                ? "bg-green-100 text-green-800 ring-green-200 dark:bg-green-900/50 dark:text-green-200 dark:ring-green-800"
+                                : "bg-red-100 text-red-800 ring-red-200 dark:bg-red-900/50 dark:text-red-200 dark:ring-red-800",
+                        ]}
+                        title={isOpen
+                            ? "Open License"
+                            : "Copyrighted / Preview Only"}
+                    >
+                        {
+                            isOpen ? (
+                                <Eye className="w-3.5 h-3.5" />
+                            ) : (
+                                <EyeOff className="w-3.5 h-3.5" />
+                            )
+                        }
+                        {displayText}
+                    </span>
+                </div>
+            </div>
+
+            {/* Actions Column */}
+            <ImageActions
+                client:load
+                paperLink={paperLink}
+                projectpageLink={projectpageLink}
+                githubLink={githubLink}
+                cite={cite}
+                imgSrc={clientImgSrc}
+                title={title}
+            />
+        </div>
+
+        {/* Paper Info */}
+        <div class="mt-4 text-center">
+            <h1 class="mt-8 text-2xl font-bold mx-auto max-w-[60ch]">
+                {title}
+            </h1>
+            <p class="mt-4 mx-auto max-w-[70ch] text-sm text-muted-foreground">
+                {authors}
+            </p>
+            <h2 class="mt-4 text-lg font-semibold mx-auto max-w-[70ch]">
+                Abstract
+            </h2>
+            <p class="mt-4 mx-auto max-w-[60ch] text-base">{abstract}</p>
+        </div>
+    </div>
+</div>
+
+<script is:inline>
+    function showToast(message, type = "default", className = "") {
+        const event = new CustomEvent("astro-toast", {
+            detail: {
+                message: message,
+                type: type,
+                className: className,
+            },
+        });
+        window.dispatchEvent(event);
+    }
+
+    function copyColorToClipboard(button) {
+        const hex = button.dataset.hex;
+        const name = button.dataset.name;
+        if (!hex) return;
+
+        navigator.clipboard
+            .writeText(hex)
+            .then(() => {
+                showToast(
+                    `${hex} copied to clipboard`,
+                    "success",
+                    "!bg-background !text-foreground !border !border-border",
+                );
+            })
+            .catch((err) => {
+                console.error("Failed to copy: ", err);
+                showToast("Failed to copy", "error");
+            });
+    }
+
+    function copyToClipboard(text) {
+        if (!text) return;
+        navigator.clipboard
+            .writeText(text)
+            .then(() => {
+                showToast(
+                    "Copied to clipboard!",
+                    "success",
+                    "!bg-background !text-foreground !border !border-border",
+                );
+            })
+            .catch((err) => {
+                console.error("Failed to copy: ", err);
+                showToast("Failed to copy", "error");
+            });
+    }
+
+    function downloadImage(src, name) {
+        if (!src) return;
+        const link = document.createElement("a");
+        link.href = src;
+        link.download = name || "image";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    // Make functions globally available
+    window.copyColorToClipboard = copyColorToClipboard;
+    window.copyToClipboard = copyToClipboard;
+    window.downloadImage = downloadImage;
+</script>

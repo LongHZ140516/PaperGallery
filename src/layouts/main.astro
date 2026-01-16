@@ -1,16 +1,21 @@
 ---
-import '../styles/global.css';
-const { content } = Astro.props;
+import "../styles/global.css";
+import NavBar from "../components/gallery-ui/NavBar.astro";
+import Footer from "../components/gallery-ui/Footer.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
+		<link rel="icon" type="image/png" href="/logo.png" />
+		<title>Paper Gallery</title>
 	</head>
-	<body>
-		<slot />
+	<body class="flex flex-col min-h-screen bg-background">
+		<NavBar />
+		<main class="flex-1">
+			<slot />
+		</main>
+		<Footer />
 	</body>
 </html>

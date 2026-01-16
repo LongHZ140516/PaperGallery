@@ -1,0 +1,236 @@
+---
+import {
+    Github,
+    Search as SearchIcon,
+    Menu,
+    Image,
+    LayoutTemplate,
+    GalleryVerticalEnd,
+    FileJson,
+    Palette,
+    Shapes,
+    Users,
+    Mail,
+    FileText,
+} from "lucide-react";
+import { ThemeSwitcher } from "./theme-switcher";
+import GlobalSearchWrapper from "./GlobalSearchWrapper.astro";
+
+const images_components = [
+    {
+        type_name: "Header",
+        href: "/images/header",
+        description: "Collection of header images.",
+        icon: Image,
+    },
+    {
+        type_name: "Pipeline",
+        href: "/images/pipeline",
+        description: "Collection of pipeline diagrams.",
+        icon: LayoutTemplate,
+    },
+];
+
+const project_components = [
+    {
+        type_name: "Examples",
+        href: "/project/examples",
+        description: "Collection of project examples.",
+        icon: GalleryVerticalEnd,
+    },
+    {
+        type_name: "Templates",
+        href: "/project/templates",
+        description: "Collection of project templates.",
+        icon: FileJson,
+    },
+];
+
+const tools_components = [
+    {
+        type_name: "Colors",
+        href: "/tools/colors",
+        description: "Collection of color websites.",
+        icon: Palette,
+    },
+    {
+        type_name: "Icons",
+        href: "/tools/icons",
+        description: "Collection of icon websites.",
+        icon: Shapes,
+    },
+];
+
+const about_components = [
+    {
+        type_name: "Team",
+        href: "/about/team",
+        description: "Meet our dedicated team.",
+        icon: Users,
+    },
+    {
+        type_name: "Terms",
+        href: "/about/terms",
+        description: "Terms of Use & Copyright Disclaimer.",
+        icon: FileText,
+    },
+    {
+        type_name: "Contact",
+        href: "/about/contact",
+        description: "Get in touch with us.",
+        icon: Mail,
+    },
+];
+
+const navItems = [
+    { trigger: "Images", items: images_components },
+    { trigger: "Project Page", items: project_components },
+    { trigger: "Tools", items: tools_components },
+    { trigger: "About", items: about_components },
+];
+---
+
+<nav
+    class="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md"
+>
+    <div
+        class="container flex h-16 items-center justify-between px-4 sm:px-8 max-w-7xl mx-auto"
+    >
+        <div class="flex items-center gap-6 lg:gap-8">
+            {/* Mobile Menu Trigger */}
+            <label
+                for="mobile-menu-toggle"
+                class="lg:hidden cursor-pointer p-2 hover:bg-accent rounded-md"
+            >
+                <Menu className="h-6 w-6" />
+            </label>
+            <input
+                type="checkbox"
+                id="mobile-menu-toggle"
+                class="hidden peer"
+            />
+
+            {/* Brand */}
+            <a href="/" class="flex items-center gap-2">
+                <img
+                    src="/src/content/logo.png"
+                    alt="Logo"
+                    width={24}
+                    height={24}
+                    class="rounded-full"
+                />
+                <span
+                    class="hidden font-bold sm:inline-block font-serif tracking-tight"
+                    >Paper Gallery</span
+                >
+            </a>
+
+            {/* Desktop Navigation */}
+            <div class="hidden lg:flex gap-6">
+                <a
+                    href="/"
+                    class="text-sm font-medium hover:text-primary py-4 flex items-center transition-colors"
+                    >Home</a
+                >
+                {
+                    navItems.map((section) => (
+                        <div class="relative group">
+                            <button class="text-sm font-medium flex items-center gap-1 hover:text-primary py-4 outline-none transition-colors">
+                                {section.trigger}
+                            </button>
+                            <div class="absolute top-full left-0 w-[340px] p-2 bg-popover border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0">
+                                <ul class="grid gap-1">
+                                    {section.items.map((item) => (
+                                        <li>
+                                            <a
+                                                href={item.href}
+                                                class="flex items-start gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                            >
+                                                <div class="mt-1 p-1 bg-background rounded border border-border/50 text-muted-foreground group-hover:text-foreground group-hover:border-border transition-colors">
+                                                    <item.icon className="h-4 w-4" />
+                                                </div>
+                                                <div class="space-y-1">
+                                                    <div class="text-sm font-medium leading-none">
+                                                        {item.type_name}
+                                                    </div>
+                                                    <p class="line-clamp-2 text-xs leading-snug text-muted-foreground">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            {/* Mobile Navigation Drawer (Peer controlled) */}
+            <div
+                class="fixed inset-y-0 left-0 z-50 w-3/4 max-w-xs bg-background border-r shadow-xl transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out lg:hidden pt-10 px-6"
+            >
+                <label
+                    for="mobile-menu-toggle"
+                    class="absolute top-4 right-4 p-2 cursor-pointer">X</label
+                >
+                <div class="flex flex-col space-y-4">
+                    <a href="/" class="font-medium text-lg">Home</a>
+                    {
+                        navItems.map((section) => (
+                            <div class="space-y-2">
+                                <h4 class="font-medium text-muted-foreground">
+                                    {section.trigger}
+                                </h4>
+                                <div class="pl-4 border-l-2 flex flex-col gap-2">
+                                    {section.items.map((item) => (
+                                        <a
+                                            href={item.href}
+                                            class="flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground"
+                                        >
+                                            <item.icon className="h-4 w-4" />
+                                            {item.type_name}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+
+            {/* Overlay for mobile menu */}
+            <label
+                for="mobile-menu-toggle"
+                class="fixed inset-0 z-40 bg-black/50 hidden peer-checked:block lg:hidden backdrop-blur-sm"
+            ></label>
+        </div>
+
+        {/* Right Side Actions */}
+        <div class="flex flex-1 items-center justify-end space-x-4">
+            <div class="w-full flex-1 lg:w-auto lg:flex-none">
+                <GlobalSearchWrapper />
+            </div>
+            <div class="flex items-center gap-3">
+                <a
+                    href="https://github.com/LongHZ140516/awesome-framework-gallery"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <button
+                        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-2 border-foreground/10 hover:border-foreground/30 bg-background hover:bg-accent hover:text-accent-foreground h-9 w-9"
+                    >
+                        <Github className="h-4 w-4" />
+                        <span class="sr-only">GitHub</span>
+                    </button>
+                </a>
+                <div
+                    class="border-2 border-foreground/10 hover:border-foreground/30 rounded-md transition-colors bg-background"
+                >
+                    <ThemeSwitcher client:load />
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

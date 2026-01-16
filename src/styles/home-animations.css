@@ -1,0 +1,140 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Animated grid beams */
+@keyframes beam-horizontal {
+
+	0%,
+	100% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes beam-vertical {
+
+	0%,
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+/* Bento card gradient wave animation */
+@keyframes gradient-wave {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	50% {
+		background-position: 100% 100%;
+	}
+
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+/* Bento card hover gradient - Diagonal flowing gradient */
+.bento-gradient-hover {
+	background: linear-gradient(135deg,
+			rgba(var(--primary-rgb), 0.03) 0%,
+			rgba(var(--primary-rgb), 0.08) 25%,
+			rgba(var(--primary-rgb), 0.12) 50%,
+			rgba(var(--primary-rgb), 0.08) 75%,
+			rgba(var(--primary-rgb), 0.03) 100%);
+	background-size: 300% 300%;
+	animation: gradient-wave 4s ease-in-out infinite;
+}
+
+/* Static bento gradient background (always visible) */
+.bento-gradient-bg {
+	background: linear-gradient(145deg,
+			transparent 0%,
+			rgba(var(--primary-rgb), 0.02) 30%,
+			rgba(var(--primary-rgb), 0.04) 60%,
+			transparent 100%);
+}
+
+/* Enhanced mesh gradient for hover */
+.bento-mesh-gradient {
+	background:
+		radial-gradient(ellipse at 0% 0%,
+			rgba(var(--primary-rgb), 0.08) 0%,
+			transparent 50%),
+		radial-gradient(ellipse at 100% 100%,
+			rgba(var(--primary-rgb), 0.06) 0%,
+			transparent 50%);
+	background-size: 200% 200%;
+	animation: gradient-wave 6s ease-in-out infinite;
+}
+
+.beam-glow {
+	background: linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.8), transparent);
+	box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
+}
+
+.animate-beam-horizontal {
+	animation: beam-horizontal 6s ease-in-out infinite;
+}
+
+.animate-beam-vertical {
+	animation: beam-vertical 6s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 4rem !important;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3rem !important;
+	}
+
+	.grid-cols-2 {
+		grid-template-columns: 1fr !important;
+	}
+
+	.auto-rows-\[240px\] {
+		auto-rows: 200px !important;
+	}
+}
+
+@media (max-width: 640px) {
+	h1 {
+		font-size: 2.5rem !important;
+	}
+}

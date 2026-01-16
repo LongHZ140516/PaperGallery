@@ -1,0 +1,68 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import ImagePage from "@/components/gallery-ui/ImagePage.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+    // Get all papers from both header and pipeline categories
+    const allPapers = await getCollection("images");
+    const cwd = process.cwd();
+
+    return allPapers.map((entry) => {
+        const { id, data, body } = entry;
+        const filename = id.split("/").pop()?.replace(".md", "") || "";
+        const category = id.split("/")[0]; // header or pipeline
+
+        // Use category prefix to avoid ID conflicts between header and pipeline
+        const uniqueId = `${category}-${filename}`;
+
+        // Build paths for both server-side (Vibrant) and client-side (browser) access
+        const serverImagePath = `${cwd}/src/content/images/${category}/images/${data.image}`;
+        // For browser display, we'll use a path that references the source
+        const clientImagePath = `/src/content/images/${category}/images/${data.image}`;
+
+        return {
+            params: { id: uniqueId },
+            props: {
+                item: {
+                    id: uniqueId,
+                    title: data.title,
+                    authors: data.authors.join(", "),
+                    abstract: body || "",
+                    bibtex: data.bibtex || "",
+                    serverImagePath, // For Vibrant color extraction
+                    clientImagePath, // For browser display
+                    paperLink: data.paper || null,
+                    githubLink: data.code || null,
+                    projectpageLink: data.project || null,
+                    license: data.license || null,
+                },
+            },
+        };
+    });
+}
+
+const { item } = Astro.props;
+
+// Fallback values if data is missing
+const title = item.title || "Untitled Image";
+const authors = item.authors || "Unknown Authors";
+const abstract = item.abstract || "No abstract available.";
+const cite = item.bibtex || "";
+const license = item.license || "";
+---
+
+<MainLayout content={{ title: item.title }}>
+    <ImagePage
+        title={title}
+        authors={authors}
+        abstract={abstract}
+        cite={cite}
+        serverImgSrc={item.serverImagePath}
+        clientImgSrc={item.clientImagePath}
+        paperLink={item.paperLink || null}
+        githubLink={item.githubLink || null}
+        projectpageLink={item.projectpageLink || null}
+        license={license}
+    />
+</MainLayout>

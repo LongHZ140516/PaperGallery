@@ -1,0 +1,14 @@
+[
+  {
+    "file": "images/pipeline/paper/Alejandro_Bench_2024.md",
+    "type": "YAML_PARSE_ERROR",
+    "message": "unknown escape sequence (11:12)\n\n  8 | code: \"https://github.com/yeung-lab/Micro- ...\n  9 | project: \"https://ale9806.github.io/uBench ...\n 10 | bibtex: \"@article{lozano2024mu,\n 11 |   title={$\\{$$\\backslash$mu$\\}$-bench: A v ...\n-----------------^\n 12 |   author={Lozano, Alejandro and Nirschl, J ...\n 13 |   journal={arXiv preprint arXiv:2407.01791},",
+    "suggestion": "Use YAML block scalar (|) for bibtex field if it contains special characters"
+  },
+  {
+    "file": "images/pipeline/paper/Yu_4Real_2024.md",
+    "type": "YAML_PARSE_ERROR",
+    "message": "unknown escape sequence (12:130)\n\n  9 |  ... \n 10 |  ... \n 11 |  ... \n 12 |  ... r and Cao, Junli and Jeni, L{\\'a}szl{\\'o} and Tulyakov, Serge ...\n-----------------------------------------^\n 13 |  ... \n 14 |  ... ",
+    "suggestion": "Use YAML block scalar (|) for bibtex field if it contains special characters"
+  }
+]

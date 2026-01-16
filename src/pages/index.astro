@@ -1,25 +1,381 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
+import "../styles/global.css";
+import "../styles/home-animations.css";
+import MainLayout from "../layouts/main.astro";
+import {
+	GalleryVerticalEnd,
+	Image,
+	LayoutTemplate,
+	Palette,
+	Users,
+	FileJson,
+	ArrowRight,
+	Shapes,
+	Mail,
+	FileText,
+} from "lucide-react";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+const content = { title: "Paper Gallery" };
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<MainLayout content={content}>
+	<!-- Hero Section -->
+	<section
+		style="height: calc(100vh - 72px); min-height: 600px;"
+		class="relative overflow-hidden flex flex-col items-center justify-center"
+		id="hero"
+	>
+		<!-- Background Grid Pattern with Animated Beams -->
+		<div class="absolute inset-0 -z-10">
+			<!-- Base grid -->
+			<div
+				class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:48px_48px]"
+			>
+			</div>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+			<!-- Animated flowing beams -->
+			<div class="absolute inset-0 overflow-hidden">
+				<!-- Horizontal beams -->
+				<div
+					class="absolute top-[20%] left-0 w-full h-[2px] beam-glow animate-beam-horizontal"
+				>
+				</div>
+				<div
+					class="absolute top-[45%] left-0 w-full h-[2px] beam-glow animate-beam-horizontal"
+					style="animation-delay: 2s;"
+				>
+				</div>
+				<div
+					class="absolute top-[70%] left-0 w-full h-[2px] beam-glow animate-beam-horizontal"
+					style="animation-delay: 4s;"
+				>
+				</div>
+
+				<!-- Vertical beams -->
+				<div
+					class="absolute left-[15%] top-0 w-[2px] h-full beam-glow animate-beam-vertical"
+				>
+				</div>
+				<div
+					class="absolute left-[50%] top-0 w-[2px] h-full beam-glow animate-beam-vertical"
+					style="animation-delay: 3s;"
+				>
+				</div>
+				<div
+					class="absolute left-[85%] top-0 w-[2px] h-full beam-glow animate-beam-vertical"
+					style="animation-delay: 1.5s;"
+				>
+				</div>
+			</div>
+
+			<!-- Radial gradient overlay -->
+			<div
+				class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--primary-rgb),0.08),transparent_50%)]"
+			>
+			</div>
 		</div>
-	</body>
-</html>
+
+		<!-- Decorative Floating Elements -->
+		<div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+			<div
+				class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse"
+				style="animation-duration: 8s;"
+			>
+			</div>
+			<div
+				class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/3 rounded-full blur-3xl animate-pulse"
+				style="animation-delay: 4s; animation-duration: 10s;"
+			>
+			</div>
+		</div>
+
+		<div
+			class="container mx-auto px-4 text-center max-w-5xl relative z-10 flex flex-col items-center -mt-10"
+		>
+			<!-- Version Badge -->
+			<div
+				class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/30 border border-border/50 text-xs font-medium text-muted-foreground mb-6 animate-fade-in translate-y-4 opacity-0 backdrop-blur-sm shadow-sm"
+				style="animation-delay: 0.1s; animation-fill-mode: forwards;"
+			>
+				<span class="relative flex h-2 w-2">
+					<span
+						class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/75 opacity-75"
+					></span>
+					<span
+						class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+					></span>
+				</span>
+				Paper Gallery v1.0
+			</div>
+
+			<!-- Main Title with Decorative Frame -->
+			<div
+				class="relative mb-6 animate-fade-in opacity-0 translate-y-4"
+				style="animation-delay: 0.2s; animation-fill-mode: forwards;"
+			>
+				<!-- Corner Decorations -->
+				<div
+					class="absolute -top-6 -left-10 w-16 h-16 border-l-2 border-t-2 border-primary/20 rounded-tl-2xl"
+				>
+				</div>
+				<div
+					class="absolute -top-6 -right-10 w-16 h-16 border-r-2 border-t-2 border-primary/20 rounded-tr-2xl"
+				>
+				</div>
+				<div
+					class="absolute -bottom-6 -left-10 w-16 h-16 border-l-2 border-b-2 border-primary/20 rounded-bl-2xl"
+				>
+				</div>
+				<div
+					class="absolute -bottom-6 -right-10 w-16 h-16 border-r-2 border-b-2 border-primary/20 rounded-br-2xl"
+				>
+				</div>
+
+				<h1
+					class="font-serif text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight px-8 leading-[1.1]"
+				>
+					<span
+						class="block text-transparent bg-clip-text bg-linear-to-b from-foreground via-foreground/90 to-foreground/70"
+						>Paper</span
+					>
+					<span
+						class="block text-transparent bg-clip-text bg-linear-to-b from-primary via-primary/90 to-primary/60 mt-2"
+						>Gallery</span
+					>
+				</h1>
+			</div>
+
+			<!-- Subtitle -->
+			<p
+				class="text-base md:text-lg lg:text-xl text-muted-foreground/80 max-w-2xl mx-auto mt-10 mb-10 font-light leading-relaxed animate-fade-in opacity-0 translate-y-4"
+				style="animation-delay: 0.3s; animation-fill-mode: forwards;"
+			>
+				A curated gallery of aesthetic paper figures, project pages, and
+				design tools tailored for modern scientific visualization.
+			</p>
+
+			<!-- Redesigned Explore Button -->
+			<button
+				onclick="document.getElementById('bento-grid').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+				class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-2xl text-sm font-medium bg-primary text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 hover:scale-[1.02] transition-all duration-300 animate-fade-in opacity-0 translate-y-1 cursor-pointer overflow-hidden"
+				style="animation-delay: 0.4s; animation-fill-mode: forwards;"
+			>
+				<!-- Shimmer effect -->
+				<div class="absolute inset-0 overflow-hidden rounded-2xl">
+					<div
+						class="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+					>
+					</div>
+				</div>
+
+				<!-- Content -->
+				<span class="relative">Explore Collection</span>
+				<ArrowRight
+					className="relative w-4 h-4 group-hover:translate-x-1 transition-transform"
+				/>
+			</button>
+		</div>
+	</section>
+
+	<!-- Bento Grid Section -->
+	<section
+		id="bento-grid"
+		class="relative container mx-auto px-4 pb-32 pt-20 scroll-mt-8"
+	>
+		<!-- Decorative Background for Bento Section -->
+		<div class="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+			<!-- Dot pattern -->
+			<div
+				class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(var(--primary-rgb),0.08)_1px,transparent_1px)] bg-[size:32px_32px]"
+			>
+			</div>
+			<!-- Subtle gradient overlay -->
+			<div
+				class="absolute inset-0 bg-[radial-gradient(circle_1200px_at_50%_100px,rgba(var(--primary-rgb),0.05),transparent)]"
+			>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
+			{/* 
+                Bento Grid Items Data
+                Design: Uniform "Claude-style" neutral theme
+                Animation: Bottom-right radial gradient spread
+            */}
+			{
+				[
+					{
+						title: "Headers",
+						desc: "Paper Header Figures. Visually striking summaries.",
+						link: "/images/header",
+						icon: Image,
+						bgIcon: Image,
+						category: "Images",
+                        catId: 1,
+						colSpan: "md:col-span-2",
+                        delay: 0.1
+					},
+					{
+						title: "Examples",
+						desc: "Curated aesthetic project pages.",
+						link: "/project/examples",
+						icon: GalleryVerticalEnd,
+						bgIcon: GalleryVerticalEnd,
+						category: "Projects",
+                        catId: 2,
+						colSpan: "md:col-span-1",
+                        delay: 0.2
+					},
+                    {
+						title: "Colors",
+						desc: "Color resources' website for design.",
+						link: "/tools/colors",
+						icon: Palette,
+						bgIcon: Palette,
+						category: "Tools",
+                        catId: 3,
+						colSpan: "md:col-span-1",
+                        delay: 0.3
+					},
+					{
+						title: "Pipeline",
+						desc: "Method/Pipeline diagrams. Flowcharts explaining models.",
+						link: "/images/pipeline",
+						icon: LayoutTemplate,
+						bgIcon: LayoutTemplate,
+						category: "Images",
+                        catId: 1,
+						colSpan: "md:col-span-2",
+                        delay: 0.4
+					},
+                    {
+						title: "Templates",
+						desc: "Ready-to-use project page templates.",
+						link: "/project/templates",
+						icon: FileJson,
+						bgIcon: FileJson,
+						category: "Projects",
+                        catId: 2,
+						colSpan: "md:col-span-1",
+                        delay: 0.5
+					},
+                    {
+						title: "Team",
+						desc: "The Architects behind Paper Gallery.",
+						link: "/about/team",
+						icon: Users,
+						bgIcon: Users,
+						category: "About",
+                        catId: 4,
+						colSpan: "md:col-span-1",
+                        delay: 0.6
+					},
+                    {
+						title: "Icons",
+						desc: "High-quality icon resources website for design.",
+						link: "/tools/icons",
+						icon: Shapes,
+						bgIcon: Shapes,
+						category: "Tools",
+                        catId: 3,
+						colSpan: "md:col-span-1",
+                        delay: 0.7
+					},
+                    {
+						title: "Terms",
+						desc: "Copyright, Usage Policy & Disclaimer.",
+						link: "/about/terms",
+						icon: FileText,
+						bgIcon: FileText,
+						category: "About",
+                        catId: 4,
+						colSpan: "md:col-span-1",
+                        delay: 0.8
+					},
+                    {
+						title: "Contact",
+						desc: "Get in touch for reports or feedback.",
+						link: "/about/contact",
+						icon: Mail,
+						bgIcon: Mail,
+						category: "About",
+                        catId: 4,
+						colSpan: "md:col-span-1",
+                        delay: 0.9
+					}
+				].map((item) => (
+					<a
+						href={item.link}
+						class={`group relative overflow-hidden rounded-3xl border border-border/40 bg-card/50 p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-xl hover:bg-card/80 ${item.colSpan} animate-fade-in opacity-0 translate-y-4`}
+                        style={`animation-delay: ${item.delay}s; animation-fill-mode: forwards;`}
+					>
+						{/* Background Patterns & Animations */}
+                        
+                        {/* 1. Base Subtle Grid */}
+						<div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[length:16px_16px] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] opacity-[0.03] group-hover:opacity-[0.1] transition-opacity duration-500"></div>
+
+                        {/* 2. Radial Gradient Spread from Bottom-Right - Stronger Opacity */}
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(var(--primary-rgb),0.25),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
+                        
+                        {/* 3. Mouse-follow highlight (optional polish) */}
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+
+						<div class="relative z-10 h-full flex flex-col justify-between">
+							<div class="flex justify-between items-start">
+								<div class="p-2.5 bg-secondary/80 rounded-xl w-fit text-foreground/80 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300 ring-1 ring-border/50 group-hover:ring-primary/30">
+									<item.icon className="w-5 h-5 transition-colors duration-300" strokeWidth={2} />
+								</div>
+                                
+                                {/* Category Indicator (Dots) */}
+                                <div class="flex gap-1.5 bg-background/40 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-border/20 shadow-sm">
+                                    {[1, 2, 3, 4].map((id) => (
+                                        <div 
+                                            class={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                                                item.catId === id 
+                                                ? "bg-primary scale-110 shadow-[0_0_8px_rgba(var(--primary-rgb),0.6)]" 
+                                                : "bg-muted-foreground/20"
+                                            }`}
+                                        ></div>
+                                    ))}
+                                </div>
+							</div>
+
+							<div>
+                                <span class="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest mb-2 block font-sans">{item.category}</span>
+								<h3 class="text-xl font-medium font-serif tracking-tight text-foreground/90 group-hover:text-foreground transition-colors mb-1.5">
+									{item.title}
+								</h3>
+								<p class="text-sm text-muted-foreground group-hover:text-muted-foreground/90 transition-colors line-clamp-2 leading-relaxed">
+									{item.desc}
+								</p>
+							</div>
+						</div>
+
+						{/* Background Decorative Icon - Stronger appearance on hover */}
+						<item.bgIcon
+							className="absolute -bottom-8 -right-8 w-40 h-40 text-foreground/[0.02] -rotate-12 group-hover:scale-110 group-hover:text-foreground/[0.08] group-hover:-rotate-6 transition-all duration-500 ease-out pointer-events-none"
+							strokeWidth={1}
+						/>
+					</a>
+				))
+			}
+		</div>
+
+		<style>
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			.animate-fade-in {
+				animation: fadeIn 0.8s ease-out forwards;
+			}
+		</style>
+	</section></MainLayout
+>

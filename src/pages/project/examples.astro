@@ -1,0 +1,197 @@
+---
+import MainLayout from "../../layouts/main.astro";
+import RegularGallery from "@/components/gallery-ui/RegularGallery.astro";
+import ProjectCard from "@/components/gallery-ui/ProjectCard.astro";
+import type { ProjectItem } from "@/components/test/project-item";
+import { GalleryVerticalEnd, Search } from "lucide-react";
+import { getCollection } from "astro:content";
+
+// Fetch all projects from examples category
+const examplesProjects = await getCollection(
+    "project_page",
+    ({ id }: { id: string }) => {
+        return id.startsWith("examples/paper/");
+    },
+);
+
+// Transform content collection data to ProjectItem format
+const project_info: ProjectItem[] = examplesProjects
+    .map((entry: any) => {
+        const { id, data } = entry;
+        const slug = entry.slug;
+
+        const filename = id.split("/").pop()?.replace(".md", "") || "";
+
+        return {
+            id: filename,
+            slug: slug,
+            category: "examples" as const,
+            title: data.title,
+            year: data.year,
+            conference: data.conference,
+            image: `/src/content/project_page/examples/images/${data.image}`,
+            link: data.link,
+            tags: data.tags || [],
+        };
+    })
+    .sort((a: ProjectItem, b: ProjectItem) => b.year.localeCompare(a.year));
+---
+
+<MainLayout>
+    <div class="py-10 space-y-12">
+        <div class="text-center flex flex-col items-center">
+            <div
+                class="p-3 bg-secondary/50 rounded-full text-primary mb-4 ring-1 ring-border/50"
+            >
+                <GalleryVerticalEnd className="w-8 h-8" />
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight mb-4 font-serif">
+                Project Examples
+            </h1>
+            <p class="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Discover various project implementations and case studies.
+            </p>
+        </div>
+
+        <div class="max-w-xl mx-auto mb-0 px-4 flex flex-col gap-6">
+            <div class="relative w-full group">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search projects..."
+                    class="peer w-full pl-11 pr-4 py-3 rounded-full border border-border/80 bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all text-sm shadow-sm hover:shadow-md"
+                />
+                <div
+                    class="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground peer-focus:text-foreground transition-colors pointer-events-none"
+                >
+                    <Search className="w-4 h-4" />
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2">
+                <button
+                    class="filter-btn active px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-foreground text-background shadow-sm hover:opacity-90"
+                    data-filter="all"
+                >
+                    All
+                </button>
+                {
+                    Array.from(
+                        new Set(project_info.map((item) => item.conference)),
+                    )
+                        .filter((conf) => conf && conf.trim() !== "")
+                        .map((conference) => ({
+                            name: conference,
+                            count: project_info.filter(
+                                (item) => item.conference === conference,
+                            ).length,
+                        }))
+                        .sort((a, b) => b.count - a.count)
+                        .slice(0, 10)
+                        .map(({ name }) => (
+                            <button
+                                class="filter-btn px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-background border border-border/60 text-muted-foreground hover:border-foreground/20 hover:text-foreground"
+                                data-filter={name}
+                                data-filter-type="conference"
+                            >
+                                {name}
+                            </button>
+                        ))
+                }
+            </div>
+        </div>
+
+        <RegularGallery>
+            {
+                project_info.map((item, i) => (
+                    <div
+                        class="gallery-item transition-all duration-500 ease-out"
+                        data-tags={item.tags?.join(",").toLowerCase() || ""}
+                        data-title={item.title?.toLowerCase() || ""}
+                        data-conference={item.conference}
+                    >
+                        <ProjectCard data={item} index={i} />
+                    </div>
+                ))
+            }
+        </RegularGallery>
+
+        <script is:inline>
+            const buttons = document.querySelectorAll(".filter-btn");
+            const searchInput = document.getElementById("search-input");
+            const items = document.querySelectorAll(".gallery-item");
+
+            let currentFilter = "all";
+            let searchQuery = "";
+
+            function filterItems() {
+                items.forEach((item) => {
+                    const conference =
+                        item.getAttribute("data-conference") || "";
+                    const title = item.getAttribute("data-title") || "";
+                    const tags = item.getAttribute("data-tags") || "";
+
+                    const matchesFilter =
+                        currentFilter === "all" || conference === currentFilter;
+
+                    // Search across title and tags
+                    const matchesSearch =
+                        searchQuery === "" ||
+                        title.includes(searchQuery) ||
+                        tags.includes(searchQuery);
+
+                    if (matchesFilter && matchesSearch) {
+                        item.style.display = "";
+                        setTimeout(() => {
+                            item.style.opacity = "1";
+                            item.style.transform = "translateY(0)";
+                        }, 10);
+                    } else {
+                        item.style.opacity = "0";
+                        item.style.transform = "translateY(20px)";
+                        setTimeout(() => {
+                            item.style.display = "none";
+                        }, 300);
+                    }
+                });
+            }
+
+            buttons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    buttons.forEach((b) => {
+                        b.classList.remove(
+                            "bg-foreground",
+                            "text-background",
+                            "shadow-sm",
+                        );
+                        b.classList.add(
+                            "bg-background",
+                            "border",
+                            "border-border/60",
+                            "text-muted-foreground",
+                        );
+                    });
+                    btn.classList.remove(
+                        "bg-background",
+                        "border",
+                        "border-border/60",
+                        "text-muted-foreground",
+                    );
+                    btn.classList.add(
+                        "bg-foreground",
+                        "text-background",
+                        "shadow-sm",
+                    );
+
+                    currentFilter = btn.getAttribute("data-filter");
+                    filterItems();
+                });
+            });
+
+            searchInput?.addEventListener("input", (e) => {
+                searchQuery = e.target.value.toLowerCase();
+                filterItems();
+            });
+        </script>
+    </div>
+</MainLayout>
