@@ -1,5 +1,10 @@
 # Paper Gallery Website
 
+> [!NOTE]
+> **License & Usage Policy**
+> 
+> This source code is intended **exclusively for academic research and educational purposes**. Any form of commercial utilization, monetization, or unauthorized redistribution (secondary distribution) is strictly prohibited.
+
 ## 🛠 Prerequisites
 
 - [Node.js](https://nodejs.org/) (Latest LTS version recommended)
