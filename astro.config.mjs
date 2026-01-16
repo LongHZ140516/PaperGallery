@@ -17,5 +17,5 @@ export default defineConfig({
 
   integrations: [react(), mdx()],
   site: 'https://LongHZ140516.github.io',
-  base: '/PaperGalleryWeb',
+  base: '/PaperGallery',
 });
