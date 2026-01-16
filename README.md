@@ -1,13 +1,31 @@
-# Astro with Tailwind
+# Paper Gallery Website
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
+## 🛠 Prerequisites
+
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [Git](https://git-scm.com/)
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+Clone the `web` branch specifically:
+
+```bash
+git clone -b web [https://github.com/LongHZ140516/awesome-framework-gallery.git](https://github.com/LongHZ140516/awesome-framework-gallery.git)
+cd awesome-framework-gallery
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+### 2. Install dependencies
+Install the required packages using npm:
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+```bash
+npm install
+```
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:4321/PaperGallery/](http://localhost:4321/PaperGallery/) in your browser to view the site.
