@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Astro to GitHub Pages
 
 on:
   # 每次推送到 `main` 分支时触发这个“工作流程”
