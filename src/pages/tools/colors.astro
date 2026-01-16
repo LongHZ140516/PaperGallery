@@ -29,7 +29,7 @@ const tool_info: ToolItem[] = colorTools
             category: "color" as const,
             name: data.name,
             link: data.link,
-            image: `/src/content/tools/color/images/${data.image}`,
+            image: `${import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL}/tools/color/${data.image}`,
         };
     })
     .sort((a: ToolItem, b: ToolItem) => a.name.localeCompare(b.name));

@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../../layouts/main.astro";
 import { Github, Globe, Users, GraduationCap } from "lucide-react";
+const base = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
 
 // Mock data based on Footer info + placeholders for missing info
 const teamMembers = [
@@ -8,7 +9,7 @@ const teamMembers = [
         name: "Zilong Huang",
         role: "Team Lead",
         bio: "Words mean nothing without action.",
-        avatar: "/members/zilonghuang.jpg",
+        avatar: `${base}/members/zilonghuang.jpg`,
         links: [
             {
                 icon: Github,
@@ -31,7 +32,7 @@ const teamMembers = [
         name: "Junyan Ye",
         role: "Team Member",
         bio: "Exhaust principles and rectify the mind.",
-        avatar: "/members/junyanye.jpg",
+        avatar: `${base}/members/junyanye.jpg`,
         links: [
             {
                 icon: Github,
@@ -54,7 +55,7 @@ const teamMembers = [
         name: "Jun He",
         role: "Team Member",
         bio: "Saying goodbye to the past is about moving towards the future.",
-        avatar: "/members/junhe.jpg",
+        avatar: `${base}/members/junhe.jpg`,
         links: [
             {
                 icon: Github,
@@ -72,7 +73,7 @@ const teamMembers = [
         name: "Yaopeng Zou",
         role: "Team Member",
         bio: "If it ain’t broke… you probably just haven’t found the right way to make it smoke yet.",
-        avatar: "/members/yaopengzou.jpg",
+        avatar: `${base}/members/yaopengzou.jpg`,
         links: [
             {
                 icon: Github,
@@ -90,7 +91,7 @@ const teamMembers = [
         name: "Jingpeng Li",
         role: "Team Member",
         bio: "Try again. Fail again. Fail better.",
-        avatar: "/members/jingpengli.jpg",
+        avatar: `${base}/members/jingpengli.jpg`,
         links: [
             {
                 icon: Github,

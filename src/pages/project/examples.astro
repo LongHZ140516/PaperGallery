@@ -29,7 +29,7 @@ const project_info: ProjectItem[] = examplesProjects
             title: data.title,
             year: data.year,
             conference: data.conference,
-            image: `/src/content/project_page/examples/images/${data.image}`,
+            image: `${import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL}/project/examples/${data.image}`,
             link: data.link,
             tags: data.tags || [],
         };

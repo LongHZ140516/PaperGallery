@@ -19,7 +19,7 @@ export async function getStaticPaths() {
         // Build paths for both server-side (Vibrant) and client-side (browser) access
         const serverImagePath = `${cwd}/src/content/images/${category}/images/${data.image}`;
         // For browser display, we'll use a path that references the source
-        const clientImagePath = `/src/content/images/${category}/images/${data.image}`;
+        const clientImagePath = `${import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL}/images/${category}/${data.image}`;
 
         return {
             params: { id: uniqueId },
