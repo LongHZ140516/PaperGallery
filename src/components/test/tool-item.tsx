@@ -2,7 +2,7 @@
 export interface ToolItem {
   id: string;
   slug: string;
-  category: 'color' | 'icon';
+  category: 'color' | 'icon' | 'repository';
   name: string;
   link: string;
   image: string;

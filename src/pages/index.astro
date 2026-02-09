@@ -11,6 +11,7 @@ import {
 	FileJson,
 	ArrowRight,
 	Shapes,
+	FolderGit2,
 	Mail,
 	FileText,
 } from "lucide-react";
@@ -197,11 +198,13 @@ const content = { title: "Paper Gallery" };
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
-			{/* 
+			{
+				/* 
                 Bento Grid Items Data
                 Design: Uniform "Claude-style" neutral theme
                 Animation: Bottom-right radial gradient spread
-            */}
+            */
+			}
 			{
 				[
 					{
@@ -211,9 +214,9 @@ const content = { title: "Paper Gallery" };
 						icon: Image,
 						bgIcon: Image,
 						category: "Images",
-                        catId: 1,
+						catId: 1,
 						colSpan: "md:col-span-2",
-                        delay: 0.1
+						delay: 0.1,
 					},
 					{
 						title: "Examples",
@@ -222,20 +225,20 @@ const content = { title: "Paper Gallery" };
 						icon: GalleryVerticalEnd,
 						bgIcon: GalleryVerticalEnd,
 						category: "Projects",
-                        catId: 2,
+						catId: 2,
 						colSpan: "md:col-span-1",
-                        delay: 0.2
+						delay: 0.2,
 					},
-                    {
+					{
 						title: "Colors",
 						desc: "Color resources' website for design.",
 						link: "/tools/colors",
 						icon: Palette,
 						bgIcon: Palette,
 						category: "Tools",
-                        catId: 3,
+						catId: 3,
 						colSpan: "md:col-span-1",
-                        delay: 0.3
+						delay: 0.3,
 					},
 					{
 						title: "Pipeline",
@@ -244,105 +247,124 @@ const content = { title: "Paper Gallery" };
 						icon: LayoutTemplate,
 						bgIcon: LayoutTemplate,
 						category: "Images",
-                        catId: 1,
+						catId: 1,
 						colSpan: "md:col-span-2",
-                        delay: 0.4
+						delay: 0.4,
 					},
-                    {
+					{
 						title: "Templates",
 						desc: "Ready-to-use project page templates.",
 						link: "/project/templates",
 						icon: FileJson,
 						bgIcon: FileJson,
 						category: "Projects",
-                        catId: 2,
+						catId: 2,
 						colSpan: "md:col-span-1",
-                        delay: 0.5
+						delay: 0.5,
 					},
-                    {
+					{
 						title: "Team",
 						desc: "The Architects behind Paper Gallery.",
 						link: "/about/team",
 						icon: Users,
 						bgIcon: Users,
 						category: "About",
-                        catId: 4,
+						catId: 4,
 						colSpan: "md:col-span-1",
-                        delay: 0.6
+						delay: 0.6,
 					},
-                    {
+					{
 						title: "Icons",
 						desc: "High-quality icon resources website for design.",
 						link: "/tools/icons",
 						icon: Shapes,
 						bgIcon: Shapes,
 						category: "Tools",
-                        catId: 3,
+						catId: 3,
 						colSpan: "md:col-span-1",
-                        delay: 0.7
+						delay: 0.7,
 					},
-                    {
+					{
+						title: "Repository",
+						desc: "Useful GitHub repositories for research.",
+						link: "/tools/repository",
+						icon: FolderGit2,
+						bgIcon: FolderGit2,
+						category: "Tools",
+						catId: 3,
+						colSpan: "md:col-span-1",
+						delay: 0.75,
+					},
+					{
 						title: "Terms",
 						desc: "Copyright, Usage Policy & Disclaimer.",
 						link: "/about/terms",
 						icon: FileText,
 						bgIcon: FileText,
 						category: "About",
-                        catId: 4,
+						catId: 4,
 						colSpan: "md:col-span-1",
-                        delay: 0.8
+						delay: 0.8,
 					},
-                    {
+					{
 						title: "Contact",
 						desc: "Get in touch for reports or feedback.",
 						link: "/about/contact",
 						icon: Mail,
 						bgIcon: Mail,
 						category: "About",
-                        catId: 4,
+						catId: 4,
 						colSpan: "md:col-span-1",
-                        delay: 0.9
-					}
+						delay: 0.9,
+					},
 				].map((item) => (
 					<a
-						href={item.link.startsWith("http") ? item.link : `${import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL}${item.link}`}
+						href={
+							item.link.startsWith("http")
+								? item.link
+								: `${import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL}${item.link}`
+						}
 						class={`group relative overflow-hidden rounded-3xl border border-border/40 bg-card/50 p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-xl hover:bg-card/80 ${item.colSpan} animate-fade-in opacity-0 translate-y-4`}
-                        style={`animation-delay: ${item.delay}s; animation-fill-mode: forwards;`}
+						style={`animation-delay: ${item.delay}s; animation-fill-mode: forwards;`}
 					>
 						{/* Background Patterns & Animations */}
-                        
-                        {/* 1. Base Subtle Grid */}
-						<div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[length:16px_16px] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] opacity-[0.03] group-hover:opacity-[0.1] transition-opacity duration-500"></div>
 
-                        {/* 2. Radial Gradient Spread from Bottom-Right - Stronger Opacity */}
-                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(var(--primary-rgb),0.25),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
-                        
-                        {/* 3. Mouse-follow highlight (optional polish) */}
-                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+						{/* 1. Base Subtle Grid */}
+						<div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[length:16px_16px] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] opacity-[0.03] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
+						{/* 2. Radial Gradient Spread from Bottom-Right - Stronger Opacity */}
+						<div class="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(var(--primary-rgb),0.25),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+
+						{/* 3. Mouse-follow highlight (optional polish) */}
+						<div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
 						<div class="relative z-10 h-full flex flex-col justify-between">
 							<div class="flex justify-between items-start">
 								<div class="p-2.5 bg-secondary/80 rounded-xl w-fit text-foreground/80 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300 ring-1 ring-border/50 group-hover:ring-primary/30">
-									<item.icon className="w-5 h-5 transition-colors duration-300" strokeWidth={2} />
+									<item.icon
+										className="w-5 h-5 transition-colors duration-300"
+										strokeWidth={2}
+									/>
 								</div>
-                                
-                                {/* Category Indicator (Dots) */}
-                                <div class="flex gap-1.5 bg-background/40 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-border/20 shadow-sm">
-                                    {[1, 2, 3, 4].map((id) => (
-                                        <div 
-                                            class={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                                                item.catId === id 
-                                                ? "bg-primary scale-110 shadow-[0_0_8px_rgba(var(--primary-rgb),0.6)]" 
-                                                : "bg-muted-foreground/20"
-                                            }`}
-                                        ></div>
-                                    ))}
-                                </div>
+
+								{/* Category Indicator (Dots) */}
+								<div class="flex gap-1.5 bg-background/40 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-border/20 shadow-sm">
+									{[1, 2, 3, 4].map((id) => (
+										<div
+											class={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+												item.catId === id
+													? "bg-primary scale-110 shadow-[0_0_8px_rgba(var(--primary-rgb),0.6)]"
+													: "bg-muted-foreground/20"
+											}`}
+										/>
+									))}
+								</div>
 							</div>
 
 							<div>
-                                <span class="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest mb-2 block font-sans">{item.category}</span>
+								<span class="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest mb-2 block font-sans">
+									{item.category}
+								</span>
 								<h3 class="text-xl font-medium font-serif tracking-tight text-foreground/90 group-hover:text-foreground transition-colors mb-1.5">
 									{item.title}
 								</h3>
