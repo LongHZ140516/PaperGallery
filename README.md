@@ -17,6 +17,7 @@
 
 ## 📰 News
 
+- **2026.01.16:** 📢 Updated repository content. Added a new `Repository` category under `Tools` to showcase **research-related GitHub repos** !
 - **2026.01.16:** 🔥 The repository has been renamed ***PaperGallery***, and its content website has officially launched [[website link](https://longhz140516.github.io/PaperGallery/)].
 - **2024.09.23:** 🎉 First update to the ***awesome-framework-gallery*** repository.
 
@@ -31,6 +32,7 @@
 * Tools
   * [Color Website](https://longhz140516.github.io/PaperGallery/tools/colors/)
   * [Icon Website](https://longhz140516.github.io/PaperGallery/tools/icons/)
+  * [Repository Website](https://longhz140516.github.io/PaperGallery/tools/repository/)
 
 <div align="center">
   <img src="assets/theme.JPG" width="24%" />
