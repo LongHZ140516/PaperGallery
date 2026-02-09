@@ -15,6 +15,11 @@
 
 </div>
 
+## 📰 News
+
+- **2026.01.16:** 🔥 The repository has been renamed ***PaperGallery***, and its content website has officially launched [[website link](https://longhz140516.github.io/PaperGallery/)].
+- **2024.09.23:** 🎉 First update to the ***awesome-framework-gallery*** repository.
+
 ## 🌐 Website Content
 
 * Images
